@@ -3,12 +3,12 @@ FROM node:lts-alpine3.12
 LABEL AUTHOR="none" \
       VERSION=0.1.4
 
-ARG KEY="-----BEGIN OPENSSH PRIVATE KEY-----\nb3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAABFwAAAAdzc2gtcn\nNhAAAAAwEAAQAAAQEAvRQk2oQqLB01iVnJKrnI3tTfJyEHzc2ULVor4vBrKKWOum4dbTeT\ndNWL5aS+CJso7scJT3BRq5fYVZcz5ra0MLMdQyFL1DdwurmzkhPYbwcNrJrB8abEPJ8ltS\nMoa0X9ecmSepaQFedZOZ2YeT/6AAXY+cc6xcwyuRVQ2ZJ3YIMBrRuVkF6nYwLyBLFegzhu\nJJeU5o53kfpbTCirwK0h9ZsYwbNbXYbWuJHmtl5tEBf2Hz+5eCkigXRq8EhRZlSnXfhPr2\n32VCb1A/gav2/YEaMPSibuBCzqVMVruP5D625XkxMdBdLqLBGWt7bCas7/zH2bf+q3zac4\nLcIFhkC6XwAAA9BjE3IGYxNyBgAAAAdzc2gtcnNhAAABAQC9FCTahCosHTWJWckqucje1N\n8nIQfNzZQtWivi8GsopY66bh1tN5N01YvlpL4ImyjuxwlPcFGrl9hVlzPmtrQwsx1DIUvU\nN3C6ubOSE9hvBw2smsHxpsQ8nyW1IyhrRf15yZJ6lpAV51k5nZh5P/oABdj5xzrFzDK5FV\nDZkndggwGtG5WQXqdjAvIEsV6DOG4kl5TmjneR+ltMKKvArSH1mxjBs1tdhta4kea2Xm0Q\nF/YfP7l4KSKBdGrwSFFmVKdd+E+vbfZUJvUD+Bq/b9gRow9KJu4ELOpUxWu4/kPrbleTEx\n0F0uosEZa3tsJqzv/MfZt/6rfNpzgtwgWGQLpfAAAAAwEAAQAAAQEAnMKZt22CBWcGHuUI\nytqTNmPoy2kwLim2I0+yOQm43k88oUZwMT+1ilUOEoveXgY+DpGIH4twusI+wt+EUVDC3e\nlyZlixpLV+SeFyhrbbZ1nCtYrtJutroRMVUTNf7GhvucwsHGS9+tr+96y4YDZxkBlJBfVu\nvdUJbLfGe0xamvE114QaZdbmKmtkHaMQJOUC6EFJI4JmSNLJTxNAXKIi3TUrS7HnsO3Xfv\nhDHElzSEewIC1smwLahS6zi2uwP1ih4fGpJJbU6FF/jMvHf/yByHDtdcuacuTcU798qT0q\nAaYlgMd9zrLC1OHMgSDcoz9/NQTi2AXGAdo4N+mnxPTHcQAAAIB5XCz1vYVwJ8bKqBelf1\nw7OlN0QDM4AUdHdzTB/mVrpMmAnCKV20fyA441NzQZe/52fMASUgNT1dQbIWCtDU2v1cP6\ncG8uyhJOK+AaFeDJ6NIk//d7o73HNxR+gCCGacleuZSEU6075Or2HVGHWweRYF9hbmDzZb\nCLw6NsYaP2uAAAAIEA3t1BpGHHek4rXNjl6d2pI9Pyp/PCYM43344J+f6Ndg3kX+y03Mgu\n06o33etzyNuDTslyZzcYUQqPMBuycsEb+o5CZPtNh+1klAVE3aDeHZE5N5HrJW3fkD4EZw\nmOUWnRj1RT2TsLwixB21EHVm7fh8Kys1d2ULw54LVmtv4+O3cAAACBANkw7XZaZ/xObHC9\n1PlT6vyWg9qHAmnjixDhqmXnS5Iu8TaKXhbXZFg8gvLgduGxH/sGwSEB5D6sImyY+DW/OF\nbmIVC4hwDUbCsTMsmTTTgyESwmuQ++JCh6f2Ams1vDKbi+nOVyqRvCrAHtlpaqSfv8hkjK\npBBqa/rO5yyYmeJZAAAAFHJvb3RAbmFzLmV2aW5lLnByZXNzAQIDBAUG\n-----END OPENSSH PRIVATE KEY-----"
+ARG KEY="-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAu2PDF5fq0UWVXUuH1oDr7VuJtipvH/g/FG+v0McE4HpWD/72\ncvto+afShwOnjSP6t1Y1G0HA6dICaTq0eZwIwQyG5GLMoE3KVQv0W2q13qzILJje\nLCG/9ofi5wg6BGvY5YWQxs5SfViseLYBKLm57ZfClzcHeHI1STZiBN0W/qAei7BM\n/7HU6OIG5pxjsLqYKdsoC+psmXuc1Ehf5RaL5sklXo/TVfNtM9phWGkM0TpbKnnm\nU2S/rqJ3OZCWemaZz25UJKc8eof/3q1mYnbS8cXr0FazdfOQdAfDpLqKka2PP5xJ\nhQDJGV0r6d4qVsQr8aHr6T5APkeLQMeWWub0ywIDAQABAoIBABpR39QPhW7RXDJX\naoPpZbnX8pbAjQ0rfAityz8CxR+Wb0Id6JWr1EnElaBbFgyP8iYQGLN0X9k3oxkO\nosy16tDappOrgNw/MN0TKcYxTcwx7oe9DO+b6e+BlJAoqqV2VGegg/44eoOakdb+\nkVkcBQ5nE3DTzNvRBsT6u3e9af5nVznTUpq9D82LV/mPqzeFy1+WGA1j+BvY+qk1\n8/hUmzHe7NDMHTIsIa5K6TQiG9go91JxQ0u+sOcwfDkLW20d/ZX5sglqbtY4ZKPO\nSUGG4Y23zkCj4udC4eWhkpgD12LeGEb1JiPeemdv7j9aOxyJlJHF74n1fkk43kZb\nBuFd6nECgYEA8AzYQpax1qgH/hYiH/BObzS8YdTQ3doP7cumvWxK362wdDNrtZIg\nPtTLg8pIjF+1i60Qq62LwWIdN1v7lqbpH306Il/d7WigpLNeo7Yg7snegJnhpj0z\npm1JaMd4u7Si8WiHvATOGTqreH7ieQ+uo/gvTp4Z1F3ydpVj4rWQyFkCgYEAx9cv\nIfbffrICrfyDJHyeeRIAuH2u+NoIhgHbMsZthJtgiVnWcL6y10+pgirHCNIqzQDb\ndL6nxxjyutS41abJTH1UtIFGrHgE7E8hV+l874OPF4t/08KWOJsaH/jce0WRzTqF\nPXXVym6F72X2wc3H/b55cn7QbOnIpjnUMMjGAcMCgYEAxsUsEb9slN1geOHk8eNv\nXyAg2TV6mimlxPc8I1/Xg+3zzdSCXMAaGUzlFETc2/eogXcV9cJnlgLjRGLTKgUd\nxmhQSgRt5NcdJiQsuozmKjRYHM7PDXNiIG4gOjXp4CwMPK+crXChJDzznXwblbkJ\nmFa6/XNm2fXM/qpnImPL9kkCgYBxk5PfCs8E06kAN1ZVY1ox1xB/yjaqikhz2RQ6\nbFoMFr6r8VoV49wC0Oy25RcPpVrb/lO7qyvx1PUHSCTwkIUxqr18hUikduXdZC/A\nJhxyh+PIbukschgsfcJAT5EHood2C390acci8OPAJsQya4DxbtLZRsewTsJR7uXw\n//rBPwKBgQDsEaCZaHyXwZ/NIzqjEhuxCxIfk57u0GpjEaJG9wAaj7FSOpEIAb8T\nwBL3hNGrqVNa/BknJ71WtsrXhQ1rPuYXNuG+dF/k6YnO3egx2z5k6VfnDrYoU3xD\njBDDQnAXNVl5FV8iKsD40fWCTn74lUHSUq03N2/HC/g43g6E1WFf0w==\n-----END RSA PRIVATE KEY-----"
 
 ENV DEFAULT_LIST_FILE=crontab_list.sh \
     CUSTOM_LIST_MERGE_TYPE=append \
     COOKIES_LIST=/scripts/logs/cookies.list \
-    REPO_URL=git@gitee.com:lxk0301/jd_scripts.git \
+    REPO_URL=git@github.com:pkpkgtr1/jd_scripts.git \
     REPO_BRANCH=master
 
 RUN set -ex \
@@ -21,7 +21,7 @@ RUN set -ex \
     && mkdir -p /root/.ssh \
     && echo -e $KEY > /root/.ssh/id_rsa \
     && chmod 600 /root/.ssh/id_rsa \
-    && ssh-keyscan gitee.com > /root/.ssh/known_hosts \
+    && ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts \
     && git clone -b $REPO_BRANCH $REPO_URL /scripts \
     && cd /scripts \
     && mkdir logs \
