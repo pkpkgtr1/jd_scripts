@@ -143,3 +143,6 @@
 15 0,3,6,12,16,20,22 * * * node /scripts/jd_jxmc.js >> /scripts/logs/jd_jxmc.log 2>&1
 #京东金融领白条券
 0 0,9 * * *  node /scripts/jd_baiTiao.js >> /scripts/logs/jd_baiTiao.log 2>&1
+
+#618竞猜
+0 23 * * *  node  /scripts/zy_618jc.js |ts >> /scripts/logs/zy_618jc.log 2>&1
