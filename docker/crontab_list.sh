@@ -8,7 +8,7 @@
 35 1,22 * * * node /scripts/jd_nzmh.js >> /scripts/logs/jd_nzmh.log 2>&1
 
 #京东极速版红包(活动时间：2021-5-5至2021-5-31)
-45 0,23 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
+#45 0,23 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
 
 #超级直播间红包雨(活动时间不定期，出现异常提示请忽略。红包雨期间会正常)
 1,31 0-23/1 * * * node /scripts/jd_live_redrain.js >> /scripts/logs/jd_live_redrain.log 2>&1
@@ -18,12 +18,6 @@
 
 #手机狂欢城
 0 0,12,18,21 * * * node /scripts/jd_carnivalcity.js >> /scripts/logs/jd_carnivalcity.log 2>&1
-#618动物联萌
-36 0,6-23/2 * * * node /scripts/jd_zoo.js >> /scripts/logs/jd_zoo.log 2>&1
-#618动物联萌专门收集金币(每小时的第30分运行一次)
-0-59/30 * * * * node /scripts/jd_zooCollect.js >> /scripts/logs/jd_zooCollect.log 2>&1
-#家电星推官 活动时间：2021年5月27日 00:00:00-2021年6月18日 23:59:59
-0 0 * * * node /scripts/jd_xtg.js >> /scripts/logs/jd_xtg.log 2>&1
 #家电星推官好友互助 活动时间：2021年5月27日 00:00:00-2021年6月18日 23:59:59
 0 0 * * * node /scripts/jd_xtg_help.js >> /scripts/logs/jd_xtg_help.log 2>&1
 #金榜创造营 活动时间：2021-05-21至2021-12-31
@@ -141,8 +135,6 @@
 15 0,12,22 * * * node /scripts/jd_jump.js >> /scripts/logs/jd_jump.log 2>&1
 #京喜牧场
 15 0,3,6,12,16,20,22 * * * node /scripts/jd_jxmc.js >> /scripts/logs/jd_jxmc.log 2>&1
-#京东金融领白条券
-0 0,9 * * *  node /scripts/jd_baiTiao.js >> /scripts/logs/jd_baiTiao.log 2>&1
 
-#618竞猜
-0 6,9,23 * * *  node  /scripts/zy_618jc.js |ts >> /scripts/logs/zy_618jc.log 2>&1
+
+
