@@ -144,7 +144,6 @@
 
 ######追加任务#####
 
-#618竞猜
-0 23 * * *   . /scripts/docker/auto_help.sh export > /scripts/logs/auto_help_export.log && node   /scripts/zy_618jc.js |ts >> /scripts/logs/zy_618jc.log 2>&1
+
 # 必须要的默认定时任务请勿删除
 19 18 * * * docker_entrypoint.sh |ts >> /scripts/logs/default_task.log 2>&1
