@@ -137,4 +137,6 @@
 15 0,3,6,12,16,20,22 * * * node /scripts/jd_jxmc.js >> /scripts/logs/jd_jxmc.log 2>&1
 #京东电竞经理
 40 10 * * * node /scripts/jd_djjl.js >> /scripts/logs/jd_djjl.log 2>&1
+#柠檬全民挖现金
+0 10 * * * node /scripts/jd_wxj.js >> /scripts/logs/jd_wxj.log 2>&1
 
