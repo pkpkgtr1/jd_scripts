@@ -1,7 +1,7 @@
 /*
 入口 京东 我的 全民挖现金
 运行一次查看邀请码 变量你的邀请码 
-export shareCode=""
+export shareCode="BF18620D893C241A6EF3C50C22FFE84A"
 [task_local]
 0 10 * * *
 */
