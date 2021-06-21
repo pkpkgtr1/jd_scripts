@@ -142,4 +142,5 @@
 41 10 * * * node /scripts/jd_djjl.js >> /scripts/logs/jd_djjl.log 2>&1
 #柠檬全民挖现金
 50 0-23/8 * * * node /scripts/jd_wxj.js >> /scripts/logs/jd_wxj.log 2>&1
-
+#京享值PK
+10 0,6-23/4 * * *  node /scripts/jd_ddo_pk.js >> /scripts/logs/jd_ddo_pk.log 2>&1
