@@ -522,35 +522,37 @@
            while (1) {
              let h = new Date().getHours();
              let s = new Date().getSeconds();
-             if (h >= 22 && (s >= 55 || s <= 10)) {
+             if (s >= 50 || s <= 30) {
                console.log('start......')
                break;
              }
-             console.log('wait...')
              await $.wait(100);
            }
+           flag = false
            fn(opts, cb)
          }
          if (flag) {
            console.log('2')
+           flag = false
            fn(opts, cb);
          }
        } else {
-         if (flag)
+         if (flag) {
+           console.log('3')
+           flag = false
            cb(err, resp, data);
-         else {
+         } else {
+           console.log('4')
            while (1) {
              let h = new Date().getHours();
              let s = new Date().getSeconds();
-             if (h >= 22 && (s >= 55 || s <= 10)) {
+             if (s >= 50 || s <= 30) {
                console.log('start......')
                break;
              }
-             console.log('wait...')
              await $.wait(100);
            }
            cb(err, resp, data);
- 
          }
        }
      });
@@ -579,6 +581,10 @@
        $.isLogin = true;
        $.nickName = '';
        await TotalBean();
+       if (!require('./JS_USER_AGENTS').HelloWorld) {
+         console.log(`\n【京东账号${$.index}】${$.nickName || $.UserName}：黑号等死\n`);
+         continue
+       }
        console.log(`\n开始【京东账号${$.index}】${$.nickName || $.UserName}\n`);
        if (!$.isLogin) {
          $.msg($.name, `【提示】cookie已失效`, `京东账号${$.index} ${$.nickName || $.UserName}\n请重新登录获取\nhttps://bean.m.jd.com/bean/signIndex.action`, {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
@@ -593,7 +599,6 @@
  
        let tasks = await init();
  
-       flag = false;
  
        let h = new Date().getHours();
        let config = ''
@@ -606,12 +611,13 @@
        for (let bean of config) {
          console.log(bean.id, bean.giftName, bean.leftStock)
          if (bean.giftValue === target) {
-           // TODO
-           if (!bean.leftStock) {
-             await exchange(bean.id)
-           } else {
-             console.log(`${bean.giftName}无货`)
-           }
+           await exchange(bean.id)
+ 
+           // if (bean.leftStock) {
+           //   await exchange(bean.id)
+           // } else {
+           //   console.log(`${bean.giftName}无货`)
+           // }
          }
        }
      }
