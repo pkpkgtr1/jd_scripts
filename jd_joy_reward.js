@@ -581,7 +581,7 @@
        $.isLogin = true;
        $.nickName = '';
        await TotalBean();
-       if (!require('./JS_USER_AGENTS').HelloWorld) {
+       if (!require('./JS_USER_AGENTS').USER_AGENT) {
          console.log(`\n【京东账号${$.index}】${$.nickName || $.UserName}：黑号等死\n`);
          continue
        }
