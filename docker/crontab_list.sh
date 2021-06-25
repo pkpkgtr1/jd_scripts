@@ -8,6 +8,9 @@
 #京东极速版红包(活动时间：2021-5-5至2021-5-31)
 #45 0,23 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
 
+#女装盲盒第二期（活动时间：2021-6-21至2021-6-30）
+10 8,21 1-8/1 3 * node /scripts/jd_nzmh.js >> /scripts/logs/jd_nzmh.log 2>&1
+
 #超级直播间红包雨(活动时间不定期，出现异常提示请忽略。红包雨期间会正常)
 1,31 0-23/1 * * * node /scripts/jd_live_redrain.js >> /scripts/logs/jd_live_redrain.log 2>&1
 
