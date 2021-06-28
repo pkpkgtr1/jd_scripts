@@ -7,11 +7,14 @@
 [task_local]
 #省钱大赢家之翻翻乐
 20 * * * * https://gitee.com/lxk0301/jd_scripts/raw/master/jd_big_winner.js, tag=省钱大赢家之翻翻乐, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
+
 =================================Loon===================================
 [Script]
 cron "20 * * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_big_winner.js,tag=省钱大赢家之翻翻乐
+
 ===================================Surge================================
 省钱大赢家之翻翻乐 = type=cron,cronexp="20 * * * *",wake-system=1,timeout=3600,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_big_winner.js
+
 ====================================小火箭=============================
 省钱大赢家之翻翻乐 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_big_winner.js, cronexpr="20 * * * *", timeout=3600, enable=true
  */
@@ -499,7 +502,7 @@ function helpAuthor2() {
       }
     }
     let options2 = {
-      url: `https://api.m.jd.com/?functionId=openRedEnvelopeInteract&body={"linkId":"DA4SkG7NXupA9sksI00L0g","redEnvelopeId":"b623a672ef594568a782211ee88b2be538571624292122604","inviter":"AghrnocwyBzh_6aDh3BPmS5acIv86eToUuynlVFt-GU","helpType":"2"}&t=1623064535450&appid=activities_platform&clientVersion=3.3.6`,
+      url: `https://api.m.jd.com/?functionId=openRedEnvelopeInteract&body={"linkId":"DA4SkG7NXupA9sksI00L0g","redEnvelopeId":"204a34116f414c49a168d6baa9e60be170511624637709940","inviter":"AghrnocwyBzh_6aDh3BPmS5acIv86eToUuynlVFt-GU","helpType":"2"}&t=1623064535450&appid=activities_platform&clientVersion=3.3.6`,
       headers: {
         "Origin": "https://618redpacket.jd.com",
         "Host": "api.m.jd.com",
@@ -508,7 +511,7 @@ function helpAuthor2() {
       }
     }
     let options3 = {
-      url: `https://api.m.jd.com/?functionId=openRedEnvelopeInteract&body={"linkId":"DA4SkG7NXupA9sksI00L0g","redEnvelopeId":"9d090ba6ed014be2a7915128670bbeb895651624292378381","inviter":"VqFbegTWUP9DJrZBj0UUJw","helpType":"2"}&t=1623064535450&appid=activities_platform&clientVersion=3.3.6`,
+      url: `https://api.m.jd.com/?functionId=openRedEnvelopeInteract&body={"linkId":"DA4SkG7NXupA9sksI00L0g","redEnvelopeId":"49dd811efca04459903a1a26833fc8dc85751624636856964","inviter":"VqFbegTWUP9DJrZBj0UUJw","helpType":"2"}&t=1623064535450&appid=activities_platform&clientVersion=3.3.6`,
       headers: {
         "Origin": "https://618redpacket.jd.com",
         "Host": "api.m.jd.com",
@@ -517,7 +520,7 @@ function helpAuthor2() {
       }
     }
     let options4 = {
-      url: `https://api.m.jd.com/?functionId=openRedEnvelopeInteract&body={"linkId":"DA4SkG7NXupA9sksI00L0g","redEnvelopeId":"351016449b9945cc8b9070ea4520ac4687291624292505599","inviter":"lYeCjR-Tqlt2Rdvzm3BstucggfTsQxjqV5WhG7YX80I","helpType":"2"}&t=1623064535450&appid=activities_platform&clientVersion=3.3.6`,
+      url: `https://api.m.jd.com/?functionId=openRedEnvelopeInteract&body={"linkId":"DA4SkG7NXupA9sksI00L0g","redEnvelopeId":"961661aefeef4a9a9e8bfc341a7f576023861624637028736","inviter":"lYeCjR-Tqlt2Rdvzm3BstucggfTsQxjqV5WhG7YX80I","helpType":"2"}&t=1623064535450&appid=activities_platform&clientVersion=3.3.6`,
       headers: {
         "Origin": "https://618redpacket.jd.com",
         "Host": "api.m.jd.com",
@@ -526,7 +529,7 @@ function helpAuthor2() {
       }
     }
     let options5 = {
-      url: `https://api.m.jd.com/?functionId=openRedEnvelopeInteract&body={"linkId":"DA4SkG7NXupA9sksI00L0g","redEnvelopeId":"241e82559bcc40999b8f8b5a3fba9f4564301624291967409","inviter":"H4PMazmFkCU2k1O53vpIyw","helpType":"2"}&t=1623064535450&appid=activities_platform&clientVersion=3.3.6`,
+      url: `https://api.m.jd.com/?functionId=openRedEnvelopeInteract&body={"linkId":"DA4SkG7NXupA9sksI00L0g","redEnvelopeId":"8c14f69b36ea4cedb1c2b216bd318b1c53591624637844948","inviter":"H4PMazmFkCU2k1O53vpIyw","helpType":"2"}&t=1623064535450&appid=activities_platform&clientVersion=3.3.6`,
       headers: {
         "Origin": "https://618redpacket.jd.com",
         "Host": "api.m.jd.com",
