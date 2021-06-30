@@ -24,8 +24,6 @@
 #半点京豆雨
 30 16-23/1 * * *  node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
 
-#万物皆可国创 特物z
-18 10,21 * * * node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1
 
 ##############长期活动##############
 # 签到
