@@ -28,14 +28,12 @@ let jdNotify = true;//是否关闭通知，false打开通知推送，true关闭�
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '', message;
 let helpAuthor = true;
-const randomCount = $.isNode() ? 0 : 5;
+const randomCount = $.isNode() ? 5 : 5;
 let cash_exchange = false;//是否消耗2元红包兑换200京豆，默认否
 const inviteCodes = [
-  `Y0B3N7v2JP0@eU9YP6rzEoFukwujri5Q@eU9Yau-1ZqkloGiAniBA0w@Jh0zbuS1b_on8A@ekdrK7XuOg`,
-  `Y0B3N7v2JP0@eU9YP6rzEoFukwujri5Q@eU9Yau-1ZqkloGiAniBA0w@Jh0zbuS1b_on8A@ekdrK7XuOg`
+  `eU9YL5XqGLxSmRSAkwxR@eU9YaO7jMvwh-W_VzyUX0Q@eU9YaurkY69zoj3UniVAgg@eU9YaOnjYK4j-GvWmXIWhA@eU9YMZ_gPpRurC-foglg@eU9Ya77gZK5z-TqHn3UWhQ@eU9Yaui2ZP4gpG-Gz3EThA@eU9YaeizbvQnpG_SznIS0w`,
+  `-4msulYas0O2JsRhE-2TA5XZmBQ@eU9Yar_mb_9z92_WmXNG0w@eU9YaO7jMvwh-W_VzyUX0Q@eU9YaurkY69zoj3UniVAgg@eU9YaOnjYK4j-GvWmXIWhA@eU9YaO23bvtyozuGyHsR1A`
 ]
-let myInviteCode;
-
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
     cookiesArr.push(jdCookieNode[item])
@@ -52,7 +50,7 @@ let allMessage = '';
     return;
   }
   await requireConfig()
-  // await getAuthorShareCode();//网址失效，注释
+  //await getAuthorShareCode();
   await getAuthorShareCode2();
   for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {
@@ -97,25 +95,25 @@ async function jdCash() {
   cash_exchange = $.isNode() ? (process.env.CASH_EXCHANGE ? process.env.CASH_EXCHANGE : `${cash_exchange}`) : ($.getdata('cash_exchange') ? $.getdata('cash_exchange') : `${cash_exchange}`);
   if (cash_exchange === 'true') {
     if(Number($.signMoney) >= 2){
-    console.log(`\n\n开始花费2元红包兑换200京豆，一周可换五次`)
-    for (let item of ["-1", "0", "1", "2", "3"]) {
-      $.canLoop = true;
-      if ($.canLoop) {
-        for (let i = 0; i < 5; i++) {
-          await exchange2(item);//兑换200京豆(2元红包换200京豆，一周5次。)
-        }
-        if (!$.canLoop) {
-          console.log(`已找到符合的兑换条件，跳出\n`);
-          break
+      console.log(`\n\n开始花费2元红包兑换200京豆，一周可换五次`)
+      for (let item of ["-1", "0", "1", "2", "3"]) {
+        $.canLoop = true;
+        if ($.canLoop) {
+          for (let i = 0; i < 5; i++) {
+            await exchange2(item);//兑换200京豆(2元红包换200京豆，一周5次。)
+          }
+          if (!$.canLoop) {
+            console.log(`已找到符合的兑换条件，跳出\n`);
+            break
+          }
         }
       }
+      if ($.exchangeBeanNum) {
+        message += `兑换京豆成功，获得${$.exchangeBeanNum * 100}京豆\n`;
+      }
+    }else{
+      console.log(`\n\n现金不够2元，不进行兑换200京豆，`)
     }
-    if ($.exchangeBeanNum) {
-      message += `兑换京豆成功，获得${$.exchangeBeanNum * 100}京豆\n`;
-    }
-  }else{
-    console.log(`\n\n现金不够2元，不进行兑换200京豆，`)
-  }
   }
   await index(true)
   // await showMsg()
@@ -146,17 +144,9 @@ function index(info=false) {
                 'inviteCode': data.data.result.inviteCode,
                 'shareDate': data.data.result.shareDate
               }
-              myInviteCode = data.data.result.inviteCode;
               $.shareDate = data.data.result.shareDate;
-              console.log(`💰签到领现金-开始提交互助码💰`);
-              const submitCodeRes = await submitCode();
-              if (submitCodeRes && submitCodeRes.code === 200) {
-                console.log(`💰签到领现金-互助码提交成功！💰`);
-              }else if (submitCodeRes.code === 300) {
-                console.log(`💰签到领现金-互助码已提交！💰`);
-              }
-              $.log(`shareDate: ${$.shareDate}`)
-              console.log(helpInfo)
+              // $.log(`shareDate: ${$.shareDate}`)
+              // console.log(helpInfo)
               for(let task of data.data.result.taskInfos){
                 if (task.type === 4) {
                   for (let i = task.doTimes; i < task.times; ++i) {
@@ -359,11 +349,10 @@ function showMsg() {
     resolve()
   })
 }
-
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
-    $.get({url: `http://www.helpu.cf/jdcodes/getcode.php?type=cash&num=${randomCount}`, 'timeout': 10000}, (err, resp, data) => {
+    $.get({url: `https://code.chiang.fun/api/v1/jd/jdcash/read/${randomCount}/`, 'timeout': 10000}, (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
@@ -384,32 +373,6 @@ function readShareCode() {
     resolve()
   })
 }
-
-//提交互助码
-function submitCode() {
-    return new Promise(async resolve => {
-    $.get({url: `http://www.helpu.cf/jdcodes/submit.php?code=${myInviteCode}&type=cash`, timeout: 10000}, (err, resp, data) => {
-      try {
-        if (err) {
-          console.log(`${JSON.stringify(err)}`)
-          console.log(`${$.name} API请求失败，请检查网路重试`)
-        } else {
-          if (data) {
-            //console.log(`随机取个${randomCount}码放到您固定的互助码后面(不影响已有固定互助)`)
-            // data = JSON.parse(data);
-          }
-        }
-      } catch (e) {
-        $.logErr(e, resp)
-      } finally {
-        resolve(data);
-      }
-    })
-    await $.wait(15000);
-    resolve()
-  })
-}
-
 //格式化助力码
 function shareCodesFormat() {
   return new Promise(async resolve => {
@@ -456,8 +419,8 @@ function requireConfig() {
         }
       })
     } else {
-      if ($.getdata('JD_CASH_SHARECODES')) $.shareCodesArr = $.getdata('JD_CASH_SHARECODES').split('\n').filter(item => !!item);
-      console.log(`\nBoxJs设置的领现金邀请码:${$.getdata('JD_CASH_SHARECODES')}\n`);
+      if ($.getdata('jd_cash_invite')) $.shareCodesArr = $.getdata('jd_cash_invite').split('\n').filter(item => !!item);
+      console.log(`\nBoxJs设置的京喜财富岛邀请码:${$.getdata('jd_cash_invite')}\n`);
     }
     console.log(`您提供了${$.shareCodesArr.length}个账号的${$.name}助力码\n`);
     resolve()
@@ -496,7 +459,7 @@ function taskUrl(functionId, body = {}) {
   }
 }
 
-function getAuthorShareCode(url = "https://a.nz.lu/jd_cash.json") {
+function getAuthorShareCode(url = "http://cdn.annnibb.me/jd_cash.json") {
   return new Promise(resolve => {
     $.get({url, headers:{
         "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/87.0.4280.88"
@@ -515,7 +478,7 @@ function getAuthorShareCode(url = "https://a.nz.lu/jd_cash.json") {
     })
   })
 }
-function getAuthorShareCode2(url = "https://ghproxy.com/https://raw.githubusercontent.com/zero205/updateTeam/main/shareCodes/jd_updateCash.json") {
+function getAuthorShareCode2(url = "https://cdn.jsdelivr.net/gh/gitupdate/updateTeam@master/shareCodes/jd_updateCash.json") {
   return new Promise(resolve => {
     $.get({url, headers:{
         "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/87.0.4280.88"
