@@ -23,7 +23,7 @@
 0 0-23/4 * * * node /scripts/jd_mohe.js >> /scripts/logs/jd_mohe.log 2>&1
 #半点京豆雨
 30 16-23/1 * * *  node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
-#全民抢京豆
+#全民抢京豆（7.2-7.15）
 45 0,6-23/4 * * *  node /scripts/jd_qjd.js >> /scripts/logs/jd_qjd.log 2>&1
 
 ##############长期活动##############
