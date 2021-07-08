@@ -26,6 +26,11 @@
 #燃动夏季（7.8-8.8）
 12 9,11,13,15,17 * * *  node /scripts/jd_summer_movement.js >> /scripts/logs/jd_summer_movement.log 2>&1
 
+#星系牧场
+30 7 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
+#来客有礼小程序
+45 4 * * * node /scripts/jd_sendBeans.js >> /scripts/logs/jd_sendBeans.log 2>&1
+
 ##############长期活动##############
 # 签到
 7 0,17 * * * node /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
@@ -137,3 +142,5 @@
 10 0,6-23/4 * * *  node /scripts/jd_ddo_pk.js >> /scripts/logs/jd_ddo_pk.log 2>&1
 #东东乐园
 18 7 * * * node /scripts/jd_ddly.js >> /scripts/logs/jd_ddly.log 2>&1
+#早起福利
+30 6 * * *  node /scripts/jd_goodMorning.js >> /scripts/logs/jd_goodMorning.log 2>&1  
