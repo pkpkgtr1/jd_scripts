@@ -26,6 +26,9 @@
 #全民抢京豆（7.2-7.15）
 45 0,6-23/4 * * *  node /scripts/jd_qjd.js >> /scripts/logs/jd_qjd.log 2>&1
 
+#燃动夏季（7.8-8.8）
+12 9,11,13,15,17 * * *  node /scripts/jd_summer_movement.js >> /scripts/logs/jd_summer_movement.log 2>&1
+
 ##############长期活动##############
 # 签到
 7 0,17 * * * node /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
