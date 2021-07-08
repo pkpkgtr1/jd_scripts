@@ -1,13 +1,13 @@
 /* 
-14 10 * * * https://raw.githubusercontent.com/smiek2221/scripts/master/jd_sign_graphics.js
+cron 14 10 * * * https://raw.githubusercontent.com/smiek2221/scripts/master/jd_sign_graphics.js
 只支持nodejs环境
 需要安装依赖 
 npm i png-js 或者 npm i png-js -S
 
 */
 
-const validator = require('./shufflewzc_faker2_jd_JDJRValidator_Pure.js');
-const Faker=require('./shufflewzc_faker2_jd_sign_graphics_validate.js') 
+const validator = require('./JDJRValidator_Pure.js');
+const Faker=require('./sign_graphics_validate.js') 
 
 const $ = new Env('京东签到图形验证');
 const notify = $.isNode() ? require('./sendNotify') : '';
