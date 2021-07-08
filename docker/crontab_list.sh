@@ -24,7 +24,7 @@
 45 0,6-23/4 * * *  node /scripts/jd_qjd.js >> /scripts/logs/jd_qjd.log 2>&1
 
 #燃动夏季（7.8-8.8）
-12 9,11,13,15,17 * * *  node /scripts/jd_summer_movement.js >> /scripts/logs/jd_summer_movement.log 2>&1
+12 6-23/2 * * *  node /scripts/jd_summer_movement.js >> /scripts/logs/jd_summer_movement.log 2>&1
 
 #星系牧场
 30 7 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
