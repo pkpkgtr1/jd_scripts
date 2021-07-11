@@ -25,6 +25,8 @@
 
 #燃动夏季（7.8-8.8）
 12 6-23/2 * * *  node /scripts/jd_summer_movement.js >> /scripts/logs/jd_summer_movement.log 2>&1
+#删除燃动夏季缓存文件
+30 5,11 * * * rm /scripts/app.*.js
 
 #星系牧场
 30 7 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
