@@ -30,7 +30,7 @@
 #柠檬推一推
 0 0 * * * node /scripts/jd_tyt.js  >> /scripts/logs/jd_tyt.log 2>&1
 #柠檬众筹许愿池
-0 0 * * * node /scripts/jd_wish.js  >> /scripts/logs/jd_wish.log 2>&1
+0 6 * * * node /scripts/jd_wish.js  >> /scripts/logs/jd_wish.log 2>&1
 
 ##############长期活动##############
 # 签到
