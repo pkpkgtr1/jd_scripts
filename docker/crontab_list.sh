@@ -27,8 +27,10 @@
 30 7 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
 #来客有礼小程序
 45 4 * * * node /scripts/jd_sendBeans.js >> /scripts/logs/jd_sendBeans.log 2>&1
-#推一推
+#柠檬推一推
 0 0 * * * node /scripts/jd_tyt.js  >> /scripts/logs/jd_tyt.log 2>&1
+#柠檬众筹许愿池
+0 0 * * * node /scripts/jd_wish.js  >> /scripts/logs/jd_wish.log 2>&1
 
 ##############长期活动##############
 # 签到
