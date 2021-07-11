@@ -31,6 +31,8 @@
 0 0 * * * node /scripts/jd_tyt.js  >> /scripts/logs/jd_tyt.log 2>&1
 #柠檬众筹许愿池
 0 6 * * * node /scripts/jd_wish.js  >> /scripts/logs/jd_wish.log 2>&1
+#欧洲狂欢杯
+57 59 9  * * *  node /scripts/jd_europeancup.js  >> /scripts/logs/jd_europeancup.log 2>&1 
 
 ##############长期活动##############
 # 签到
