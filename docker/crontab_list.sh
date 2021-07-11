@@ -142,3 +142,5 @@
 30 6 * * *  node /scripts/jd_goodMorning.js >> /scripts/logs/jd_goodMorning.log 2>&1  
 #京东签到图形验证
 14 2,10 * * * node /scripts/jd_sign_graphics.js >> /scripts/logs/jd_sign_graphics.log 2>&1   
+#京东试用
+28 10 * * * node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1 
