@@ -35,7 +35,9 @@
 57 59 9  * * *  node /scripts/jd_europeancup.js  >> /scripts/logs/jd_europeancup.log 2>&1 
 #天天优惠大乐透
 15 6 * * *  node /scripts/jd_DrawEntrance.js   >> /scripts/logs/jd_DrawEntrance.log 2>&1  
-
+#翻翻乐
+1 0-23/1 * * *  node /scripts/jd_fcffl.js   >> /scripts/logs/jd_fcffl.log 2>&1  
+ 
 ##############长期活动##############
 # 签到
 7 0,17 * * * node /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
