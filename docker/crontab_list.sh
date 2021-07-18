@@ -36,8 +36,10 @@
 #天天优惠大乐透
 15 6 * * *  node /scripts/jd_DrawEntrance.js   >> /scripts/logs/jd_DrawEntrance.log 2>&1  
 #翻翻乐
-1 0-23/1 * * *  node /scripts/jd_fcffl.js   >> /scripts/logs/jd_fcffl.log 2>&1  
- 
+#1 0-23/1 * * *  node /scripts/jd_fcffl.js   >> /scripts/logs/jd_fcffl.log 2>&1  
+#省钱大赢家之翻翻乐
+ 1 0-23/1 * * *  node /scripts/jd_big_winner.js   >> /scripts/logs/jd_big_winner.log 2>&1  
+
 ##############长期活动##############
 # 签到
 6 1,16,20 * * * node /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
