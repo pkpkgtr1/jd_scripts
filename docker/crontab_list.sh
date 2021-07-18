@@ -38,7 +38,10 @@
 #翻翻乐
 #1 0-23/1 * * *  node /scripts/jd_fcffl.js   >> /scripts/logs/jd_fcffl.log 2>&1  
 #省钱大赢家之翻翻乐
- 1 0-23/1 * * *  node /scripts/jd_big_winner.js   >> /scripts/logs/jd_big_winner.log 2>&1  
+1 0-23/1 * * *  node /scripts/jd_big_winner.js   >> /scripts/logs/jd_big_winner.log 2>&1  
+ #小鸽有礼
+13 1,22,23 * * *  node /scripts/jd_daily_lottery.js   >> /scripts/logs/jd_daily_lottery.log 2>&1
+
 
 ##############长期活动##############
 # 签到
@@ -152,4 +155,5 @@
 #京东试用
 28 10 * * * node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1 
 #财富大陆
-18 0-23/2 * * * node /scripts/gua_wealth_island.js  >> /scripts/logs/gua_wealth_island.log 2>&1  
+18 0-23/2 * * * node /scripts/gua_wealth_island.js  >> /scripts/logs/gua_wealth_island.log 2>&1 
+
