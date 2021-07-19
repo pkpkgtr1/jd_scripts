@@ -39,8 +39,10 @@
 #1 0-23/1 * * *  node /scripts/jd_fcffl.js   >> /scripts/logs/jd_fcffl.log 2>&1  
 #省钱大赢家之翻翻乐
 1 0-23/1 * * *  node /scripts/jd_big_winner.js   >> /scripts/logs/jd_big_winner.log 2>&1  
- #小鸽有礼
+#小鸽有礼
 13 1,22,23 * * *  node /scripts/jd_daily_lottery.js   >> /scripts/logs/jd_daily_lottery.log 2>&1
+#柠檬伊利养牛记
+0 12,17 * * * node /scripts/jd_ylyn.js   >> /scripts/logs/jd_ylyn.log 2>&1
 
 
 ##############长期活动##############
