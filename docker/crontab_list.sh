@@ -42,7 +42,7 @@
 #小鸽有礼
 13 1,22,23 * * *  node /scripts/jd_daily_lottery.js   >> /scripts/logs/jd_daily_lottery.log 2>&1
 #柠檬伊利养牛记
-0 12,17 * * * node /scripts/jd_ylyn.js   >> /scripts/logs/jd_ylyn.log 2>&1
+0 6-23/3 * * * node /scripts/jd_ylyn.js   >> /scripts/logs/jd_ylyn.log 2>&1
 
 
 ##############长期活动##############
