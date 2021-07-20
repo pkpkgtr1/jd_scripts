@@ -43,7 +43,8 @@
 13 1,22,23 * * *  node /scripts/jd_daily_lottery.js   >> /scripts/logs/jd_daily_lottery.log 2>&1
 #柠檬伊利养牛记
 0 6-23/3 * * * node /scripts/jd_ylyn.js   >> /scripts/logs/jd_ylyn.log 2>&1
-
+#赚30
+1 1,12 * * * node /scripts/jd_earn30.js   >> /scripts/logs/jd_earn30.log 2>&1
 
 ##############长期活动##############
 # 签到
