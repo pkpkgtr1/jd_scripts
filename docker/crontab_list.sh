@@ -156,7 +156,7 @@
 #京东签到图形验证
 14 2,10 * * * node /scripts/jd_sign_graphics.js >> /scripts/logs/jd_sign_graphics.log 2>&1   
 #京东试用
-28 10 * * * node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1 
+28 11 * * * node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1 
 #财富大陆
 18 0-23/2 * * * node /scripts/gua_wealth_island.js  >> /scripts/logs/gua_wealth_island.log 2>&1 
 #财富大陆体现
