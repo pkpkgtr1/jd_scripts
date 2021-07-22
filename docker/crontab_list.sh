@@ -45,7 +45,8 @@
 0 6-23/3 * * * node /scripts/jd_ylyn.js   >> /scripts/logs/jd_ylyn.log 2>&1
 #赚30
 1 1,12 * * * node /scripts/jd_earn30.js   >> /scripts/logs/jd_earn30.log 2>&1
-
+#添加MM领京豆
+15 1,9 * * * node /scripts/gua_MMdou.js   >> /scripts/logs/gua_MMdou.log 2>&1
 ##############长期活动##############
 # 签到
 6 1,16,20 * * * node /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
@@ -161,4 +162,5 @@
 18 0-23/2 * * * node /scripts/gua_wealth_island.js  >> /scripts/logs/gua_wealth_island.log 2>&1 
 #财富大陆体现
 59 11,12,23 * * * node /scripts/jd_cfdtx.js  >> /scripts/logs/jd_cfdtx.log 2>&1 
+
 
