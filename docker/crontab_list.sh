@@ -19,10 +19,6 @@
 30 16-23/1 * * *  node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
 #全民抢京豆（7.2-7.15）
 45 0,6-23/4 * * *  node /scripts/jd_qjd.js >> /scripts/logs/jd_qjd.log 2>&1
-#燃动夏季（7.8-8.8）
-12 6-23/2 * * *  node /scripts/jd_summer_movement.js >> /scripts/logs/jd_summer_movement.log 2>&1
-#删除燃动夏季缓存文件
-30 5,11 * * * rm /scripts/app.*.js
 #星系牧场
 30 7 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
 #来客有礼小程序
