@@ -46,7 +46,7 @@
 #燃动夏季
 18 0-23/2 * * *  node /scripts/jd_summer_movement.js   >> /scripts/logs/jd_summer_movement.log 2>&1
 #财富大陆互助
-18 0-23/2 * * *  node /scripts/gua_wealth_island_help.js    >> /scripts/logs/gua_wealth_island_help.log 2>&1  
+18 0,1,9,14,18 * * *   node /scripts/gua_wealth_island_help.js    >> /scripts/logs/gua_wealth_island_help.log 2>&1  
 ##############长期活动##############
 # 签到
 6 1,16,20 * * * node /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
