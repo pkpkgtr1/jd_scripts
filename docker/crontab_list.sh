@@ -49,6 +49,10 @@
 18 0,1,9,14,18 * * *   node /scripts/gua_wealth_island_help.js    >> /scripts/logs/gua_wealth_island_help.log 2>&1 
 #特务Zx佳沛（7月27日结束）
 23 0,9 24-27 7 *  node /scripts/jd_productZ4Brand.js   >> /scripts/logs/jd_productZ4Brand.log 2>&1
+#特务Zx佳沛（7月27日结束）第二次运行
+24 0,9 24-27 7 *  node /scripts/jd_productZ4Brand.js   >> /scripts/logs/jd_productZ4Brand.log 2>&1
+#真·抢京豆
+0 0 * * *  node /scripts/jd_angryBean.js   >> /scripts/logs/jd_angryBean.log 2>&1
 
 ##############长期活动##############
 # 签到
