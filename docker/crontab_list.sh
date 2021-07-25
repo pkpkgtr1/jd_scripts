@@ -45,6 +45,8 @@
 15 1,9 * * * node /scripts/gua_MMdou.js   >> /scripts/logs/gua_MMdou.log 2>&1
 #燃动夏季
 18 0-23/2 * * *  node /scripts/jd_summer_movement.js   >> /scripts/logs/jd_summer_movement.log 2>&1
+#燃动夏季互助
+18 0-23/2 * * *  node /scripts/gua_wealth_island_help.js   >> /scripts/logs/gua_wealth_island_help.log 2>&1
 #财富大陆互助
 18 0,1,9,14,18 * * *   node /scripts/gua_wealth_island_help.js    >> /scripts/logs/gua_wealth_island_help.log 2>&1 
 #特务Zx佳沛（7月27日结束）
