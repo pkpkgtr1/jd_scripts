@@ -57,8 +57,7 @@
 0 0 * * *  node /scripts/jd_angryBean.js   >> /scripts/logs/jd_angryBean.log 2>&1
 #京喜领88元红包
 4 2,10 * * *  node /scripts/jd_jxlhb.js  >> /scripts/logs/jd_jxlhb.log 2>&1
-#京喜签到
-10 * * * * node /scripts/jxqd_new.js  >> /scripts/logs/jxqd_new.log 2>&1
+
 
 ##############长期活动##############
 # 签到
