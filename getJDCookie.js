@@ -1,6 +1,6 @@
 /**
  * 扫码获取京东cookie，此方式得到的cookie有效期为30天
- * 柠檬修复版
+ * 修复版
  */
 const $ = new Env('扫码获取京东cookie');
 const qrcode = require('qrcode-terminal');
