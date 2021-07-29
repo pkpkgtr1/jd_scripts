@@ -10,7 +10,7 @@
 #女装盲盒第三期（活动时间：2021-7-1至2021-7-31）
 10 8,21 1-8/1 3 * node /scripts/jd_nzmh.js >> /scripts/logs/jd_nzmh.log 2>&1
 #超级直播间红包雨(活动时间不定期，出现异常提示请忽略。红包雨期间会正常)
-1,31 0-23/1 * * * node /scripts/jd_live_redrain.js >> /scripts/logs/jd_live_redrain.log 2>&1
+40 */1 * * * node /scripts/jd_live_redrain.js >> /scripts/logs/jd_live_redrain.log 2>&1
 #金榜创造营 活动时间：2021-05-21至2021-12-31
 0 1,22 * * * node /scripts/jd_gold_creator.js >> /scripts/logs/jd_gold_creator.log 2>&1
 #5G超级盲盒(活动时间：2021-06-2到2021-07-31)
