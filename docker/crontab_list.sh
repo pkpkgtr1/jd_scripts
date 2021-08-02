@@ -169,5 +169,6 @@
 18 0-23/2 * * * node /scripts/gua_wealth_island.js  >> /scripts/logs/gua_wealth_island.log 2>&1 
 #财富大陆体现
 59 11,12,23 * * * node /scripts/jd_cfdtx.js  >> /scripts/logs/jd_cfdtx.log 2>&1 
-
+#店铺签到
+0 0,12 * * * node /scripts/jd_dpqd.js >> /scripts/logs/jd_dpqd.log 2>&1 
 
