@@ -121,7 +121,7 @@ function getCookie() {
     } else {
       $.log(`其他异常：${JSON.stringify(checkRes)}\n`);
       clearInterval($.timer);
-      $.done();
+      //$.done();
     }
   }, 1000)
 }
