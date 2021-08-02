@@ -120,7 +120,7 @@ function getCookie() {
       //未扫描登录
     } else {
       $.log(`其他异常：${JSON.stringify(checkRes)}\n`);
-      clearInterval($.timer);
+      //clearInterval($.timer);
       //$.done();
     }
   }, 1000)
