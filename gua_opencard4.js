@@ -58,16 +58,7 @@ message = ""
     });
     return;
   }
-  if ($.isNode()) {
-    if (!process.env.guaopencard4 || process.env.guaopencard4 == "true") {
-      console.log('如需执行脚本请设置环境变量[guaopencard4]为"true"')
-      return
-    }
-  }
-  guaopencard_addSku4 = process.env.guaopencard_addSku4
-  if (!process.env.guaopencard_addSku4 || process.env.guaopencard_addSku4 == "false") {
-    console.log('如需加购请设置环境变量[guaopencard_addSku4]为"true"')
-  }
+  guaopencard_addSku4 = true
   $.shareUuid = '8eef88dbbb5e4a11b04f222b78b195c8'
   console.log(`入口:\nhttps://lzdz1-isv.isvjcloud.com/dingzhi/dz/openCard/activity/832865?activityId=c225ad5922cf4ac8b4a68fd37f486088&shareUuid=${$.shareUuid}`)
   // 134
