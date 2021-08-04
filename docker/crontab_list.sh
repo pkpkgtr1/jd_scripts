@@ -50,7 +50,7 @@
 #京喜签到
 30 0,22 * * * node /scripts/jx_sign.js  >> /scripts/logs/jx_sign.log 2>&1
 #大牌联合 冰爽一夏 8.4-8.12 
-30 0,18 * * * node /scripts/gua_opencard4.js  >> /scripts/logs/gua_opencard4.log 2>&1
+36 0,8 4-12 8 * node /scripts/gua_opencard4.js  >> /scripts/logs/gua_opencard4.log 2>&1
 
 ##############长期活动##############
 # 签到
