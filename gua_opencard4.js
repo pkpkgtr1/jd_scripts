@@ -48,7 +48,7 @@ if ($.isNode()) {
 } else {
   cookiesArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
 }
-let guaopencard_addSku4 = true
+let guaopencard_addSku4 = false
 const JD_API_HOST = `https://api.m.jd.com/client.action`;
 message = ""
 !(async () => {
@@ -58,10 +58,9 @@ message = ""
     });
     return;
   }
-  guaopencard_addSku4 = true
+  guaopencard_addSku4 = process.env.guaopencard_addSku4
   $.shareUuid = '8eef88dbbb5e4a11b04f222b78b195c8'
   console.log(`入口:\nhttps://lzdz1-isv.isvjcloud.com/dingzhi/dz/openCard/activity/832865?activityId=c225ad5922cf4ac8b4a68fd37f486088&shareUuid=${$.shareUuid}`)
-  // 134
   for (let i = 0; i < cookiesArr.length; i++) {
     cookie = cookiesArr[i];
     if (cookie) {
@@ -173,13 +172,14 @@ function getDrawRecordHasCoupon() {
         } else {
           // console.log(data)
           data = JSON.parse(data)
-          console.log(`我的奖品`)
+          console.log(`我的奖品：`)
+          let num = 0
           for(let i in data.data){
-            if(i>=15) console.log(`......`)
-            if(i>=15) break
             let item = data.data[i]
-            console.log(`${item.infoType != 10 && item.value +':' || ''}${item.infoName}`)
+            if(item.value == '邀请好友') num++;
+            if(item.value != '邀请好友') console.log(`${item.infoType != 10 && item.value +':' || ''}${item.infoName}`)
           }
+          if(num > 0) console.log(`邀请好友(${num}):${num*20}京豆`)
         }
       } catch (e) {
         $.logErr(e, resp)
