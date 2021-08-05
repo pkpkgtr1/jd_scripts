@@ -51,7 +51,8 @@
 30 0,22 * * * node /scripts/jx_sign.js  >> /scripts/logs/jx_sign.log 2>&1
 #大牌联合 冰爽一夏 8.4-8.12 
 36 0,8 4-12 8 * node /scripts/gua_opencard4.js  >> /scripts/logs/gua_opencard4.log 2>&1
-
+#大牌联合 冰爽一夏 8.4-8.12 
+38 0,8 5-12 8 * node /scripts/gua_opencard5.js  >> /scripts/logs/gua_opencard5.log 2>&1
 ##############长期活动##############
 # 签到
 6 1,16,20 * * * node /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
