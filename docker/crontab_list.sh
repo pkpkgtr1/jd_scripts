@@ -4,7 +4,6 @@
 30 * * * * sh +x /scripts/docker/auto_help.sh collect >> /scripts/logs/auto_help_collect.log 2>&1
 
 ##############短期活动##############
-
 #京东极速版红包(活动时间：2021-5-5至？)
 45 0,6,23 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
 #女装盲盒第三期（活动时间：2021-7-1至2021-7-31）
@@ -57,6 +56,7 @@
 30 0,8 * 8 * node /scripts/gua_opencard6.js  >> /scripts/logs/gua_opencard6.log 2>&1
 #七夕情报局
 36 0,10,21 4-15 8 * node /scripts/gua_doge.js  >> /scripts/logs/gua_doge.log 2>&1 
+
 ##############长期活动##############
 # 签到
 6 1,16,20 * * * node /scripts/jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
@@ -178,5 +178,5 @@
 0 0 */5 * * node /scripts/jd_cleancart.js >> /scripts/logs/jd_cleancart.log 2>&1 
 #汪汪乐园每日任务
 20 7,9,17,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1 
- #汪汪乐园
+#汪汪乐园
 20 0-23/3 * * * node /scripts/jd_joy_park.js >> /scripts/logs/jd_joy_park.log 2>&1 
