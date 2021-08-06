@@ -177,4 +177,5 @@
 0 0 */5 * * node /scripts/jd_cleancart.js >> /scripts/logs/jd_cleancart.log 2>&1 
 #汪汪乐园每日任务
 20 7,9,17,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1 
- 
+ #汪汪乐园
+20 0-23/3 * * * node /scripts/jd_joypark_joy.js >> /scripts/logs/jd_joypark_joy.log 2>&1 
