@@ -27,7 +27,7 @@
 #柠檬众筹许愿池
 0 6 * * * node /scripts/jd_wish.js  >> /scripts/logs/jd_wish.log 2>&1
 #欧洲狂欢杯
-57 59 9  * * *  node /scripts/jd_europeancup.js  >> /scripts/logs/jd_europeancup.log 2>&1 
+0 10  * * *  node /scripts/jd_europeancup.js  >> /scripts/logs/jd_europeancup.log 2>&1 
 #天天优惠大乐透
 15 6 * * *  node /scripts/jd_DrawEntrance.js   >> /scripts/logs/jd_DrawEntrance.log 2>&1  
 #省钱大赢家之翻翻乐
