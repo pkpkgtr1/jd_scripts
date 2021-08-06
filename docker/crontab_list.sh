@@ -173,4 +173,6 @@
 59 11,12,23 * * * node /scripts/jd_cfdtx.js  >> /scripts/logs/jd_cfdtx.log 2>&1 
 #店铺签到
 0 0,12 * * * node /scripts/jd_dpqd.js >> /scripts/logs/jd_dpqd.log 2>&1 
-
+#清理购物车
+0 0 */5 * * node /scripts/jd_cleancart.js >> /scripts/logs/jd_cleancart.log 2>&1 
+ 
