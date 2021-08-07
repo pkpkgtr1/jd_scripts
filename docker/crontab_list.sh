@@ -16,8 +16,6 @@
 0 0-23/4 * * * node /scripts/jd_mohe.js >> /scripts/logs/jd_mohe.log 2>&1
 #半点京豆雨
 30 16-23/1 * * *  node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
-#全民抢京豆（7.2-7.15）
-45 0,6-23/4 * * *  node /scripts/jd_qjd.js >> /scripts/logs/jd_qjd.log 2>&1
 #星系牧场
 30 7 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
 #来客有礼小程序
@@ -174,6 +172,8 @@
 59 11,12,23 * * * node /scripts/jd_cfdtx.js  >> /scripts/logs/jd_cfdtx.log 2>&1 
 #店铺签到
 0 0,12 * * * node /scripts/jd_dpqd.js >> /scripts/logs/jd_dpqd.log 2>&1 
+#店铺签到2
+0 0,12 * * * node /scripts/jd_dpqd2.js >> /scripts/logs/jd_dpqd2.log 2>&1 
 #清理购物车
 0 0 */5 * * node /scripts/jd_cleancart.js >> /scripts/logs/jd_cleancart.log 2>&1 
 #汪汪乐园每日任务
