@@ -24,8 +24,6 @@
 0 0 * * * node /scripts/jd_tyt.js  >> /scripts/logs/jd_tyt.log 2>&1
 #柠檬众筹许愿池
 0 6 * * * node /scripts/jd_wish.js  >> /scripts/logs/jd_wish.log 2>&1
-#欧洲狂欢杯
-0 10  * * *  node /scripts/jd_europeancup.js  >> /scripts/logs/jd_europeancup.log 2>&1 
 #天天优惠大乐透
 15 6 * * *  node /scripts/jd_DrawEntrance.js   >> /scripts/logs/jd_DrawEntrance.log 2>&1  
 #省钱大赢家之翻翻乐
@@ -139,8 +137,7 @@
 21 1,6 * * * node /scripts/jd_speed_sign.js >> /scripts/logs/jd_speed_sign.log 2>&1
 # 删除优惠券(默认注释，如需要自己开启，如有误删，已删除的券可以在回收站中还原，慎用)
 #20 9 * * 6 node /scripts/jd_delCoupon.js >> /scripts/logs/jd_delCoupon.log 2>&1
-#家庭号
-10 6,7 * * * node /scripts/jd_family.js >> /scripts/logs/jd_family.log 2>&1
+
 #京东直播（又回来了）
 30-50/5 12,23 * * * node /scripts/jd_live.js >> /scripts/logs/jd_live.log 2>&1
 #京东健康社区
@@ -159,8 +156,6 @@
 41 10 * * * node /scripts/jd_djjl.js >> /scripts/logs/jd_djjl.log 2>&1
 #柠檬全民挖现金
 50 0-23/8 * * * node /scripts/jd_wxj.js >> /scripts/logs/jd_wxj.log 2>&1
-#京享值PK
-10 0,6-23/4 * * *  node /scripts/jd_ddo_pk.js >> /scripts/logs/jd_ddo_pk.log 2>&1
 #东东乐园
 18 7 * * * node /scripts/jd_ddly.js >> /scripts/logs/jd_ddly.log 2>&1
 #早起福利
