@@ -55,7 +55,7 @@
 #七夕情报局
 36 0,10,21 4-15 8 * node /scripts/gua_doge.js  >> /scripts/logs/gua_doge.log 2>&1 
 #全民抢京豆 8.6-8.16
-10 7 * * *  node /scripts/jd_qmqjd.js  >> /scripts/logs/jd_qmqjd.log 2>&1 
+10 7 * * *  node /scripts/jd_qjd1.py >> /scripts/logs/jd_qjd1.log 2>&1 
 
 
 ##############长期活动##############
