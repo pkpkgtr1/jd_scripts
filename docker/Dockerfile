@@ -3,7 +3,7 @@ FROM node:lts-alpine3.12
 LABEL AUTHOR="none" \
       VERSION=0.1.4
 
-ARG KEY="-----BEGIN RSA PRIVATE KEY-----\nMIIEpAIBAAKCAQEAu2PDF5fq0UWVXUuH1oDr7VuJtipvH/g/FG+v0McE4HpWD/72\ncvto+afShwOnjSP6t1Y1G0HA6dICaTq0eZwIwQyG5GLMoE3KVQv0W2q13qzILJje\nLCG/9ofi5wg6BGvY5YWQxs5SfViseLYBKLm57ZfClzcHeHI1STZiBN0W/qAei7BM\n/7HU6OIG5pxjsLqYKdsoC+psmXuc1Ehf5RaL5sklXo/TVfNtM9phWGkM0TpbKnnm\nU2S/rqJ3OZCWemaZz25UJKc8eof/3q1mYnbS8cXr0FazdfOQdAfDpLqKka2PP5xJ\nhQDJGV0r6d4qVsQr8aHr6T5APkeLQMeWWub0ywIDAQABAoIBABpR39QPhW7RXDJX\naoPpZbnX8pbAjQ0rfAityz8CxR+Wb0Id6JWr1EnElaBbFgyP8iYQGLN0X9k3oxkO\nosy16tDappOrgNw/MN0TKcYxTcwx7oe9DO+b6e+BlJAoqqV2VGegg/44eoOakdb+\nkVkcBQ5nE3DTzNvRBsT6u3e9af5nVznTUpq9D82LV/mPqzeFy1+WGA1j+BvY+qk1\n8/hUmzHe7NDMHTIsIa5K6TQiG9go91JxQ0u+sOcwfDkLW20d/ZX5sglqbtY4ZKPO\nSUGG4Y23zkCj4udC4eWhkpgD12LeGEb1JiPeemdv7j9aOxyJlJHF74n1fkk43kZb\nBuFd6nECgYEA8AzYQpax1qgH/hYiH/BObzS8YdTQ3doP7cumvWxK362wdDNrtZIg\nPtTLg8pIjF+1i60Qq62LwWIdN1v7lqbpH306Il/d7WigpLNeo7Yg7snegJnhpj0z\npm1JaMd4u7Si8WiHvATOGTqreH7ieQ+uo/gvTp4Z1F3ydpVj4rWQyFkCgYEAx9cv\nIfbffrICrfyDJHyeeRIAuH2u+NoIhgHbMsZthJtgiVnWcL6y10+pgirHCNIqzQDb\ndL6nxxjyutS41abJTH1UtIFGrHgE7E8hV+l874OPF4t/08KWOJsaH/jce0WRzTqF\nPXXVym6F72X2wc3H/b55cn7QbOnIpjnUMMjGAcMCgYEAxsUsEb9slN1geOHk8eNv\nXyAg2TV6mimlxPc8I1/Xg+3zzdSCXMAaGUzlFETc2/eogXcV9cJnlgLjRGLTKgUd\nxmhQSgRt5NcdJiQsuozmKjRYHM7PDXNiIG4gOjXp4CwMPK+crXChJDzznXwblbkJ\nmFa6/XNm2fXM/qpnImPL9kkCgYBxk5PfCs8E06kAN1ZVY1ox1xB/yjaqikhz2RQ6\nbFoMFr6r8VoV49wC0Oy25RcPpVrb/lO7qyvx1PUHSCTwkIUxqr18hUikduXdZC/A\nJhxyh+PIbukschgsfcJAT5EHood2C390acci8OPAJsQya4DxbtLZRsewTsJR7uXw\n//rBPwKBgQDsEaCZaHyXwZ/NIzqjEhuxCxIfk57u0GpjEaJG9wAaj7FSOpEIAb8T\nwBL3hNGrqVNa/BknJ71WtsrXhQ1rPuYXNuG+dF/k6YnO3egx2z5k6VfnDrYoU3xD\njBDDQnAXNVl5FV8iKsD40fWCTn74lUHSUq03N2/HC/g43g6E1WFf0w==\n-----END RSA PRIVATE KEY-----"
+ARG KEY="-----BEGIN RSA PRIVATE KEY-----\nMIIEoAIBAAKCAQEAoyd+WKgVRq9SsoIeUUoM8F3crlR9bysmsXN8RutA+6zX4YQL\n9kf9OSLNK96UChrdS1Brxa2PSwye74iU4kSJPjUJbT/a64IcWzz8qBM9lwBIDhGp\nRAecQOuZVQzuM1HUFLLmCaYPWCv5216NuC/u9TYMfYFgzF0DbXKxgF4es1F2yh9c\n60cNEgEJx0MDluZODv54o0dzIt+rRovK4kODDx4NpkhTtvAmORwQOb14S97+icJN\nLkQGElWdlYWiU9nCyPWkffCF8ybLYiKRT+IMnAWUHYHAOMxqNLBcecDNza5yb3J8\nejvFqg1bCp/4b4Wo+6AqLe3QMdiSlFJDHBg7BQIBIwKCAQB93KNLtN02hz/LiPLQ\n/pxEZao9Vx7vW81kUcZFVmVUb2S1SJuDeVzxj+AahyG+pwJ77ZT3lIR7uUdoU2uJ\n+ls+nfFURzPaP8y7aY+026SKbe5xQNMImCgU0wFBnEK54AoBVs62/HI8tDXGfCQv\nAGfhu/sBu5PQ2gn1WHpNFWgj7SdHimbY7Z67FDIpUFGRljmOmONx7ZcJCd7fLefr\nlLy6+P87YQT2pSm46xLE46M6FnE3uIByjfWDaC6CZ61hHExDC9XmSEG1clXAmsNE\nPCTue7MmfMuQRKSUfkgvG6wTkgmxB1sIOhCtCPFttLe3nd52ovOBwAFBFETGvZvl\nq+SLAoGBANZVgvUZYIoaz8H6RVa+oi9N8EmSUZllBycGvUTjSuPNJqPvfOszqeEi\ny4qNRpB3OSIi1Fri9IxbhvtFZ6SxQgFdSCKlj7lRZHcY4VxNpo0ecShAgZZyDfYO\n/gwuKxxshwBEFfY9V6rxymU56bNpGZ+bR7bhhD7r2GYnp/0bA29BAoGBAMLe+/V2\nU6u41LrsxPdBd+cbK4z4iPmCuMIn+0/gjSXd0RVgVx+1U7mrWK+2uB24wah0CEJO\nhH3Tk2+BJdEIQ6pqGWyRa234678zI0Fd7YiBUuJyOHc7IxoP3zUYAAs00m8WeOpO\nq8w2xZbtKtIh4cMSaMXdG1bCOzuQ9tq66h7FAoGADD9mkamtvr+0GbaHno6M7MKg\nBDQ/LVY67EmHKIIER4gQ1irxMgLzw7jYblE3O3SG7AH9gYlPzYGSr0XLaH8oV9lx\n1hgW12O8mRddVbtLWIVljUWDv3Q7T+OZfQnz1b0PB1RZBsGtPPffrgNPLtLOQ6J5\nIGSoeJ/DOQmUkh7M/wsCgYAWRV6ftcBrZZSnpgfhvlbYlWQQHGds+P8sIdOUGam7\nL0sYYsgg4YXpVWk4pyr8FR1yVmdYCPky85vSOqU8dfkaykwMaGQMkXoHOQtX7Xo7\nfH6AR5Fstk0njMkNYdQeibGmS7YMJj+FDZLsrWP6wgssPJ5Cf6taX1c6AfBTgxNx\nOwKBgDHPafJE3mKrcSYECeZBKXu3SVgkTg1dgq4lX1dXC6MHnWqS+0qsg8tscgks\nLcbwfDVHam9O26cqHj3EozEH3kJN3sZGCy9yZ/X62mXtMTYYmwCV7x1rgAgPe9Ve\nvUxWkI2mkEAkHdCxogDw4frUC9aWykLvzSTmh+zU6iO1yI43\n-----END RSA PRIVATE KEY-----"
 
 ENV DEFAULT_LIST_FILE=crontab_list.sh \
     CUSTOM_LIST_MERGE_TYPE=append \
@@ -14,8 +14,11 @@ ENV DEFAULT_LIST_FILE=crontab_list.sh \
 RUN set -ex \
     && apk update \
     && apk upgrade \
-    && apk add --no-cache bash tzdata git moreutils curl jq openssh-client \
+    && apk add --no-cache bash tzdata git moreutils curl jq openssh-client python3 openssl wget \
     && rm -rf /var/cache/apk/* \
+    && cd /root \ 
+    && wget https://bootstrap.pypa.io/get-pip.py \
+    && python3 get-pip.py \
     && ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
     && echo "Asia/Shanghai" > /etc/timezone \
     && mkdir -p /root/.ssh \
@@ -27,6 +30,7 @@ RUN set -ex \
     && mkdir logs \
     && npm config set registry https://registry.npm.taobao.org \
     && npm install \
+    && pip install -r requirements.txt \
     && cp /scripts/docker/docker_entrypoint.sh /usr/local/bin \
     && chmod +x /usr/local/bin/docker_entrypoint.sh
 
