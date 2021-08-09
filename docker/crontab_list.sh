@@ -54,7 +54,8 @@
 10 7 * * *  node /scripts/jd_qjd.py >> /scripts/logs/jd_qjd.log 2>&1 
 #七夕会员福利社 gua_opencard7.js
 36 0,10,21 4-15 8 * node /scripts/guaopencard7.js  >> /scripts/logs/guaopencard7.log 2>&1 
-
+#京东手机狂欢城活动
+0 0-18/6 * * * node /scripts/gua_carnivalcity.js  >> /scripts/logs/gua_carnivalcity.log 2>&1 
 ##############长期活动##############
 # 签到
 6 1,16,20 * * * node /scripts/jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
