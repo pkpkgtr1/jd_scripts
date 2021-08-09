@@ -52,7 +52,8 @@
 36 0,10,21 4-15 8 * node /scripts/gua_doge.js  >> /scripts/logs/gua_doge.log 2>&1 
 #全民抢京豆 8.6-8.16
 10 7 * * *  node /scripts/jd_qjd.py >> /scripts/logs/jd_qjd.log 2>&1 
-
+#七夕会员福利社 gua_opencard7.js
+36 0,10,21 4-15 8 * node /scripts/guaopencard7.js  >> /scripts/logs/guaopencard7.log 2>&1 
 
 ##############长期活动##############
 # 签到
