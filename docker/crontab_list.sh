@@ -56,6 +56,13 @@
 36 0,10,21 4-15 8 * node /scripts/guaopencard7.js  >> /scripts/logs/guaopencard7.log 2>&1 
 #京东手机狂欢城活动（活动时间: 2021-8-9至2021-8-28）
 0 0-18/6 * * * node /scripts/gua_carnivalcity.js  >> /scripts/logs/gua_carnivalcity.log 2>&1 
+#粉丝互动
+34 6,18 * * *  node /scripts/jd_wxFans.js  >> /scripts/logs/jd_wxFans.log 2>&1 
+#来电好物季
+10 1 * * * node /scripts/zy_ldhwj.js >> /scripts/logs/zy_ldhwj.log 2>&1  
+#荣耀焕新季
+0 1 * * * node /scripts/zy_ryhxj.js >> /scripts/logs/zy_ryhxj.log 2>&1
+   
 ##############长期活动##############
 # 签到
 6 1,16,20 * * * node /scripts/jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
