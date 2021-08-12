@@ -70,6 +70,9 @@
 0 1 * * * node /scripts/zy_ryhxj.js >> /scripts/logs/zy_ryhxj.log 2>&1
 # 京小鸽吾悦寄
 35 4,7 * * * node /scripts/jd_jxg.js >> /scripts/logs/jd_jxg.log 2>&1
+# 汽车生活节
+30 9,21 12-20 8 * node /scripts/jd_qcshj.js >> /scripts/logs/jd_qcshj.log 2>&1
+
 ##############长期活动##############
 # 签到
 6 1,16,20 * * * node /scripts/jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
