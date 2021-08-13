@@ -5,7 +5,9 @@ set -e
 # 在这个任务里面还有初始化还有目的就是为了方便bot更新了新功能的话只需要重启容器就完成更新
 function initPythonEnv() {
   echo "开始安装运行jd_bot需要的python环境及依赖..."
-  apk add --update python3-dev py3-pip py3-cryptography py3-numpy py-pillow
+  apk del python3
+  rm -rf /usr/lib/python3.8/
+  apk add --update python3-dev py3-pip py3-cryptography py3-numpy py-pillow libffi-dev musl-dev linux-headers
   echo "开始安装jd_bot依赖..."
   #测试
   #cd /jd_docker/docker/bot
