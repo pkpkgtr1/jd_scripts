@@ -42,10 +42,6 @@
 4 2,10 * * *  node /scripts/jd_jxlhb.js  >> /scripts/logs/jd_jxlhb.log 2>&1
 #京喜签到
 30 0,22 * * * node /scripts/jx_sign.js  >> /scripts/logs/jx_sign.log 2>&1
-#大牌联合 冰爽一夏 8.4-8.12 
-36 0,8 4-12 8 * node /scripts/gua_opencard4.js  >> /scripts/logs/gua_opencard4.log 2>&1
-#大牌联合 冰爽一夏 8.4-8.12 
-38 0,8 5-12 8 * node /scripts/gua_opencard5.js  >> /scripts/logs/gua_opencard5.log 2>&1
 #七夕告白季-开卡
 30 0,8 * 8 * node /scripts/gua_opencard6.js  >> /scripts/logs/gua_opencard6.log 2>&1
 #七夕情报局
