@@ -36,8 +36,8 @@ const Faker = require('./JDSignValidator')
 const zooFaker = require('./JDJRValidator_Pure')
 let fp = '', eid = ''
 
-$nobyda.get = zooFaker.injectToRequest2($nobyda.get.bind($nobyda), 'channelSign')
-$nobyda.post = zooFaker.injectToRequest2($nobyda.post.bind($nobyda), 'channelSign')
+$nobyda.get = zooFaker.injectToRequest($nobyda.get.bind($nobyda), 'channelSign')
+$nobyda.post = zooFaker.injectToRequest($nobyda.post.bind($nobyda), 'channelSign')
 
 async function all() {
   merge = {};
