@@ -42,20 +42,14 @@
 4 2,10 * * *  node /scripts/jd_jxlhb.js  >> /scripts/logs/jd_jxlhb.log 2>&1
 #京喜签到
 30 0,22 * * * node /scripts/jx_sign.js  >> /scripts/logs/jx_sign.log 2>&1
-#七夕告白季-开卡
-30 0,8 * 8 * node /scripts/gua_opencard6.js  >> /scripts/logs/gua_opencard6.log 2>&1
-#七夕情报局
-36 0,10,21 4-15 8 * node /scripts/gua_doge.js  >> /scripts/logs/gua_doge.log 2>&1 
 #全民抢京豆 8.6-8.16
 10 7 * * *  node /scripts/jd_qjd.py >> /scripts/logs/jd_qjd.log 2>&1 
-#8.8-8.14 七夕会员福利社 [gua_opencard7.js]
-36 0,10,21 4-15 8 * node /scripts/guaopencard7.js  >> /scripts/logs/guaopencard7.log 2>&1 
 #8.10-8.15 头号玩家 一起热8
-28 0,22 8-15 8 * node /scripts/guaopencard8.js  >> /scripts/logs/guaopencard8.log 2>&1 
+28 0,22 8-15 8 * node /scripts/gua_opencard8.js  >> /scripts/logs/gua_opencard8.log 2>&1 
 #8.11-8.15 星动七夕 纵享丝滑
-39 0,22 8-15 8 * node /scripts/guaopencard9.js  >> /scripts/logs/guaopencard9.log 2>&1 
+39 0,22 8-15 8 * node /scripts/gua_opencard9.js  >> /scripts/logs/gua_opencard9.log 2>&1 
 #8.11-8.18 大牌联合 约惠一夏
-30 0,22 11-18 8 *  node /scripts/guaopencard10.js  >> /scripts/logs/guaopencard10.log 2>&1 
+30 0,22 11-18 8 *  node /scripts/gua_opencard10.js  >> /scripts/logs/gua_opencard10.log 2>&1 
 #京东手机狂欢城活动（活动时间: 2021-8-9至2021-8-28）
 0 0-18/6 * * * node /scripts/gua_carnivalcity.js  >> /scripts/logs/gua_carnivalcity.log 2>&1 
 #粉丝互动
@@ -73,9 +67,9 @@
 #8.13-8.25 骁龙品牌日 
 31 8,22 13-31 8 *   node /scripts/gua_xiaolong.js >> /scripts/logs/gua_xiaolong.log 2>&1 
 #金机馆
-33 4,7 8-20 8 *    node /scripts/jd_goldPhone.js >> /scripts/logs/jd_goldPhone.log 2>&1 
+33 4,7 8-20 8 *   node /scripts/jd_goldPhone.js >> /scripts/logs/jd_goldPhone.log 2>&1 
 #送豆得豆 
-45 0,8 * * *    node /scripts/jd_sddd.js >> /scripts/logs/jd_sddd.log 2>&1 
+45 0,8 * * *   node /scripts/jd_sddd.js >> /scripts/logs/jd_sddd.log 2>&1 
   
 
 ##############长期活动##############

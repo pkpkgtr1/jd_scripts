@@ -1,7 +1,5 @@
-const UA = require('../USER_AGENTS.js').USER_AGENT;
-
 const navigator = {
-  userAgent: UA,
+  userAgent: require('./USER_AGENTS').USER_AGENT,
   plugins: { length: 0 },
   language: "zh-CN",
 };
@@ -2057,8 +2055,8 @@ function _jdJrTdCommonsObtainPin(t) {
   return u
 };
 
-function getBody(url = document.location.href) {
-  navigator.userAgent = UA
+function getBody(userAgent, url = document.location.href) {
+  navigator.userAgent = userAgent
   let href = url
   let choose = /((https?:)\/\/([^\/]+))(.+)/.exec(url)
   let [, origin, protocol, host, pathname] = choose;
