@@ -44,10 +44,6 @@
 30 0,22 * * * node /scripts/jx_sign.js  >> /scripts/logs/jx_sign.log 2>&1
 #全民抢京豆 8.6-8.16
 10 7 * * *  node /scripts/jd_qjd.py >> /scripts/logs/jd_qjd.log 2>&1 
-#8.10-8.15 头号玩家 一起热8
-28 0,22 8-15 8 * node /scripts/gua_opencard8.js  >> /scripts/logs/gua_opencard8.log 2>&1 
-#8.11-8.15 星动七夕 纵享丝滑
-39 0,22 8-15 8 * node /scripts/gua_opencard9.js  >> /scripts/logs/gua_opencard9.log 2>&1 
 #8.11-8.18 大牌联合 约惠一夏
 30 0,22 11-18 8 *  node /scripts/gua_opencard10.js  >> /scripts/logs/gua_opencard10.log 2>&1 
 #京东手机狂欢城活动（活动时间: 2021-8-9至2021-8-28）
