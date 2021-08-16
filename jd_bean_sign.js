@@ -5,7 +5,8 @@ Node.JS专用
 https://raw.githubusercontent.com/zero205/JD_tencent_scf/main/jd_bean_sign.js
 IOS软件用户请使用 https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
 更新时间：2021-8-15
-JRBODY抓取网站:ms.jr.jd.com/gw/generic/hy/h5/m/appSign(进入金融APP签到页面,无需签到);格式:"reqData=xxx"
+金融签到在测试,有能力可以单独反馈.
+JRBODY抓取网站:ms.jr.jd.com/gw/generic/hy/h5/m/appSign(进入金融APP签到页面手动签到);格式:"reqData=xxx"
 变量填写示例:JRBODY: reqData=xxx&reqData=xxx&&reqData=xxx(比如第三个号没有,则留空,长度要与CK一致)
  */
 const $ = new Env('京东多合一签到SCF')
@@ -147,24 +148,24 @@ function TotalBean(cookie) {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
-          console.log(`${$.name} API请求失败，请检查网路重试`)
-          resolve()
+          console.error(`${$.name} API请求失败，请检查网路重试`)
+          resolve(false)
         } else {
           if (data) {
             data = JSON.parse(data);
             if (data['retcode'] === "1001") {
-              resolve(); //cookie过期
+              resolve(false); //cookie过期
+              console.warn('CK过期')
               return
             }
             resolve(true)
           } else {
-            console.log(`京东服务器返回空数据`)
+            console.error(`京东服务器返回空数据`)
+            resolve(false)
           }
         }
       } catch (e) {
         $.logErr(e, resp)
-      } finally {
-        resolve()
       }
     })
   })
