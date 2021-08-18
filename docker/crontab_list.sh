@@ -62,7 +62,8 @@
 31 8,22 13-31 8 *   node /scripts/gua_xiaolong.js >> /scripts/logs/gua_xiaolong.log 2>&1 
 #送豆得豆 
 45 0,8 * * *   node /scripts/jd_sddd.js >> /scripts/logs/jd_sddd.log 2>&1 
-  
+#8.18-8.25 全民818 一“促”即发"
+30 9,21 18-25 8 * node /scripts/gua_opencard12.js  >> /scripts/logs/gua_opencard12.log 2>&1   
 
 ##############长期活动##############
 # 签到
