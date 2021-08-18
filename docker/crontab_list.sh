@@ -64,6 +64,8 @@
 45 0,8 * * *   node /scripts/jd_sddd.js >> /scripts/logs/jd_sddd.log 2>&1 
 #8.18-8.25 全民818 一“促”即发"
 30 9,21 18-25 8 * node /scripts/gua_opencard12.js  >> /scripts/logs/gua_opencard12.log 2>&1   
+#8.18-8.26 全民发一发 大牌狂欢趴
+30 9,21 18-25 8 * node /scripts/gua_opencard13.js  >> /scripts/logs/gua_opencard13.log 2>&1   
 
 ##############长期活动##############
 # 签到
