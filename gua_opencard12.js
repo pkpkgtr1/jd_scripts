@@ -56,12 +56,6 @@ message = ""
     });
     return;
   }
-  if ($.isNode()) {
-    if (!process.env.guaopencard12 || process.env.guaopencard12 == "false") {
-      console.log('如需执行脚本请设置环境变量[guaopencard12]为"true"')
-      return
-    }
-  }
   $.shareUuid = 'c0bcf5c57dcc4446aab0f0fe111f6497'
   $.activityId = '02d54511202b4d1781088b66b9e07b9c'
   console.log(`入口:\nhttps://lzdz1-isv.isvjcloud.com/dingzhi/dz/openCard/activity/7768835?activityId=${$.activityId}&shareUuid=${$.shareUuid}`)
