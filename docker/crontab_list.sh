@@ -60,8 +60,6 @@
 31 8,22 13-31 8 *   node /scripts/gua_xmGame.js >> /scripts/logs/gua_xmGame.log 2>&1 
 #8.13-8.25 骁龙品牌日 
 31 8,22 13-31 8 *   node /scripts/gua_xiaolong.js >> /scripts/logs/gua_xiaolong.log 2>&1 
-#金机馆
-33 4,7 8-20 8 *   node /scripts/jd_goldPhone.js >> /scripts/logs/jd_goldPhone.log 2>&1 
 #送豆得豆 
 45 0,8 * * *   node /scripts/jd_sddd.js >> /scripts/logs/jd_sddd.log 2>&1 
   
