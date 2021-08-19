@@ -68,6 +68,9 @@
 30 9,21 18-25 8 * node /scripts/gua_opencard13.js  >> /scripts/logs/gua_opencard13.log 2>&1   
 #8.18-8.26 全民发一发 大牌狂欢趴
 18 9,22 18-31 8 * node /scripts/gua_opencard14.js  >> /scripts/logs/gua_opencard14.log 2>&1  
+#工业品抽奖机
+10 0 * * *  node /scripts/jd_industryLottery.js  >> /scripts/logs/jd_industryLottery.log 2>&1  
+
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
