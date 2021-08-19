@@ -70,6 +70,8 @@
 18 9,22 18-31 8 * node /scripts/gua_opencard14.js  >> /scripts/logs/gua_opencard14.log 2>&1  
 #工业品抽奖机
 10 0 * * *  node /scripts/jd_industryLottery.js  >> /scripts/logs/jd_industryLottery.log 2>&1  
+#京东零食街
+0 11 * * *  node /scripts/jd_lsj.js >> /scripts/logs/jd_lsj.log 2>&1  
 
 ##############长期活动##############
 # 签到
