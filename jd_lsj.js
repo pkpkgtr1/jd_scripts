@@ -61,6 +61,7 @@ if ($.isNode()) {
       }
       if (lsjdh.length !== 0) {
         $.log("检测到您设置了兑换变量，开始兑换")
+        await getinfo() 
         await duihuan()
       }
       await start()
