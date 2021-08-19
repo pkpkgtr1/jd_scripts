@@ -56,12 +56,6 @@ message = ""
     });
     return;
   }
-  if ($.isNode()) {
-    if (!process.env.guaopencard14 || process.env.guaopencard14 == "false") {
-      console.log('如需执行脚本请设置环境变量[guaopencard14]为"true"')
-      return
-    }
-  }
   $.shareUuid = 'abcd4cabe50f48e6853acde2ebf7fd48'
   $.activityId = '8461aaca3fd24c66a3674da99c5342eb'
   console.log(`入口:\nhttps://lzdz1-isv.isvjcloud.com/lzclient/dz/2021jan/eliminateGame/0816eliminate/?activityId=${$.activityId}&shareUuid=${$.shareUuid}`)
