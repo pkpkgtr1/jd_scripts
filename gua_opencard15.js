@@ -61,12 +61,6 @@ message = ""
     });
     return;
   }
-  if ($.isNode()) {
-    if (!process.env.guaopencard15 || process.env.guaopencard15 == "false") {
-      console.log('如需执行脚本请设置环境变量[guaopencard15]为"true"')
-      return
-    }
-  }
   $.appkey = '51B59BB805903DA4CE513D29EC448375'
   $.userId = '10299171'
   $.actId = 'c2a69b3596a948d8b8028b9_820'

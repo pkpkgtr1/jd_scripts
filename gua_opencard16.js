@@ -110,7 +110,6 @@ async function run() {
         console.log(`\n[${$.task.moduleBaseInfo.configName}] ${$.task.memberTask.showOrder == 2 && '日常任务' || $.task.memberTask.showOrder == 1 && '开卡任务' || '未知任务'} ${($.task.moduleBaseInfo.rewardStatus == 2) && '全部完成' || ''}${msg}`)
         $.oneTask = ''
         for (let o in $.task.memberTask.memberList) {
-          if(guaopencard !== "true") break
           $.oneTask = $.task.memberTask.memberList[o];
           console.log(`[${$.oneTask.cardName}] ${0 == $.oneTask.result ? "开卡得" + $.oneTask.rewardQuantity + "京豆" : 1 == $.oneTask.result ? "领取" + $.oneTask.rewardQuantity + "京豆" : 3 == $.oneTask.result ? "其他渠道入会" : "已入会"}`)
           if($.oneTask.result == 0) await statistic(`{"activityType":"module_task","groupType":7,"configCode":"${item.configCode}","itemId":${$.oneTask.cardId}}`)
