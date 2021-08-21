@@ -40,7 +40,7 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let jdNotify = true;//是否关闭通知，false打开通知推送，true关闭通知推送
 const randomCount = $.isNode() ? 0 : 0;
 //IOS等用户直接用NobyDa的jd cookie
-let cookiesArr = [], cookie = '', jdFactoryShareArr = [], message;
+let cookiesArr = [], cookie = '', jdFactoryShareArr = [], message,newShareCodes;
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
     cookiesArr.push(jdCookieNode[item])
@@ -261,7 +261,7 @@ async function helpFriends() {
   } else {
     newShareCode = newShareCodes
   }
-  for (let code of $.newShareCode) {
+  for (let code of newShareCode) {
     if (!code) continue
     const helpRes = await jdfactory_collectScore(code);
     if (helpRes.code === 0 && helpRes.data.bizCode === -7) {
