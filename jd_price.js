@@ -5,6 +5,8 @@ update 2021/7/25
 ==========================Quantumultx=========================
 打开手机客户端，或者浏览器访问 https://msitepp-fm.jd.com/rest/priceprophone/priceProPhoneMenu
 
+TOKEN抓取说明见作者仓库:https://github.com/ZCY01/daily_scripts.抓取地址见[rewrite_local]
+
 [rewrite_local]
 https:\/\/api\.m.jd.com\/api\?appid=siteppM&functionId=siteppM_priceskusPull url script-request-body https://raw.githubusercontent.com/ZCY01/daily_scripts/main/jd/jd_priceProtectRewrite.js
 
