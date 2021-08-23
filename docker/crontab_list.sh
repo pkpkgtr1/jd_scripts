@@ -52,8 +52,6 @@
 0 1 * * * node /scripts/zy_ryhxj.js >> /scripts/logs/zy_ryhxj.log 2>&1
 # 京小鸽吾悦寄
 35 4,7 * * * node /scripts/jd_jxg.js >> /scripts/logs/jd_jxg.log 2>&1
-# 汽车生活节
-30 9,21 12-20 8 * node /scripts/jd_qcshj.js >> /scripts/logs/jd_qcshj.log 2>&1
 #8.13-8.31 小米-星空大冒险
 31 8,22 13-31 8 *   node /scripts/gua_xmGame.js >> /scripts/logs/gua_xmGame.log 2>&1 
 #8.13-8.25 骁龙品牌日 
@@ -193,3 +191,5 @@
 20 7,9,17,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1 
 #汪汪乐园
 20 0-23/3 * * * node /scripts/jd_joy_park.js >> /scripts/logs/jd_joy_park.log 2>&1 
+#取关主播
+55 6 * * *  node /scripts/jd_unsubscriLive.js >> /scripts/logs/jd_unsubscriLive.log 2>&1
