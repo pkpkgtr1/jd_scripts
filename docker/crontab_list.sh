@@ -40,8 +40,6 @@
 4 2,10 * * *  node /scripts/jd_jxlhb.js  >> /scripts/logs/jd_jxlhb.log 2>&1
 #京喜签到
 30 0,22 * * * node /scripts/jx_sign.js  >> /scripts/logs/jx_sign.log 2>&1
-#全民抢京豆 8.6-8.16
-10 7 * * *  node /scripts/jd_qjd.py >> /scripts/logs/jd_qjd.log 2>&1 
 #京东手机狂欢城活动（活动时间: 2021-8-9至2021-8-28）
 0 0-18/6 * * * node /scripts/gua_carnivalcity.js  >> /scripts/logs/gua_carnivalcity.log 2>&1 
 #粉丝互动
@@ -54,12 +52,8 @@
 35 4,7 * * * node /scripts/jd_jxg.js >> /scripts/logs/jd_jxg.log 2>&1
 #8.13-8.31 小米-星空大冒险
 31 8,22 13-31 8 *   node /scripts/gua_xmGame.js >> /scripts/logs/gua_xmGame.log 2>&1 
-#8.13-8.25 骁龙品牌日 
-31 8,22 13-31 8 *   node /scripts/gua_xiaolong.js >> /scripts/logs/gua_xiaolong.log 2>&1 
 #送豆得豆 
-45 0,8 * * *   node /scripts/jd_sddd.js >> /scripts/logs/jd_sddd.log 2>&1 
-#8.18-8.25 全民818 一“促”即发"
-30 9,21 18-25 8 * node /scripts/gua_opencard12.js  >> /scripts/logs/gua_opencard12.log 2>&1   
+45 0,8 * * *   node /scripts/jd_sddd.js >> /scripts/logs/jd_sddd.log 2>&1   
 #8.18-8.26 全民发一发 大牌狂欢趴
 30 9,21 18-25 8 * node /scripts/gua_opencard13.js  >> /scripts/logs/gua_opencard13.log 2>&1   
 #8.18-8.26 全民发一发 大牌狂欢趴
