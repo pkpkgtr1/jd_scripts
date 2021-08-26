@@ -59,15 +59,6 @@ message = ""
     });
     return;
   }
-  if(guaopencard+"" != "true"){
-    console.log('如需开卡请设置环境变量[guaopencard17]为"true"')
-  }
-  if(guaopencardRun+"" != "true"){
-    console.log('如需做任务请设置环境变量[guaopencardRun17]为"true"')
-  }
-  if(guaopencard+"" != "true" && guaopencardRun+"" != "true"){
-    return
-  }
   console.log(`入口:\nhttps://prodev.m.jd.com/mall/active/3q7yrbh3qCJvHsu3LhojdgxNuWQT/index.html`)
   for (let i = 0; i < cookiesArr.length; i++) {
     cookie = cookiesArr[i];
