@@ -51,14 +51,13 @@
 # 京小鸽吾悦寄
 35 4,7 * * * node /scripts/jd_jxg.js >> /scripts/logs/jd_jxg.log 2>&1
 #8.13-8.31 小米-星空大冒险
-31 8,22 13-31 8 *   node /scripts/gua_xmGame.js >> /scripts/logs/gua_xmGame.log 2>&1 
-#送豆得豆 
-45 0,8 * * *   node /scripts/jd_sddd.js >> /scripts/logs/jd_sddd.log 2>&1   
+31 8,22 13-31 8 *   node /scripts/gua_xmGame.js >> /scripts/logs/gua_xmGame.log 2>&1   
 #工业品抽奖机
 10 0 * * *  node /scripts/jd_industryLottery.js  >> /scripts/logs/jd_industryLottery.log 2>&1  
 #京东零食街
 0 11 * * *  node /scripts/jd_lsj.js >> /scripts/logs/jd_lsj.log 2>&1  
-
+#积分换话费
+33 7,19 * * *  node /scripts/jd_dwapp.js >> /scripts/logs/jd_dwapp.log 2>&1  
 
 ##############长期活动##############
 # 签到
