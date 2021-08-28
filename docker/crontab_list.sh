@@ -40,8 +40,6 @@
 4 2,10 * * *  node /scripts/jd_jxlhb.js  >> /scripts/logs/jd_jxlhb.log 2>&1
 #京喜签到
 30 0,22 * * * node /scripts/jx_sign.js  >> /scripts/logs/jx_sign.log 2>&1
-#京东手机狂欢城活动（活动时间: 2021-8-9至2021-8-28）
-0 0-18/6 * * * node /scripts/gua_carnivalcity.js  >> /scripts/logs/gua_carnivalcity.log 2>&1 
 #粉丝互动
 34 6,18 * * *  node /scripts/jd_wxFans.js  >> /scripts/logs/jd_wxFans.log 2>&1 
 #来电好物季
