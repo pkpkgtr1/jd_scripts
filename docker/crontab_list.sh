@@ -54,6 +54,8 @@
 0 11 * * *  node /scripts/jd_lsj.js >> /scripts/logs/jd_lsj.log 2>&1  
 #积分换话费
 33 7,19 * * *  node /scripts/jd_dwapp.js >> /scripts/logs/jd_dwapp.log 2>&1  
+#特物Z|万物皆可国创
+30 11 * * *  node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1  
 
 ##############长期活动##############
 # 签到
