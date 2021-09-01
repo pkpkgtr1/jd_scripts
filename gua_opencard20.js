@@ -62,14 +62,6 @@ message = ""
     });
     return;
   }
-  if ($.isNode()) {
-    if(guaopencard+"" != "true"){
-      console.log('如需执行脚本请设置环境变量[guaopencard20]为"true"')
-    }
-    if(guaopencard+"" != "true"){
-      return
-    }
-  }
   $.shareUuidArr = [];
   $.shareUuid = '1644bc91f825400a856e4d2a15f311af'
   $.activityId = 'dz2108100001566301'
