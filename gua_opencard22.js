@@ -66,14 +66,6 @@ message = ""
     });
     return;
   }
-  if ($.isNode()) {
-    if(guaopencard+"" != "true"){
-      console.log('如需执行脚本请设置环境变量[guaopencard22]为"true"')
-    }
-    if(guaopencard+"" != "true"){
-      return
-    }
-  }
   $.shareUuid = 'a7b772e80ce64826b78da56f75be9700'
   $.activityId = '902090301'
   console.log(`入口:\nhttps://lzdz-isv.isvjcloud.com/dingzhi/union/kxj/activity/2451572?activityId=${$.activityId}&shareUuid=${$.shareUuid}`)
