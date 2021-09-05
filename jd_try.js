@@ -497,7 +497,7 @@ function taskurl(url, goodId) {
 			'Cookie': $.cookie,
 			'Connection': 'keep-alive',
 			'Accept': '*/*',
-			'UserAgent': 'jdapp;iPhone;10.1.0;13.3;network/wifi;Mozilla/5.0 (iPhone; CPU iPhone OS 13_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1',
+			'UserAgent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1',
 			'Accept-Language': 'zh-cn',
 			'Referer': goodId ? `https://try.m.jd.com/activity/?id=${goodId}` : undefined
 		},
