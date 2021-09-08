@@ -57,7 +57,8 @@
 30 11 * * *  node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1  
 #集萌宝得团圆礼包
 10 0,8,23 * * *  node /scripts/jd_jika.js >> /scripts/logs/jd_jika.log 2>&1  
-
+#粉丝签到
+34 5,18 * * *  node /scripts/jd_fan.js >> /scripts/logs/jd_fan.log 2>&1  
 
 ##############长期活动##############
 # 签到
