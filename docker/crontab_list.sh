@@ -55,6 +55,9 @@
 33 7,19 * * *  node /scripts/jd_dwapp.js >> /scripts/logs/jd_dwapp.log 2>&1  
 #特物Z|万物皆可国创
 30 11 * * *  node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1  
+#集萌宝得团圆礼包
+10 0,8,23 * * *  node /scripts/jd_jika.js >> /scripts/logs/jd_jika.log 2>&1  
+
 
 ##############长期活动##############
 # 签到
