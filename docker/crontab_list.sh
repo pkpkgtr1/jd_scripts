@@ -56,9 +56,10 @@
 #特物Z|万物皆可国创
 30 11 * * *  node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1  
 #集萌宝得团圆礼包
-10 0,8,23 * * *  node /scripts/jd_jika.js >> /scripts/logs/jd_jika.log 2>&1  
+10 8,23 * * * node /scripts/jd_jika.js >> /scripts/logs/jd_jika.log 2>&1  
 #粉丝签到
 34 5,18 * * *  node /scripts/jd_fan.js >> /scripts/logs/jd_fan.log 2>&1  
+
 
 ##############长期活动##############
 # 签到
@@ -186,3 +187,5 @@
 20 0-23/3 * * * node /scripts/jd_joy_park.js >> /scripts/logs/jd_joy_park.log 2>&1 
 #取关主播
 55 6 * * *  node /scripts/jd_unsubscriLive.js >> /scripts/logs/jd_unsubscriLive.log 2>&1
+#京东汽车兑换
+0 0 * * * node /scripts/jd_car_exchange.js >> /scripts/logs/jd_car_exchange.log 2>&1   
