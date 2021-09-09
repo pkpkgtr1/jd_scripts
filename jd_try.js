@@ -43,7 +43,7 @@ let args_xh = {
      * 可设置环境变量：JD_TRY_TABID，用@进行分隔
      * 默认为 1 到 5
      * */
-    tabId: process.env.JD_TRY_TABID && process.env.JD_TRY_TABID.split('@').map(Number) || [1, 2, 3, 4, 5],
+    tabId: process.env.JD_TRY_TABID && process.env.JD_TRY_TABID.split('@').map(Number) || [3, 4, 5],
     /*
      * 试用商品标题过滤，黑名单，当标题存在关键词时，则不加入试用组
      * 可设置环境变量：JD_TRY_TITLEFILTERS，关键词与关键词之间用@分隔
@@ -56,7 +56,7 @@ let args_xh = {
      * C商品原价49元，现在试用价1元，如果下面设置为1，那C商品也会被添加到带提交试用组，因为1 = 1
      * 可设置环境变量：JD_TRY_TRIALPRICE，默认为0
      * */
-    trialPrice: process.env.JD_TRY_TRIALPRICE * 1 || 0,
+    trialPrice: process.env.JD_TRY_TRIALPRICE * 1 || 1,
     /*
      * 最小提供数量，例如试用商品只提供2份试用资格，当前设置为1，则会进行申请
      * 若只提供5分试用资格，当前设置为10，则不会申请
