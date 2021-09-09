@@ -1,10 +1,11 @@
 /*
 
-https://prodev.m.jd.com/mall/active/2VyRHGE7jM1igBJcrjoB6ak1JJWV/index.htm
+https://prodev.m.jd.com/mall/active/2VyRHGE7jM1igBJcrjoB6ak1JJWV/index.html
 
 
 如需加购请设置环境变量[guaunknownTask_addSku1]为"true"
 
+27 14 * 9 * https://raw.githubusercontent.com/smiek2221/scripts/master/gua_UnknownTask1.js
 */
 const $ = new Env('电脑配件');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
@@ -28,6 +29,7 @@ guaunknownTask_addSku = $.isNode() ? (process.env.guaunknownTask_addSku_All ? pr
 allMessage = ""
 message = ""
 $.hotFlag = false
+$.outFlag = 0
 !(async () => {
   if (!cookiesArr[0]) {
     $.msg($.name, '【提示】请先获取cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/', {
@@ -36,7 +38,7 @@ $.hotFlag = false
     return;
   }
   MD5()
-  console.log(`入口:\nhttps://prodev.m.jd.com/mall/active/2VyRHGE7jM1igBJcrjoB6ak1JJWV/index.htm`)
+  console.log(`入口:\nhttps://prodev.m.jd.com/mall/active/2VyRHGE7jM1igBJcrjoB6ak1JJWV/index.html`)
   for (let i = 0; i < cookiesArr.length; i++) {
     cookie = cookiesArr[i];
     if (cookie) {
@@ -55,6 +57,7 @@ $.hotFlag = false
         allMessage += msg
       }
     }
+    if($.outFlag != 0) break
   }
   if(allMessage){
     $.msg($.name, ``, `${allMessage}\n`);
@@ -86,6 +89,10 @@ async function run() {
             await $.wait(parseInt(Math.random() * 1000 + 6000, 10))
             await doTask('getPrize', $.task.id, $.oneTask.taskId);
           }
+          if($.outFlag != 0) {
+            message += "\n京豆库存已空，退出脚本\n"
+            return
+          }
           if($.task.status != 4) await $.wait(parseInt(Math.random() * 1000 + 3000, 10))
         }
       }
@@ -94,7 +101,7 @@ async function run() {
     }
     await indexInfo();
     await $.wait(parseInt(Math.random() * 1000 + 2000, 10))
-    if($.extraTaskStatus == 3) await extraTaskPrize();
+    if($.extraTaskStatus == 3 && $.outFlag == 0) await extraTaskPrize();
     await $.wait(parseInt(Math.random() * 1000 + 3000, 10))
   } catch (e) {
     console.log(e)
@@ -149,6 +156,7 @@ function indexInfo() {
   })
 }
 function doTask(type, id, taskId) {
+  if($.outFlag != 0) return
   return new Promise(async resolve => {
     let sign = getSign(`/tzh/combination/${type}`,{"activityId": 11,"id":id,"taskId":taskId})
     $.post({
@@ -185,6 +193,9 @@ function doTask(type, id, taskId) {
             }else if(res.msg){
               if(res.msg.indexOf('活动太火爆') > -1){
                 $.hotFlag = true
+              }else if(res.msg.indexOf('京豆已被抢光') > -1){
+                message += res.msg+"\n"
+                $.outFlag = 1
               }
               console.log(res.msg)
             }else{
@@ -202,6 +213,7 @@ function doTask(type, id, taskId) {
   })
 }
 function extraTaskPrize() {
+  if($.outFlag != 0) return
   return new Promise(async resolve => {
     let sign = getSign(`/tzh/combination/extraTaskPrize`,{"activityId": 11})
     $.post({
