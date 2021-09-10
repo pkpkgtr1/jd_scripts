@@ -26,8 +26,6 @@
 1 0-23/1 * * *  node /scripts/jd_big_winner.js   >> /scripts/logs/jd_big_winner.log 2>&1  
 #小鸽有礼
 13 1,22,23 * * *  node /scripts/jd_daily_lottery.js   >> /scripts/logs/jd_daily_lottery.log 2>&1
-#柠檬伊利养牛记
-0 6-23/3 * * * node /scripts/jd_ylyn.js   >> /scripts/logs/jd_ylyn.log 2>&1
 #赚30
 1 1,12 * * * node /scripts/jd_earn30.js   >> /scripts/logs/jd_earn30.log 2>&1
 #添加MM领京豆
@@ -46,7 +44,6 @@
 0 1 * * * node /scripts/zy_ryhxj.js >> /scripts/logs/zy_ryhxj.log 2>&1
 # 京小鸽吾悦寄
 35 4,7 * * * node /scripts/jd_jxg.js >> /scripts/logs/jd_jxg.log 2>&1
-
 #工业品抽奖机
 10 0 * * *  node /scripts/jd_industryLottery.js  >> /scripts/logs/jd_industryLottery.log 2>&1  
 #京东零食街
@@ -60,7 +57,10 @@
 #粉丝签到
 34 5,18 * * *  node /scripts/jd_fan.js >> /scripts/logs/jd_fan.log 2>&1  
 #电脑配件
-27 14 * 9 *  node /scripts/gua_UnknownTask1.js >> /scripts/logs/gua_UnknownTask1.log 2>&1   
+27 14 * 9 *  node /scripts/gua_UnknownTask1.js >> /scripts/logs/gua_UnknownTask1.log 2>&1 
+#内容鉴赏官
+15 3,6 * * *  node /scripts/jd_connoisseur.js >> /scripts/logs/jd_connoisseur.log 2>&1
+
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
@@ -170,7 +170,7 @@
 #京东试用
 14 8-23/1 * * * node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1 
 #财富大陆
-#18 0-23/2 * * * node /scripts/gua_wealth_island.js  >> /scripts/logs/gua_wealth_island.log 2>&1 
+18 10-20/5 * * * node /scripts/gua_wealth_island.js  >> /scripts/logs/gua_wealth_island.log 2>&1 
 #财富大陆(京喜财富岛)
 18 0-23/2 * * * node /scripts/jd_cfd.js  >> /scripts/logs/jd_cfd.log 2>&1 
 #财富大陆体现
