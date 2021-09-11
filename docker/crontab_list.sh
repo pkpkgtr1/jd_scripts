@@ -47,7 +47,7 @@
 #工业品抽奖机
 10 0 * * *  node /scripts/jd_industryLottery.js  >> /scripts/logs/jd_industryLottery.log 2>&1  
 #京东零食街
-0 11 * * *  node /scripts/jd_lsj.js >> /scripts/logs/jd_lsj.log 2>&1  
+0 0,6-22/2 * * *  node /scripts/jd_lsj.js >> /scripts/logs/jd_lsj.log 2>&1  
 #积分换话费
 33 7,19 * * *  node /scripts/jd_dwapp.js >> /scripts/logs/jd_dwapp.log 2>&1  
 #特物Z|万物皆可国创
@@ -56,8 +56,6 @@
 10 8,23 * * * node /scripts/jd_jika.js >> /scripts/logs/jd_jika.log 2>&1  
 #粉丝签到
 34 5,18 * * *  node /scripts/jd_fan.js >> /scripts/logs/jd_fan.log 2>&1  
-#电脑配件
-27 14 * 9 *  node /scripts/gua_UnknownTask1.js >> /scripts/logs/gua_UnknownTask1.log 2>&1 
 #内容鉴赏官
 15 3,6 * * *  node /scripts/jd_connoisseur.js >> /scripts/logs/jd_connoisseur.log 2>&1
 #寻找内容鉴赏官
