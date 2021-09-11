@@ -60,6 +60,8 @@
 27 14 * 9 *  node /scripts/gua_UnknownTask1.js >> /scripts/logs/gua_UnknownTask1.log 2>&1 
 #内容鉴赏官
 15 3,6 * * *  node /scripts/jd_connoisseur.js >> /scripts/logs/jd_connoisseur.log 2>&1
+#寻找内容鉴赏官
+27 8,18 * 9 * node /scripts/gua_UnknownTask3.js >> /scripts/logs/gua_UnknownTask3.log 2>&1 
 
 ##############长期活动##############
 # 签到
