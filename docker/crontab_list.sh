@@ -60,7 +60,8 @@
 15 3,6 * * *  node /scripts/jd_connoisseur.js >> /scripts/logs/jd_connoisseur.log 2>&1
 #寻找内容鉴赏官
 27 8,18 * 9 * node /scripts/gua_UnknownTask3.js >> /scripts/logs/gua_UnknownTask3.log 2>&1 
-
+#京喜财富岛合成月饼
+5 */1 * * * node /scripts/jd_cfd_mooncake.js >> /scripts/logs/jd_cfd_mooncake.log 2>&1 
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
