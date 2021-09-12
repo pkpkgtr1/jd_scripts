@@ -48,7 +48,7 @@ let args_xh = {
      * 试用商品标题过滤，黑名单，当标题存在关键词时，则不加入试用组
      * 可设置环境变量：JD_TRY_TITLEFILTERS，关键词与关键词之间用@分隔
      * */
-    titleFilters: process.env.JD_TRY_TITLEFILTERS && process.env.JD_TRY_TITLEFILTERS.split('@') || ["中国电信","联通","移动","幼儿园", "教程", "英语", "辅导", "培训", "孩子", "小学"],
+    titleFilters: process.env.JD_TRY_TITLEFILTERS && process.env.JD_TRY_TITLEFILTERS.split('@') || ["钢化膜","维修","中国电信","联通","移动","幼儿园", "教程", "英语", "辅导", "培训", "孩子", "小学"],
     /*
      * 试用价格(中了要花多少钱)，高于这个价格都不会试用，小于等于才会试用，意思就是
      * A商品原价49元，现在试用价1元，如果下面设置为10，那A商品将会被添加到待提交试用组，因为1 < 10
