@@ -62,7 +62,7 @@ let args_xh = {
      * 若只提供5分试用资格，当前设置为10，则不会申请
      * 可设置环境变量：JD_TRY_MINSUPPLYNUM
      * */
-    minSupplyNum: process.env.JD_TRY_MINSUPPLYNUM * 1 || 1,
+    minSupplyNum: process.env.JD_TRY_MINSUPPLYNUM * 1 || 3,
     /*
      * 过滤大于设定值的已申请人数，例如下面设置的1000，A商品已经有1001人申请了，则A商品不会进行申请，会被跳过
      * 可设置环境变量：JD_TRY_APPLYNUMFILTER
