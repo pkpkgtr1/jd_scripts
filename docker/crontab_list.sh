@@ -64,6 +64,12 @@
 13 6,13,23 * * * node /scripts/jd_cfd_mooncake.js >> /scripts/logs/jd_cfd_mooncake.log 2>&1 
 # 母婴-跳跳乐
 1 0,11,21 * * * node /scripts/jd_jump.js >> /scripts/logs/jd_jump.log 2>&1
+# 9.14~9.18 男神装备礼遇季
+30 9 14-18 9 *  node /scripts/gua_opencard32.js >> /scripts/logs/gua_opencard32.log 2>&1 
+# 9.15~9.21 超店会员福利社
+30 9 14-18 9 *  node /scripts/gua_opencard33.js >> /scripts/logs/gua_opencard33.log 2>&1 
+
+
 
 ##############长期活动##############
 # 签到
@@ -141,7 +147,7 @@
 # 京东秒秒币
 10 6,21 * * * node /scripts/jd_ms.js >> /scripts/logs/jd_ms.log 2>&1
 #美丽研究院
-41 7,12,19 * * * node /scripts/jd_beauty.js >> /scripts/logs/jd_beauty.log 2>&1
+1 7,12,19 * * * node /scripts/jd_beauty.js >> /scripts/logs/jd_beauty.log 2>&1
 #京东保价
 #41 0,23 * * * node /scripts/jd_price.js >> /scripts/logs/jd_price.log 2>&1
 #京东极速版签到+赚现金任务
