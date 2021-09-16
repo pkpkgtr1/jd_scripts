@@ -178,7 +178,7 @@
 #京东签到图形验证
 14 2,10 * * * node /scripts/jd_sign_graphics.js >> /scripts/logs/jd_sign_graphics.log 2>&1   
 #京东试用
-14 8-22/2 * * * node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1 
+14 10-20/2 * * * node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1 
 #财富大陆
 18 10-20/5 * * * node /scripts/gua_wealth_island.js  >> /scripts/logs/gua_wealth_island.log 2>&1 
 #财富大陆(京喜财富岛)
