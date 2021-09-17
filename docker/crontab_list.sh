@@ -64,10 +64,8 @@
 13 6,13,23 * * * node /scripts/jd_cfd_mooncake.js >> /scripts/logs/jd_cfd_mooncake.log 2>&1 
 # 母婴-跳跳乐
 1 0,11,21 * * * node /scripts/jd_jump.js >> /scripts/logs/jd_jump.log 2>&1
-# 9.14~9.18 男神装备礼遇季
-30 9 14-18 9 *  node /scripts/gua_opencard32.js >> /scripts/logs/gua_opencard32.log 2>&1 
-# 9.15~9.21 超店会员福利社
-30 9 14-18 9 *  node /scripts/gua_opencard33.js >> /scripts/logs/gua_opencard33.log 2>&1 
+#星系牧场
+45 0,6-23/2 * * * node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1   
 
 
 
