@@ -70,6 +70,8 @@
 0 0-18/6 * * * node /scripts/jd_carnivalcity.js >> /scripts/logs/jd_carnivalcity.log 2>&1
 # 东东世界
 25 2,10 * * * node /scripts/jd_ddworld.js >> /scripts/logs/jd_ddworld.log 2>&1
+#东东玩家
+20 0 * * * node /scripts/zy_ddwj.js >> /scripts/logs/zy_ddwj.log 2>&1
 
 ##############长期活动##############
 # 签到
