@@ -72,7 +72,8 @@
 25 2,10 * * * node /scripts/jd_ddworld.js >> /scripts/logs/jd_ddworld.log 2>&1
 #东东玩家
 20 0 * * * node /scripts/zy_ddwj.js >> /scripts/logs/zy_ddwj.log 2>&1
-
+#东东游戏
+17 12-23/4 * * *  node /scripts/gua_ddgame.js >> /scripts/logs/gua_ddgame.log 2>&1 
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
