@@ -1,6 +1,6 @@
 /*
 特物Z|万物皆可国创
-Opencardtw是否开卡,默认关
+FS_LEVEL=card开卡,默认关
 抄自 @yangtingxiao 抽奖机脚本
 活动入口：
 更新地址：https://raw.githubusercontent.com/Wenmoux/scripts/master/jd/jd_superBrand.js
@@ -26,7 +26,6 @@ const $ = new Env('特物Z|万物皆可国创');
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const randomCount = $.isNode() ? 20 : 5;
-const Opencardtw= $.isNode() ? (process.env.Opencardtw?process.env.Opencardtw:false):false
 const notify = $.isNode() ? require('./sendNotify') : '';
 let merge = {}
 let codeList = []
@@ -55,6 +54,7 @@ const JD_API_HOST = `https://api.m.jd.com/client.action`;
     const signactid = 1000021
     const signenpid = "uK2fYitTgioETuevoY88bGEts3U"
     const signdataeid = "47E6skJcyZx7GSUFXyomLgF1FLCA"
+    await getShareCode()
     for (let i = 0; i < cookiesArr.length; i++) {
         cookie = cookiesArr[i];
         if (cookie) {
@@ -92,7 +92,7 @@ const JD_API_HOST = `https://api.m.jd.com/client.action`;
                         } else if (task.assignmentType == 0){ // 分享任务 
                             await doTask("secondfloor", $.enpid, task.encryptAssignmentId, null, 0)             
                         }else{ 
-                        if(Opencardtw){  //领取开卡奖励
+                        if(process.env.FS_LEVEL === 'card'){  //领取开卡奖励
                             await doTask("secondfloor", $.enpid, task.encryptAssignmentId, task.ext.brandMemberList[0].itemId, 7)
                         }else{console.log("默认不执行开卡任务") }
                         }
@@ -108,6 +108,7 @@ const JD_API_HOST = `https://api.m.jd.com/client.action`;
             }
         }
     }
+    codeList = [...(codeList || []), ...($.shareCode || [])]
     for (let i = 0; i < cookiesArr.length; i++) {
         cookie = cookiesArr[i];
         if (cookie) {
@@ -144,8 +145,32 @@ const JD_API_HOST = `https://api.m.jd.com/client.action`;
 })()
 .catch((e) => $.logErr(e))
     .finally(() => $.done())
-//获取活动信息
 
+function getShareCode() {
+  return new Promise(resolve => {
+    $.get({
+      url: "https://raw.fastgit.org/zero205/updateTeam/main/shareCodes/tewu.json",
+      headers: {
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/87.0.4280.88"
+      }
+    }, async (err, resp, data) => {
+      try {
+        if (err) {
+          console.log(`${JSON.stringify(err)}`);
+          console.log(`${$.name} API请求失败，请检查网路重试`);
+        } else {
+          console.log(`优先账号内部互助，有剩余助力次数再帮【zero205】助力`);
+          $.shareCode = JSON.parse(data);
+        }
+      } catch (e) {
+        $.logErr(e, resp)
+      } finally {
+        resolve();
+      }
+    })
+  })
+}
+//获取活动信息
 function getid(functionid, source) {
     return new Promise(async (resolve) => {
         const options = taskPostUrl(functionid, `{"source":"${source}"}`)
