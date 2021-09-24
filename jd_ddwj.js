@@ -93,7 +93,7 @@ function PostRequest(uri,body) {
 "Origin": "https://h5.m.jd.com",
 "Cookie": cookie,
 "Host": "api.m.jd.com",
-"User-Agent": "jdapp;iPhone;10.0.6;14.4;0bcbcdb2a68f16cf9c9ad7c9b944fd141646a849;network/4g;model/iPhone12,1;addressid/2377723269;appBuild/167724;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"
+"User-Agent": "jdapp;iPhone;10.1.0;13.4;2f605b48976086550160aaee42cf2b4c8ba50eed;network/wifi;model/iPhone10,3;addressid/3190732591;appBuild/167774;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 13_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"
 }
   return {url: url, method: method, headers: headers, body: body};
 }
