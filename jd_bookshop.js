@@ -2,7 +2,7 @@
 口袋书店
 更新时间：2021-06-26 
 加了一个码,修复需要手动打开的问题
-活动入口：京东app首页-京东图书-右侧口袋书店
+活动入口：https://lzdz-isv.isvjcloud.com/dingzhi/book/develop/activity?activityId=dz2010100034444201(感谢TG群友@gh2923提供地址)
 已支持IOS双京东账号,Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
 ============Quantumultx===============
@@ -32,7 +32,8 @@ ADD_CART = $.isNode() ? (process.env.PURCHASE_SHOPS ? process.env.PURCHASE_SHOPS
 // 加入购物车开关，与东东小窝共享
 
 let inviteCodes = [
-  '3cc59194ba79484690385b66f848bfd4'
+  '4dd98623868f4292b5432822389fe3e9@daf75e50044144c68b2aff47de57fe49@e341962809ae42c5b8d2d61995bbb5a4@77f08ad1aea04b73acd4542f7fd1dac6@fe5536751f89403d87bad635a87bd956@7cac62f390074868949f72c18cc8469c',
+  '4dd98623868f4292b5432822389fe3e9@daf75e50044144c68b2aff47de57fe49@e341962809ae42c5b8d2d61995bbb5a4@77f08ad1aea04b73acd4542f7fd1dac6@fe5536751f89403d87bad635a87bd956@7cac62f390074868949f72c18cc8469c'
 ]
 
 if ($.isNode()) {
@@ -107,7 +108,7 @@ async function jdBeauty() {
   }
   if($.userInfo.storeGold) await chargeGold()
   await helpFriends()
-  await showMsg();
+  // await showMsg();
 }
 
 async function helpFriends() {
@@ -699,10 +700,10 @@ function shareCodesFormat() {
       const tempIndex = $.index > inviteCodes.length ? (inviteCodes.length - 1) : ($.index - 1);
       $.newShareCodes = inviteCodes[tempIndex].split('@');
     }
-    const readShareCodeRes = null //await readShareCode();
-    if (readShareCodeRes && readShareCodeRes.code === 200) {
-      $.newShareCodes = [...new Set([...$.newShareCodes, ...(readShareCodeRes.data || [])])];
-    }
+    // const readShareCodeRes = await readShareCode();
+    // if (readShareCodeRes && readShareCodeRes.code === 200) {
+    //   $.newShareCodes = [...new Set([...$.newShareCodes, ...(readShareCodeRes.data || [])])];
+    // }
     console.log(`第${$.index}个京东账号将要助力的好友${JSON.stringify($.newShareCodes)}`)
     resolve();
   })
