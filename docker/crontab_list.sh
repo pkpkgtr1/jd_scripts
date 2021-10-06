@@ -42,8 +42,6 @@
 10 1 * * * node /scripts/zy_ldhwj.js >> /scripts/logs/zy_ldhwj.log 2>&1  
 #荣耀焕新季
 0 1 * * * node /scripts/zy_ryhxj.js >> /scripts/logs/zy_ryhxj.log 2>&1
-# 京小鸽吾悦寄
-35 4,7 * * * node /scripts/jd_jxg.js >> /scripts/logs/jd_jxg.log 2>&1
 #工业品抽奖机
 10 0 * * *  node /scripts/jd_industryLottery.js  >> /scripts/logs/jd_industryLottery.log 2>&1  
 #京东零食街
@@ -56,10 +54,6 @@
 34 5,18 * * *  node /scripts/jd_fan.js >> /scripts/logs/jd_fan.log 2>&1  
 #内容鉴赏官
 15 3,6 * * *  node /scripts/jd_connoisseur.js >> /scripts/logs/jd_connoisseur.log 2>&1
-#寻找内容鉴赏官
-27 8,18 * 9 * node /scripts/gua_UnknownTask3.js >> /scripts/logs/gua_UnknownTask3.log 2>&1 
-#希捷品牌日瓜分百万京豆
-17 10 * 9,10 * node /scripts/gua_UnknownTask4.js >> /scripts/logs/gua_UnknownTask4.log 2>&1 
 #京喜财富岛合成月饼
 13 6,13,23 * * * node /scripts/jd_cfd_mooncake.js >> /scripts/logs/jd_cfd_mooncake.log 2>&1 
 # 母婴-跳跳乐
@@ -80,6 +74,8 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 20 0,16 * * * node /scripts/jd_ttpt.js  >> /scripts/logs/jd_ttpt.log 2>&1 
 # 京喜财富岛热气球
 30 * * * * node /scripts/jd_cfd_loop.js >> /scripts/logs/jd_cfd_loop.log 2>&1
+#芥么赚豪礼
+37 0,11 * * * node /scripts/jd_genz.js >> /scripts/logs/jd_genz.log 2>&1
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
