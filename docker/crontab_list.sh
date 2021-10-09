@@ -62,8 +62,6 @@
 25 2,10 * * * node /scripts/jd_ddworld.js >> /scripts/logs/jd_ddworld.log 2>&1
 #东东玩家
 #20 6-23/5 * * * node /scripts/jd_ddwj.js >> /scripts/logs/jd_ddwj.log 2>&1
-#东东游戏
-17 12-23/4 * * *  node /scripts/gua_ddgame.js >> /scripts/logs/gua_ddgame.log 2>&1 
 #热血心跳,狂解压
 5 6,18 1-16,21-30 9,10 *  node /scripts/jd_decompression.js >> /scripts/logs/jd_decompression.log 2>&1
 #集魔方
