@@ -70,6 +70,8 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 30 * * * * node /scripts/jd_cfd_loop.js >> /scripts/logs/jd_cfd_loop.log 2>&1
 #芥么赚豪礼
 37 0,11 * * * node /scripts/jd_genz.js >> /scripts/logs/jd_genz.log 2>&1
+#芥么签到
+11 0,9 * * * /scripts/jd_zsign.js >> /scripts/logs/jd_zsign.log 2>&1
 #柠檬赚金币
 0 7 * * * node /scripts/jd_zjb.js >> /scripts/logs/jd_zjb.log 2>&1 
 ##############长期活动##############
