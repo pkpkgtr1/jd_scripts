@@ -8,8 +8,6 @@
 45 0,6,23 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
 #女装盲盒（活动时间：2021-8-5至2021-8-31）
 35 1,23 * * *  node /scripts/jd_nzmh.js >> /scripts/logs/jd_nzmh.log 2>&1
-#超级直播间红包雨(活动时间不定期，出现异常提示请忽略。红包雨期间会正常)
-40 */1 * * * node /scripts/jd_live_redrain.js >> /scripts/logs/jd_live_redrain.log 2>&1
 #金榜创造营 活动时间：2021-05-21至2021-12-31
 0 1,22 * * * node /scripts/jd_gold_creator.js >> /scripts/logs/jd_gold_creator.log 2>&1
 #半点京豆雨
@@ -74,6 +72,11 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 11 0,9 * * * /scripts/jd_zsign.js >> /scripts/logs/jd_zsign.log 2>&1
 #柠檬赚金币
 0 7 * * * node /scripts/jd_zjb.js >> /scripts/logs/jd_zjb.log 2>&1 
+#京东小魔方
+31 2,8 * * * node /scripts/jd_mf.js >> /scripts/logs/jd_mf.log 2>&1
+#京东金融-天天提鹅
+31 2,8 * * * node /scripts/jd_daily_egg.js >> /scripts/logs/jd_daily_egg.log 2>&1
+
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
