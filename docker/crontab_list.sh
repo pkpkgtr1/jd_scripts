@@ -58,8 +58,6 @@
 45 0,6-23/2 * * * node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1   
 # 东东世界
 25 2,10 * * * node /scripts/jd_ddworld.js >> /scripts/logs/jd_ddworld.log 2>&1
-#热血心跳,狂解压
-5 6,18 1-16,21-30 9,10 *  node /scripts/jd_decompression.js >> /scripts/logs/jd_decompression.log 2>&1
 #集魔方
 cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1 
 #京东金融天天拼图
@@ -69,13 +67,16 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 #芥么赚豪礼
 37 0,11 * * * node /scripts/jd_genz.js >> /scripts/logs/jd_genz.log 2>&1
 #芥么签到
-11 0,9 * * * node /scripts/jd_zsign.js >> /scripts/logs/jd_zsign.log 2>&1
+15 1,8 * * * node /scripts/jd_zsign.js >> /scripts/logs/jd_zsign.log 2>&1
 #柠檬赚金币
 0 7 * * * node /scripts/jd_zjb.js >> /scripts/logs/jd_zjb.log 2>&1 
 #京东小魔方
 31 2,8 * * * node /scripts/jd_mf.js >> /scripts/logs/jd_mf.log 2>&1
 #京东金融-天天提鹅
 31 2,8 * * * node /scripts/jd_daily_egg.js >> /scripts/logs/jd_daily_egg.log 2>&1
+#攒金币 赢大礼
+22 0,8 * * * node /scripts/jd_GoldcoinToGift.js >> /scripts/logs/jd_GoldcoinToGift.log 2>&1
+
 
 ##############长期活动##############
 # 签到
