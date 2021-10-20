@@ -76,7 +76,8 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 31 2,8 * * * node /scripts/jd_daily_egg.js >> /scripts/logs/jd_daily_egg.log 2>&1
 #攒金币 赢大礼
 22 0,8 * * * node /scripts/jd_GoldcoinToGift.js >> /scripts/logs/jd_GoldcoinToGift.log 2>&1
-
+#城城领现金
+0 0-23/5,22 10 * *node /scripts/gua_city.js >> /scripts/logs/gua_city.log 2>&1
 
 ##############长期活动##############
 # 签到
