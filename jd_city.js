@@ -40,7 +40,7 @@ if ($.isNode()) {
   cookiesArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
 }
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
-const author_codes = ['RtGKtKXCCGPaFNnMXqtumpbk6HpAGAj3IRbH8x9D_7uCEN-Y','HYbgy-qjRw-qeoT1V5h_muLtOL3esg5EXpBM9BzzfRJgeg'].sort(() => 0.5 - Math.random())
+const author_codes = ['RtGKzeWsEwjye4SbRdVl1XFP3110BJ_xUmOBfnb-HVUNa67SiA','RtGKiJDGBHL_CcXAV69Zmp8YK0YUeK2z2eKyCzIx_S4Rh-58'].sort(() => 0.5 - Math.random())
 const self_code = []
 let pool = []
 !(async () => {
@@ -316,7 +316,7 @@ function shareCodesFormat() {
       console.log('首个帐号,助力作者和池子')
       $.newShareCodes = [...new Set([...author_codes,...pool,...$.newShareCodes])]
     } else{
-      console.log('非首个个帐号,助力池子')
+      console.log('非首个帐号,助力池子')
       $.newShareCodes = [...new Set([...$.newShareCodes,...pool])]
     }
     console.log(`第${$.index}个京东账号将要助力的好友${JSON.stringify($.newShareCodes)}`)

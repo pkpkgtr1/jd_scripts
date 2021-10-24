@@ -85,7 +85,9 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 #京东手机狂欢城
 0 0-18/6 * * * node /scripts/jd_carnivalcity.js >> /scripts/logs/jd_carnivalcity.log 2>&1  
 #京东手机狂欢城助力
-10 0,8 * * *  node /scripts/jd_carnivalcity_help.js, >> /scripts/logs/jd_carnivalcity_help.log 2>&1  
+10 0,8 * * *  node /scripts/jd_carnivalcity_help.js >> /scripts/logs/jd_carnivalcity_help.log 2>&1  
+#电竞预言家瓜分京豆
+23 10,11 * * * node /scripts/jd_lol.js >> /scripts/logs/jd_lol.log 2>&1  
 
 ##############长期活动##############
 # 签到
