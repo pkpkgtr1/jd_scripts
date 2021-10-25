@@ -1,4 +1,7 @@
-
+if (!["card","car"].includes(process.env.FS_LEVEL)) {
+    console.log("请设置通用加购/开卡环境变量FS_LEVEL为\"car\"(或\"card\"开卡+加购)来运行加购脚本")
+    return
+}
 /**
  电竞预言家瓜分京豆，链接： u.jd.com/3wyVFhp
  必须得做完任务才能参与竞猜，有加购，没开卡，参与竞猜后，如果猜对了，第二天可以瓜分京豆（蚊子腿。。。）
@@ -181,7 +184,6 @@ async function main(cookie) {
             console.log(JSON.stringify(lotteryInfo));
             await $.wait(2000);
         }
-        break;
     }
 }
 async function takeRequest(cookie,body){

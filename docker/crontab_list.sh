@@ -34,10 +34,6 @@
 4 10,16,21,16,21 * * *  node /scripts/jd_jxlhb.js  >> /scripts/logs/jd_jxlhb.log 2>&1
 #京喜签到
 30 0,22 * * * node /scripts/jx_sign.js  >> /scripts/logs/jx_sign.log 2>&1
-#来电好物季
-10 1 * * * node /scripts/zy_ldhwj.js >> /scripts/logs/zy_ldhwj.log 2>&1  
-#荣耀焕新季
-0 1 * * * node /scripts/zy_ryhxj.js >> /scripts/logs/zy_ryhxj.log 2>&1
 #工业品抽奖机
 10 0 * * *  node /scripts/jd_industryLottery.js  >> /scripts/logs/jd_industryLottery.log 2>&1  
 #京东零食街
@@ -88,6 +84,8 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 10 0,8 * * *  node /scripts/jd_carnivalcity_help.js >> /scripts/logs/jd_carnivalcity_help.log 2>&1  
 #电竞预言家瓜分京豆
 23 10,11 * * * node /scripts/jd_lol.js >> /scripts/logs/jd_lol.log 2>&1  
+#集萌宝得团圆礼包
+10 8,23 * * * node /scripts/jd_jika.js >> /scripts/logs/jd_jika.log 2>&1 
 
 ##############长期活动##############
 # 签到
