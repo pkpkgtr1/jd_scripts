@@ -90,6 +90,10 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 1 6-22/3 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1 
 #柠檬是兄弟就砍我2
 0 5,17 * * * node /scripts/jd_kanjia2.js >> /scripts/logs/jd_kanjia2.log 2>&1
+#双十一无门槛红包
+0 0,20 * * * node /scripts/jd_red.js>> /scripts/logs/jd_red.log 2>&1
+
+
 
 
 ##############长期活动##############
