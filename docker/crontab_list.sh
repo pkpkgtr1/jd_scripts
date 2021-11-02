@@ -91,8 +91,11 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 #柠檬是兄弟就砍我2
 0 5,17 * * * node /scripts/jd_kanjia2.js >> /scripts/logs/jd_kanjia2.log 2>&1
 #双十一无门槛红包
-0 0,20 * * * node /scripts/jd_red.js>> /scripts/logs/jd_red.log 2>&1
-
+0 0,20 * * * node /scripts/jd_red.js >> /scripts/logs/jd_red.log 2>&1
+#7天店铺签到
+1 0 * * *  node /scripts/jd_sevenDay.js >> /scripts/logs/jd_sevenDay.log 2>&1
+#京东超级盒子
+40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1 
 
 
 
