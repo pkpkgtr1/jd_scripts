@@ -98,6 +98,8 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1 
 #京喜-首页-牛牛福利
 1 0,9,19,23 * * * node /scripts/zx_nnfls.js >> /scripts/logs/zx_nnfls.log 2>&1  
+#手机竞猜
+0 0 * * * 1 0,9,19,23 * * * node /scripts/zy_sjjc.js>> /scripts/logs/zy_sjjc.log 2>&1  z
 
 
 ##############长期活动##############

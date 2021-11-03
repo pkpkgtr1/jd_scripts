@@ -1,10 +1,18 @@
 /*
 Node.JS专用
-https://raw.githubusercontent.com/zero205/JD_tencent_scf/main/jd_bean_sign.js
+cron 0 0 * * *  https://raw.githubusercontent.com/zero205/JD_tencent_scf/main/jd_bean_sign.js
 金融签到有一定使用门槛,需要请仔细阅读下方文字:
-JRBODY抓取网站:ms.jr.jd.com/gw/generic/hy/h5/m/appSign(进入金融APP签到页面手动签到);格式:"reqData=xxx"
+JRBODY抓取网站:ms.jr.jd.com/gw/generic/hy/h5/m/appSign(进入金融APP签到页面手动签到);抓取请求body,格式:"reqData=xxx"
 变量填写示例:JRBODY: reqData=xxx&reqData=xxx&&reqData=xxx(比如第三个号没有,则留空,长度要与CK一致)
+
+强烈建议用文件,环境变量太长了
 云函数用户在config分支新建diy/JRBODY.txt即可(也就是diy文件夹下新建JRBODY.txt).每行一个jrbody,结尾行写'Finish'
+例子:
+reqData=xxx
+(这个号没有,这行空着)
+reqData=xxx
+Finish
+
 其他环境用户除了JRBODY环境变量可以选用JRBODY.txt文件,放在同目录下,格式同上.
 注:优先识别环境变量,如使用txt文件请不要设置环境变量.JRBODY换行符(应为unix换行符)可能影响脚本读取!
 
@@ -832,9 +840,9 @@ function JDUserSign1(s, key, title, body) {
 async function JDUserSign2(s, key, title, tid, acData) {
   await new Promise(resolve => {
     let lkt = new Date().getTime()
-    let lks = md5('' + 'JL1VTNRadM68cIMQ' + lkt).toString()
+    let lks = md5('' + 'q8DNJdpcfRQ69gIx' + lkt).toString()
     $nobyda.get({
-      url: `https://jdjoy.jd.com/api/turncard/channel/detail?turnTableId=${tid}&invokeKey=JL1VTNRadM68cIMQ`,
+      url: `https://jdjoy.jd.com/api/turncard/channel/detail?turnTableId=${tid}&invokeKey=q8DNJdpcfRQ69gIx`,
       headers: {
         Cookie: KEY,
         'lkt': lkt,
@@ -864,9 +872,9 @@ async function JDUserSign2(s, key, title, tid, acData) {
   return new Promise(resolve => {
     setTimeout(() => {
       let lkt = new Date().getTime()
-      let lks = md5('' + 'JL1VTNRadM68cIMQ' + lkt).toString()
+      let lks = md5('' + 'q8DNJdpcfRQ69gIx' + lkt).toString()
       const JDUrl = {
-        url: 'https://jdjoy.jd.com/api/turncard/channel/sign?invokeKey=JL1VTNRadM68cIMQ',
+        url: 'https://jdjoy.jd.com/api/turncard/channel/sign?invokeKey=q8DNJdpcfRQ69gIx',
         headers: {
           Cookie: KEY,
           'lkt': lkt,
