@@ -35,8 +35,8 @@ All变量适用
 47 19 1-11 11 * https://raw.githubusercontent.com/smiek2121/scripts/master/gua_opencard62.js, tag=10.31~11.11 品牌盛典 11.11狂欢购, enabled=true
 
 */
-let guaopencard_addSku = "false"
-let guaopencard = "false"
+let guaopencard_addSku = "true"
+let guaopencard = "true"
 let guaopenwait = "0"
 
 const $ = new Env('10.31~11.11 品牌盛典 11.11狂欢购');
