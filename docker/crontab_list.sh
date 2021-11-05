@@ -99,8 +99,11 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 #京喜-首页-牛牛福利
 1 0,9,19,23 * * * node /scripts/zx_nnfls.js >> /scripts/logs/zx_nnfls.log 2>&1  
 #手机竞猜
-0 0 * * * 1 0,9,19,23 * * * node /scripts/zy_sjjc.js>> /scripts/logs/zy_sjjc.log 2>&1  z
-
+0 0 * * * 1 0,9,19,23 * * * node /scripts/zy_sjjc.js >> /scripts/logs/zy_sjjc.log 2>&1  
+#双十一无门槛红包
+0 10,12,20 * * *  node /scripts/jd_jxred.js >> /scripts/logs/jd_jxred.log 2>&1   
+#京东电器盲盒
+0 0 8 1-20 * * node /scripts/jd_dqmh.js >> /scripts/logs/jd_dqmh.log 2>&1   
 
 ##############长期活动##############
 # 签到
