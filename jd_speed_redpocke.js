@@ -66,7 +66,7 @@ if ($.isNode()) {
 
 async function jsRedPacket() {
   try {
-    await sign();//极速版签到提现
+    //await sign();//极速版签到提现
     await reward_query();
     for (let i = 0; i < 3; ++i) {
       await redPacket();//开红包
