@@ -102,7 +102,10 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 0 10,12,20 * * *  node /scripts/jd_jxred.js >> /scripts/logs/jd_jxred.log 2>&1   
 #京东电器盲盒
 0 0 8 1-20 * * node /scripts/jd_dqmh.js >> /scripts/logs/jd_dqmh.log 2>&1   
-
+#双11环游记大富翁
+0 2 1-11 11 * node /scripts/jd_travel_shop.js >> /scripts/logs/jd_travel_shop.log 2>&1   
+#极速免费签到
+0 2 1-11 11 * node /scripts/jd_signFree.js >> /scripts/logs/jd_signFree.log 2>&1   
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
