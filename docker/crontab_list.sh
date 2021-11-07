@@ -5,7 +5,7 @@
 
 ##############短期活动##############
 #京东极速版红包(活动时间：2021-5-5至？)
-#45 0,6,23 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
+45 0,6,23 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
 #女装盲盒（活动时间：2021-8-5至2021-8-31）
 35 1,23 * * *  node /scripts/jd_nzmh.js >> /scripts/logs/jd_nzmh.log 2>&1
 #金榜创造营 活动时间：2021-05-21至2021-12-31
@@ -104,8 +104,7 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 0 0 8 1-20 * * node /scripts/jd_dqmh.js >> /scripts/logs/jd_dqmh.log 2>&1   
 #双11环游记大富翁
 0 2 1-11 11 * node /scripts/jd_travel_shop.js >> /scripts/logs/jd_travel_shop.log 2>&1   
-#极速免费签到
-0 2 1-11 11 * node /scripts/jd_signFree.js >> /scripts/logs/jd_signFree.log 2>&1   
+
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
