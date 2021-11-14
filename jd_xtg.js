@@ -1,6 +1,6 @@
 /**
  星推官
- cron 22 3,4 * * * https://raw.githubusercontent.com/star261/jd/main/scripts/jd_xtg.js
+ cron 22 1,19 * * * https://raw.githubusercontent.com/star261/jd/main/scripts/jd_xtg.js
  * */
 const $ = new Env('星推官');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
@@ -18,7 +18,7 @@ if ($.isNode()) {
         $.getdata("CookieJD2"),
         ...$.toObj($.getdata("CookiesJD") || "[]").map((item) => item.cookie)].filter((item) => !!item);
 }
-let shareList = [],message = '';
+let shareList = [{"user":"恋你莲我","code":"78b68d87-ad41-476a-8f84-a2e048e6bfe4","need":5},{"user":"jd_rtrqrVNXHIXE","code":"0556c657-ebb2-4d1b-87f5-89cdb9256fb8","need":5}],message = '';
 !(async () => {
     if (!cookiesArr[0]) {
         $.msg($.name, '【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取', 'https://bean.m.jd.com/bean/signIndex.action', {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
