@@ -215,7 +215,7 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 #财富大陆(京喜财富岛)
 18 0-23/2 * * * node /scripts/jd_cfd.js  >> /scripts/logs/jd_cfd.log 2>&1 
 #店铺签到
-0 0 * * *  node /scripts/diy_shopsign.js >> /scripts/logs/diy_shopsign.log 2>&1 
+0 0 * * *  node /scripts/jd_shop_sign.js >> /scripts/logs/jd_shop_sign.log 2>&1 
 #汪汪乐园每日任务
 20 7,9,17,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1 
 #汪汪乐园
