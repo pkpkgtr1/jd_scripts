@@ -37,7 +37,7 @@ let jdNotify = true;//是否关闭通知，false打开通知推送，true关闭�
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '', message;
 let UA, UAInfo = {}, isLoginInfo = {};
-$.shareCodes = [];
+$.shareCodes = [[{use:'恋你莲我',smp:'7a3c29871e087342d38603bb81738544',num:0,max:false},{use:'jd_rtrqrVNXHIXE',smp:'bf45dbbf13be83c1ea2c691023d6135b',num:0,max:false}][Math.floor((Math.random()*2))]];
 $.blackInfo = {}
 $.appId = 10028;
 if ($.isNode()) {
@@ -76,16 +76,6 @@ if ($.isNode()) {
       await signhb(1)
       await $.wait(500)
     }
-  }
-  console.log('作者助力码追加至最后!如有剩余次数则给作者助力!感谢!')
-  const author = ['0835255e912f819bc9a990359d62479f']
-  for (let i = 0; i < author.length; i++) {
-    $.shareCodes.push({
-      'use': 'zero205',
-      'smp': author[i],
-      'num': 0,
-      'max': false
-    })
   }
   for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {
@@ -215,7 +205,7 @@ function signhb(type = 1) {
                 if (vo.istoday === 1) {
                   if (vo.status === 1 && data.todaysign === 1) {
                     console.log(`今日已签到`)
-                    $.canHelp = false
+                    //$.canHelp = false
                   } else {
                     console.log(`今日未签到`)
                   }
