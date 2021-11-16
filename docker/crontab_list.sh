@@ -55,7 +55,7 @@
 # 东东世界
 25 2,10 * * * node /scripts/jd_ddworld.js >> /scripts/logs/jd_ddworld.log 2>&1
 #集魔方
-cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1 
+6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1 
 #京东金融天天拼图
 20 0,16 * * * node /scripts/jd_ttpt.js  >> /scripts/logs/jd_ttpt.log 2>&1 
 # 京喜财富岛热气球
@@ -101,7 +101,9 @@ cron 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1
 #整点红包雨
 0 9-22/1 9-20 11 * node /scripts/jd_super_redrain.js >> /scripts/logs/jd_super_redrain.log 2>&1 
 #发财挖宝
-#40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1  
+#40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1 
+#饭粒
+0 9-22/1 9-20 11 * node /scripts/jd_fanli.js >> /scripts/logs/jd_fanli.log 2>&1  
 
 ##############长期活动##############
 # 签到
