@@ -79,7 +79,7 @@
 #集萌宝得团圆礼包
 10 8,23 * * * node /scripts/jd_jika.js >> /scripts/logs/jd_jika.log 2>&1 
 #发财大赢家
-1 6-22/3 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1 
+#1 6-22/3 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1 
 #柠檬是兄弟就砍我2
 0 5,17 * * * node /scripts/jd_kanjia2.js >> /scripts/logs/jd_kanjia2.log 2>&1
 #7天店铺签到
