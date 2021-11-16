@@ -11,9 +11,7 @@
 #金榜创造营 活动时间：2021-05-21至2021-12-31
 0 1,22 * * * node /scripts/jd_gold_creator.js >> /scripts/logs/jd_gold_creator.log 2>&1
 #半点京豆雨
-30 16-23/1 * * *  node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
-#来客有礼小程序
-24 0,12 * * * node /scripts/jd_sendBeans.js >> /scripts/logs/jd_sendBeans.log 2>&1
+#30 16-23/1 * * *  node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
 #柠檬推一推
 0 0 * * * node /scripts/jd_tyt.js  >> /scripts/logs/jd_tyt.log 2>&1
 #柠檬众筹许愿池
@@ -33,9 +31,7 @@
 #京喜领88元红包
 4 10,16,21,16,21 * * *  node /scripts/jd_jxlhb.js  >> /scripts/logs/jd_jxlhb.log 2>&1
 #京喜签到
-30 0,22 * * * node /scripts/jx_sign.js  >> /scripts/logs/jx_sign.log 2>&1
-#工业品抽奖机
-10 0 * * *  node /scripts/jd_industryLottery.js  >> /scripts/logs/jd_industryLottery.log 2>&1  
+30 0,22 * * * node /scripts/jx_sign.js  >> /scripts/logs/jx_sign.log 2>&1 
 #京东零食街
 0 0,6-22/2 * * *  node /scripts/jd_lsj.js >> /scripts/logs/jd_lsj.log 2>&1  
 #积分换话费
