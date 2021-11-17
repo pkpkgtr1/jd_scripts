@@ -5,7 +5,7 @@
 
 ##############短期活动##############
 #京东极速版红包(活动时间：2021-5-5至？)
-45 0,6,23 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
+44 0 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
 #女装盲盒（活动时间：2021-8-5至2021-8-31）
 35 1,23 * * *  node /scripts/jd_nzmh.js >> /scripts/logs/jd_nzmh.log 2>&1
 #金榜创造营 活动时间：2021-05-21至2021-12-31
