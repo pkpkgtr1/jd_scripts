@@ -99,7 +99,9 @@
 #发财挖宝
 #40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1 
 #饭粒
-0 9-22/1 9-20 11 * node /scripts/jd_fanli.js >> /scripts/logs/jd_fanli.log 2>&1  
+0 9-22/1 9-20 11 * node /scripts/jd_fanli.js >> /scripts/logs/jd_fanli.log 2>&1 
+#京东零食街2
+0 0,6-22/2 * * *  node /scripts/jd_foodRunning.js >> /scripts/logs/jd_foodRunning.log 2>&1  
 
 ##############长期活动##############
 # 签到
