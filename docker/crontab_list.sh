@@ -50,6 +50,8 @@
 45 0,6-23/2 * * * node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1   
 # 东东世界
 25 2,10 * * * node /scripts/jd_ddworld.js >> /scripts/logs/jd_ddworld.log 2>&1
+# 东东世界兑换
+0 0 * * * node /scripts/jd_ddworld_exchange.js >> /scripts/logs/jd_ddworld_exchange.log 2>&1
 #集魔方
 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1 
 #京东金融天天拼图
