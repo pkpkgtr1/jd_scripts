@@ -102,8 +102,7 @@
 0 0,6-22/2 * * *  node /scripts/jd_foodRunning.js >> /scripts/logs/jd_foodRunning.log 2>&1  
 #京东金融-每日签到
 49 8 * * * node /scripts/jd_jdjrjf.js >> /scripts/logs/jd_jdjrjf.log 2>&1 
-#东东农村-大风车
-49 7 * * * node /scripts/jd_ddnc_farmpark.js >> /scripts/logs/jd_ddnc_farmpark.log 2>&1 
+
 
 ##############长期活动##############
 # 签到
