@@ -102,8 +102,16 @@
 0 0,6-22/2 * * *  node /scripts/jd_foodRunning.js >> /scripts/logs/jd_foodRunning.log 2>&1  
 #京东金融-每日签到
 49 8 * * * node /scripts/jd_jdjrjf.js >> /scripts/logs/jd_jdjrjf.log 2>&1 
+#5G盲盒2021年11月1日到2022年1月28日
+5 0,1-23/3 * * *  node /scripts/jd_mohe.js >> /scripts/logs/jd_mohe.log 2>&1 
+#美丽研究院--兑换
+5 0,1-23/3 * * *  node /scripts/jd_beauty_ex.js  >> /scripts/logs/jd_beauty_ex.log 2>&1 
+#京喜财富岛合成生鲜
+45 7-23/1 * * *  node /scripts/jd_cfd_fresh.js >> /scripts/logs/jd_cfd_fresh.log 2>&1 
+#京喜财富岛合成生鲜兑换
+0 12 * * * node /scripts/jd_cfd_fresh_exchange.js >> /scripts/logs/jd_cfd_fresh_exchange.log 2>&1 
 
-
+    
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
