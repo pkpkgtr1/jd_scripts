@@ -26,6 +26,7 @@ cron "15 6-18/6 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/mast
 东东萌宠 = type=cron,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/jd_pet.js, cronexpr="15 6-18/6 * * *", timeout=3600, enable=true
 
 */
+let sc = require("./share_code.js")
 const $ = new Env('东东萌宠');
 let cookiesArr = [], cookie = '', jdPetShareArr = [], isBox = false, notify, newShareCodes=[], allMessage = '';
 //助力好友分享码(最多5个,否则后面的助力失败),原因:京东农场每人每天只有四次助力机会
@@ -45,6 +46,7 @@ let goodsUrl = '', taskInfoKey = [];
 let randomCount = $.isNode() ? 20 : 5;
 $.newShareCode = [];
 !(async () => {
+  cookiesArr=sc.ModCK(cookiesArr);
   if (!process.env.JD_JOIN_ZLC) {
     console.log(`【注意】本脚本默认会给助力池进行助力！\n如需加入助力池请添加TG群：https://t.me/jd_zero_205\n如不加入助力池互助，可添加变量名称：JD_JOIN_ZLC，变量值：false\n`)
   }
