@@ -116,3 +116,4 @@ async function ExchangePearlHb(dwLvl, ddwVirHb, strPoolName) {
     }
     return false;
 }
+
