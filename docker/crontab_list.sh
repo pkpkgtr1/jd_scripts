@@ -54,10 +54,6 @@
 20 0,16 * * * node /scripts/jd_ttpt.js  >> /scripts/logs/jd_ttpt.log 2>&1 
 # 京喜财富岛热气球
 30 * * * * node /scripts/jd_cfd_loop.js >> /scripts/logs/jd_cfd_loop.log 2>&1
-#芥么赚豪礼
-37 0,11 * * * node /scripts/jd_genz.js >> /scripts/logs/jd_genz.log 2>&1
-#芥么签到
-15 1,8 * * * node /scripts/jd_zsign.js >> /scripts/logs/jd_zsign.log 2>&1
 #柠檬赚金币
 0 7 * * * node /scripts/jd_zjb.js >> /scripts/logs/jd_zjb.log 2>&1 
 #京东小魔方
