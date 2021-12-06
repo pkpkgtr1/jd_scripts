@@ -110,6 +110,9 @@
 10 8 * * * node /scripts/jd_sign_graphics1.js >> /scripts/logs/jd_sign_graphics1.log 2>&1 
 #财富岛珍珠合成红包兑换
 59 0-23/1 * * * node /scripts/jd_cfd_pearl_ex.js >> /scripts/logs/jd_cfd_pearl_ex.log 2>&1 
+#京东赚赚
+10 3 * * *  * * * node /scripts/jd_jdzz.js >> /scripts/logs/jd_jdzz.log 2>&1 
+
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
