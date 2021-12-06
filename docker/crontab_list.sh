@@ -3,6 +3,7 @@
 #收集助力码
 30 * * * * sh +x /scripts/docker/auto_help.sh collect >> /scripts/logs/auto_help_collect.log 2>&1
 
+
 ##############短期活动##############
 #京东极速版红包(活动时间：2021-5-5至？)
 44 0 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
@@ -109,9 +110,11 @@
 #财富岛珍珠合成红包兑换
 59 0-23/1 * * * node /scripts/jd_cfd_pearl_ex.js >> /scripts/logs/jd_cfd_pearl_ex.log 2>&1 
 #京东赚赚
-10 3 * * *  * * * node /scripts/jd_jdzz.js >> /scripts/logs/jd_jdzz.log 2>&1 
+10 3 * * *  node /scripts/jd_jdzz.js >> /scripts/logs/jd_jdzz.log 2>&1 
 #一分钱抽奖
-10 4 * * *  * * * node /scripts/jd_lottery_drew.js >> /scripts/logs/jd_lottery_drew.log 2>&1 
+10 4 * * * node /scripts/jd_lottery_drew.js >> /scripts/logs/jd_lottery_drew.log 2>&1 
+#星系牧场
+1 0-23/2 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1 
 
 ##############长期活动##############
 # 签到
