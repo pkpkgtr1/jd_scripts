@@ -110,6 +110,8 @@
 59 0-23/1 * * * node /scripts/jd_cfd_pearl_ex.js >> /scripts/logs/jd_cfd_pearl_ex.log 2>&1 
 #京东赚赚
 10 3 * * *  * * * node /scripts/jd_jdzz.js >> /scripts/logs/jd_jdzz.log 2>&1 
+#一分钱抽奖
+10 4 * * *  * * * node /scripts/jd_lottery_drew.js >> /scripts/logs/jd_lottery_drew.log 2>&1 
 
 ##############长期活动##############
 # 签到
