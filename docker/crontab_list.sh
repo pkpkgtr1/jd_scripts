@@ -195,7 +195,7 @@
 #京喜工厂商品列表详情
 10 10 * * * node /scripts/jx_products_detail.js >> /scripts/logs/jx_products_detail.log 2>&1 
 #京东直播（又回来了）
-50 12-14 * * * node /scripts/jd_live.js >> /scripts/logs/jd_live.log 2>&1
+50 12-14 * * * node /scripts/jd_live_redrain.js >> /scripts/logs/jd_live_redrain.log 2>&1
 #京东健康社区
 13 1,6,22 * * * node /scripts/jd_health.js >> /scripts/logs/jd_health.log 2>&1
 #京东健康社区收集健康能量
