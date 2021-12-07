@@ -114,7 +114,7 @@
 #一分钱抽奖
 10 4 * * * node /scripts/jd_lottery_drew.js >> /scripts/logs/jd_lottery_drew.log 2>&1 
 #星系牧场
-1 0-23/2 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1 
+1 0-23/4 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1 
 
 ##############长期活动##############
 # 签到
