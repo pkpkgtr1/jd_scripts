@@ -121,6 +121,8 @@
 18 0,21 * * *  node /scripts/jd_xiaolong.js >> /scripts/logs/jd_xiaolong.log 2>&1 
 #京东我的理想家，可抽奖获得京豆
 18 0,21 * * *  node /scripts/jd_lxLottery.js >> /scripts/logs/jd_lxLottery.log 2>&1 
+#金榜年终奖
+39 0,9 * * *  node /scripts/jd_split.js >> /scripts/logs/jd_split.log 2>&1 
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
