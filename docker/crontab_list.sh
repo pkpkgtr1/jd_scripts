@@ -118,7 +118,7 @@
 #京东生鲜每日抽奖
 30 7 * * *  node /scripts/jd_sxLottery.js >> /scripts/logs/jd_sxLottery.log 2>&1 
 #晓龙
-10 1,21 * * *  node /scripts/jd_xiaolong.js >> /scripts/logs/jd_xiaolong.log 2>&1 
+18 0,21 * * *  node /scripts/jd_xiaolong.js >> /scripts/logs/jd_xiaolong.log 2>&1 
 
 ##############长期活动##############
 # 签到
