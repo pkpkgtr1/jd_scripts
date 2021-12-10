@@ -57,8 +57,6 @@
 30 * * * * node /scripts/jd_cfd_loop.js >> /scripts/logs/jd_cfd_loop.log 2>&1
 #柠檬赚金币
 0 7 * * * node /scripts/jd_zjb.js >> /scripts/logs/jd_zjb.log 2>&1 
-#京东小魔方
-31 2,8 * * * node /scripts/jd_mf.js >> /scripts/logs/jd_mf.log 2>&1
 #攒金币 赢大礼
 22 0,8 * * * node /scripts/jd_GoldcoinToGift.js >> /scripts/logs/jd_GoldcoinToGift.log 2>&1
 #城城领现金
@@ -69,8 +67,6 @@
 5 0,2 * * * node /scripts/jd_ys.js >> /scripts/logs/jd_ys.log 2>&1  
 #电竞预言家瓜分京豆
 23 10,11 * * * node /scripts/jd_lol.js >> /scripts/logs/jd_lol.log 2>&1  
-#集萌宝得团圆礼包
-10 8,23 * * * node /scripts/jd_jika.js >> /scripts/logs/jd_jika.log 2>&1 
 #发财大赢家
 #1 6-22/3 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1 
 #柠檬是兄弟就砍我2
@@ -115,8 +111,6 @@
 10 4 * * * node /scripts/jd_lottery_drew.js >> /scripts/logs/jd_lottery_drew.log 2>&1 
 #星系牧场
 1 0-23/4 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1 
-#京东生鲜每日抽奖
-30 7 * * *  node /scripts/jd_sxLottery.js >> /scripts/logs/jd_sxLottery.log 2>&1 
 #晓龙
 18 0,21 * * *  node /scripts/jd_xiaolong.js >> /scripts/logs/jd_xiaolong.log 2>&1 
 #京东我的理想家，可抽奖获得京豆
