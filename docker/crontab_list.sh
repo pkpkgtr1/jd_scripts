@@ -117,6 +117,12 @@
 18 0,21 * * *  node /scripts/jd_lxLottery.js >> /scripts/logs/jd_lxLottery.log 2>&1 
 #金榜年终奖2021-12-12日结束
 39 0,9 * * *  node /scripts/jd_split.js >> /scripts/logs/jd_split.log 2>&1 
+#京东答题领金豆
+9 10 * * * node /scripts/jd_answer.js >> /scripts/logs/jd_answer.log 2>&1 
+#生活特权
+26 22 * *  node /scripts/jd_week.js >> /scripts/logs/jd_week.log 2>&1 
+
+
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
