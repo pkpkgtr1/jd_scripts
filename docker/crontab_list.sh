@@ -121,7 +121,12 @@
 9 10 * * * node /scripts/jd_answer.js >> /scripts/logs/jd_answer.log 2>&1 
 #生活特权
 26 22 * *  node /scripts/jd_week.js >> /scripts/logs/jd_week.log 2>&1 
-
+#京东小魔方
+1 2,8 * * * node /scripts/jd_mf.js >> /scripts/logs/jd_mf.log 2>&1  
+#暖暖红包
+0 0,12,20 * * * node /scripts/jd_redEnvelope.js >> /scripts/logs/jd_redEnvelope.log 2>&1
+#京东生鲜每日抽奖
+42 7 * * * node /scripts/jd_sxLottery.js >> /scripts/logs/jd_sxLottery.log 2>&1
 
 ##############长期活动##############
 # 签到
