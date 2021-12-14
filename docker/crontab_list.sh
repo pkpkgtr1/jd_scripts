@@ -125,10 +125,6 @@
 0 0,12,20 * * * node /scripts/jd_redEnvelope.js >> /scripts/logs/jd_redEnvelope.log 2>&1
 #京东生鲜每日抽奖
 42 7 * * * node /scripts/jd_sxLottery.js >> /scripts/logs/jd_sxLottery.log 2>&1
-#整点红包雨
-0 1-23/1 * * * node /scripts/jd_redrain.js >> /scripts/logs/jd_redrain.log 2>&1
-#半点红包雨
-30 20-23/1 * * * node /scripts/jd_redrain_half.js >> /scripts/logs/jd_redrain_half.log 2>&1
 #见缝插针
 15 10 * * * node /scripts/jd_jfcz.js  >> /scripts/logs/jd_jfcz.log 2>&1 
 
