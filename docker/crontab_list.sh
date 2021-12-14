@@ -129,8 +129,8 @@
 0 1-23/1 * * * node /scripts/jd_redrain.js >> /scripts/logs/jd_redrain.log 2>&1
 #半点红包雨
 30 20-23/1 * * * node /scripts/jd_redrain_half.js >> /scripts/logs/jd_redrain_half.log 2>&1
-
-
+#见缝插针
+15 10 * * * node /scripts/jd_jfcz.js  >> /scripts/logs/jd_jfcz.log 2>&1 
 
 ##############长期活动##############
 # 签到
