@@ -107,8 +107,6 @@
 59 0-23/1 * * * node /scripts/jd_cfd_pearl_ex.js >> /scripts/logs/jd_cfd_pearl_ex.log 2>&1 
 #京东赚赚
 10 3 * * *  node /scripts/jd_jdzz.js >> /scripts/logs/jd_jdzz.log 2>&1 
-#一分钱抽奖
-10 4 * * * node /scripts/jd_lottery_drew.js >> /scripts/logs/jd_lottery_drew.log 2>&1 
 #星系牧场
 1 0-23/4 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1 
 #晓龙
@@ -125,8 +123,6 @@
 0 0,12,20 * * * node /scripts/jd_redEnvelope.js >> /scripts/logs/jd_redEnvelope.log 2>&1
 #京东生鲜每日抽奖
 42 7 * * * node /scripts/jd_sxLottery.js >> /scripts/logs/jd_sxLottery.log 2>&1
-#见缝插针
-15 10 * * * node /scripts/jd_jfcz.js  >> /scripts/logs/jd_jfcz.log 2>&1 
 #京东特价翻翻乐
 15 0,8 * * * node /scripts/jd_jdtj_winner.js  >> /scripts/logs/jd_jdtj_winner.log 2>&1 
 
