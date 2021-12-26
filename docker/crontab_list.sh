@@ -125,7 +125,8 @@
 42 7 * * * node /scripts/jd_sxLottery.js >> /scripts/logs/jd_sxLottery.log 2>&1
 #京东特价翻翻乐
 15 0,8 * * * node /scripts/jd_jdtj_winner.js  >> /scripts/logs/jd_jdtj_winner.log 2>&1 
-
+#组队分豆-蒙牛
+18 1,16 * * * node /scripts/jd_mengniu.js  >> /scripts/logs/jd_mengniu.log 2>&1 
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
