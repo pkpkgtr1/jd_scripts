@@ -96,7 +96,7 @@
 #5G盲盒2021年11月1日到2022年1月28日
 5 0,1-23/3 * * *  node /scripts/jd_mohe.js >> /scripts/logs/jd_mohe.log 2>&1 
 #美丽研究院--兑换
-5 0,1-23/3 * * *  node /scripts/jd_beauty_ex.js  >> /scripts/logs/jd_beauty_ex.log 2>&1 
+#5 0,1-23/3 * * *  node /scripts/jd_beauty_ex.js  >> /scripts/logs/jd_beauty_ex.log 2>&1 
 #京喜财富岛合成生鲜
 45 7-23/1 * * *  node /scripts/jd_cfd_fresh.js >> /scripts/logs/jd_cfd_fresh.log 2>&1 
 #京喜财富岛合成生鲜兑换
