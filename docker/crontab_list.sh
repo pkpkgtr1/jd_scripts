@@ -127,6 +127,8 @@
 15 0,8 * * * node /scripts/jd_jdtj_winner.js  >> /scripts/logs/jd_jdtj_winner.log 2>&1 
 #组队分豆-蒙牛
 18 1,16 * * * node /scripts/jd_mengniu.js  >> /scripts/logs/jd_mengniu.log 2>&1 
+#京东通天塔--签到
+3 1,11 * * * node /scripts/jd_m_sign.js  >> /scripts/logs/jd_m_sign.log 2>&1  
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
