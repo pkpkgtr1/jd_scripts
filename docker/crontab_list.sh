@@ -69,8 +69,6 @@
 23 10,11 * * * node /scripts/jd_lol.js >> /scripts/logs/jd_lol.log 2>&1  
 #发财大赢家
 #1 6-22/3 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1 
-#柠檬是兄弟就砍我2
-0 5,17 * * * node /scripts/jd_kanjia2.js >> /scripts/logs/jd_kanjia2.log 2>&1
 #7天店铺签到
 1 0 * * *  node /scripts/jd_sevenDay.js >> /scripts/logs/jd_sevenDay.log 2>&1
 #京东超级盒子
@@ -84,7 +82,7 @@
 #京东电器盲盒
 0 0 8 1-20 * * node /scripts/jd_dqmh.js >> /scripts/logs/jd_dqmh.log 2>&1   
 #整点红包雨
-0 9-22/1 9-20 11 * node /scripts/jd_super_redrain.js >> /scripts/logs/jd_super_redrain.log 2>&1 
+#0 9-22/1 9-20 11 * node /scripts/jd_super_redrain.js >> /scripts/logs/jd_super_redrain.log 2>&1 
 #发财挖宝
 #40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1 
 #饭粒
@@ -101,24 +99,16 @@
 45 7-23/1 * * *  node /scripts/jd_cfd_fresh.js >> /scripts/logs/jd_cfd_fresh.log 2>&1 
 #京喜财富岛合成生鲜兑换
 0 0,12 * * * node /scripts/jd_cfd_fresh_exchange.js >> /scripts/logs/jd_cfd_fresh_exchange.log 2>&1 
-#京东到家果园任务脚本
-10 0,3,8,11,17 * * * node /scripts/jd_jddj_fruit.js >> /scripts/logs/jd_jddj_fruit.log 2>&1 
 #财富岛珍珠合成红包兑换
 59 0-23/1 * * * node /scripts/jd_cfd_pearl_ex.js >> /scripts/logs/jd_cfd_pearl_ex.log 2>&1 
 #京东赚赚
 10 3 * * *  node /scripts/jd_jdzz.js >> /scripts/logs/jd_jdzz.log 2>&1 
 #星系牧场
 1 0-23/4 * * *  node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1 
-#晓龙
-18 0,21 * * *  node /scripts/jd_xiaolong.js >> /scripts/logs/jd_xiaolong.log 2>&1 
 #京东我的理想家，可抽奖获得京豆
 18 0,21 * * *  node /scripts/jd_lxLottery.js >> /scripts/logs/jd_lxLottery.log 2>&1 
-#京东答题领金豆
-9 10 * * * node /scripts/jd_answer.js >> /scripts/logs/jd_answer.log 2>&1 
 #生活特权
 26 22 * *  node /scripts/jd_week.js >> /scripts/logs/jd_week.log 2>&1 
-#京东小魔方
-1 2,8 * * * node /scripts/jd_mf.js >> /scripts/logs/jd_mf.log 2>&1  
 #暖暖红包
 0 0,12,20 * * * node /scripts/jd_redEnvelope.js >> /scripts/logs/jd_redEnvelope.log 2>&1
 #京东生鲜每日抽奖
