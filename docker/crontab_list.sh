@@ -69,8 +69,6 @@
 23 10,11 * * * node /scripts/jd_lol.js >> /scripts/logs/jd_lol.log 2>&1  
 #发财大赢家
 #1 6-22/3 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1 
-#7天店铺签到
-1 0 * * *  node /scripts/jd_sevenDay.js >> /scripts/logs/jd_sevenDay.log 2>&1
 #京东超级盒子
 40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1 
 #京喜-首页-牛牛福利
