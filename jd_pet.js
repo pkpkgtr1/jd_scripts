@@ -118,7 +118,7 @@ async function jdPet() {
         return
       }
       console.log(`\n【京东账号${$.index}（${$.UserName}）的${$.name}好友互助码】${$.petInfo.shareCode}\n`);
-
+      await submitCode();
       await taskInit();
       if ($.taskInit.resultCode === '9999' || !$.taskInit.result) {
         console.log('初始化任务异常, 请稍后再试');
@@ -298,6 +298,7 @@ async function slaveHelp() {
     } else {
       console.log(`助力好友结果: ${response.message}`);
     }
+    await $.wait(2000)
   }
   if (helpPeoples && helpPeoples.length > 0) {
     message += `【您助力的好友】${helpPeoples.substr(0, helpPeoples.length - 1)}\n`;
@@ -316,6 +317,10 @@ async function petSport() {
     if (resultCode == 0) {
       let sportRevardResult = await request('getSportReward');
       console.log(`领取遛狗奖励完成: ${JSON.stringify(sportRevardResult)}`);
+    } else if (resultCode == 1013) {
+      let sportRevardResult = await request('getSportReward', {"version":1});
+      console.log(`领取遛狗奖励完成: ${JSON.stringify(sportRevardResult)}`);
+      if (sportRevardResult.resultCode == 0) resultCode = 0
     }
     times++;
   } while (resultCode == 0 && code == 0)
@@ -471,6 +476,34 @@ function readShareCode() {
     resolve({"code":200,"data":shareCodes})
   })
 }
+//提交互助码
+function submitCode() {
+  return new Promise(async resolve => {
+    $.get({url: `http://www.helpu.cf/jdcodes/submit.php?code=${$.petInfo.shareCode}&type=pet`, timeout: 10000}, (err, resp, data) => {
+      try {
+        if (err) {
+          console.log(`${JSON.stringify(err)}`)
+          console.log(`${$.name} submitCode API请求失败，请检查网路重试`)
+        } else {
+          if (data) {
+            data = JSON.parse(data);
+            if (data.code === 200) {
+              console.log(`🐶东东萌宠-互助码提交成功！🐶`);
+            } else if (data.code === 300) {
+              console.log(`🐶东东萌宠-互助码已提交！🐶`);
+            }
+          }
+        }
+      } catch (e) {
+        $.logErr(e, resp)
+      } finally {
+        resolve(data || {"code":500})
+      }
+    })
+    await $.wait(10000);
+    resolve({"code":500})
+  })
+}
 function shareCodesFormat() {
   return new Promise(async resolve => {
     // console.log(`第${$.index}个京东账号的助力码:::${$.shareCodesArr[$.index - 1]}`)
@@ -605,7 +638,7 @@ function taskUrl(function_id, body = {}) {
   body["channel"] = 'app';
   return {
     url: `${JD_API_HOST}?functionId=${function_id}`,
-    body: `body=${escape(JSON.stringify(body))}&appid=wh5&loginWQBiz=pet-town&clientVersion=9.0.4`,
+    body: `body=${encodeURIComponent(JSON.stringify(body))}&appid=wh5&loginWQBiz=pet-town&clientVersion=9.0.4`,
     headers: {
       'Cookie': cookie,
       'User-Agent': $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.4.4;14.3;network/4g;Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1"),
