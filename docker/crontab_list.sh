@@ -117,6 +117,11 @@
 3 1,11 * * * node /scripts/jd_m_sign.js  >> /scripts/logs/jd_m_sign.log 2>&1
 #年货签到
 14 1,20 * * *  node /scripts/jd_nh_sign.js  >> /scripts/logs/jd_nh_sign.log 2>&1 
+#集“年味卡”，享年货盛宴
+0 0,8 * * * node /scripts/jd_lzdz1_customized1.js  >> /scripts/logs/jd_lzdz1_customized1.log 2>&1 
+#年货盛宴 春节集福攻略
+0 0,8 * * * node /scripts/jd_lzdz1_customized2.js  >> /scripts/logs/jd_lzdz1_customized2.log 2>&1 
+
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
