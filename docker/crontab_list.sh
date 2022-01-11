@@ -116,11 +116,13 @@
 #诚诚分现金
 22 11,20 * * * node /scripts/jd_city.js  >> /scripts/logs/jd_city.log 2>&1 
 #炸年兽
-20 0,6-23/2 * * * node /scripts/jd_travel.js  >> /scripts/logs/jd_travel.log 2>&1 
+#20 0,6-23/2 * * * node /scripts/jd_travel.js  >> /scripts/logs/jd_travel.log 2>&1 
 #京享红包
 0 0,20,21 * * * node /scripts/jd_redEnvelope.js  >> /scripts/logs/jd_redEnvelope.log 2>&1 
 #会场红包
 0 0,12,20-23 * * * node /scripts/jd_nhs_red.js  >> /scripts/logs/jd_nhs_red.log 2>&1 
+#京东超级盒子
+24 3,13 * * * node /scripts/jd_cjhz.js   >> /scripts/logs/jd_cjhz.log 2>&1  
 
 ##############长期活动##############
 # 签到
