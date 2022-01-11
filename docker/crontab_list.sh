@@ -73,10 +73,6 @@
 40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1 
 #京喜-首页-牛牛福利
 1 0,9,19,23 * * * node /scripts/zx_nnfls.js >> /scripts/logs/zx_nnfls.log 2>&1  
-#手机竞猜
-0 0 * * * 1 0,9,19,23 * * * node /scripts/zy_sjjc.js >> /scripts/logs/zy_sjjc.log 2>&1  
-#双十一无门槛红包
-0 10,12,20 * * *  node /scripts/jd_jxred.js >> /scripts/logs/jd_jxred.log 2>&1   
 #京东电器盲盒
 0 0 8 1-20 * * node /scripts/jd_dqmh.js >> /scripts/logs/jd_dqmh.log 2>&1   
 #整点红包雨
@@ -107,10 +103,6 @@
 18 0,21 * * *  node /scripts/jd_lxLottery.js >> /scripts/logs/jd_lxLottery.log 2>&1 
 #生活特权
 26 22 * *  node /scripts/jd_week.js >> /scripts/logs/jd_week.log 2>&1 
-#暖暖红包
-0 0,12,20 * * * node /scripts/jd_redEnvelope.js >> /scripts/logs/jd_redEnvelope.log 2>&1
-#京东生鲜每日抽奖
-42 7 * * * node /scripts/jd_sxLottery.js >> /scripts/logs/jd_sxLottery.log 2>&1
 #京东特价翻翻乐
 15 0,8 * * * node /scripts/jd_jdtj_winner.js  >> /scripts/logs/jd_jdtj_winner.log 2>&1 
 #京东通天塔--签到
