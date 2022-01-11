@@ -1,6 +1,6 @@
 /*
 京享红包
-0 0,20,21 * * * jd_redEnvelope.js
+cron 0 0,20,21 * * * jd_redEnvelope.js
 添加环境变量FLCODE 如需自己返利，请填写该变量（https://u.jd.com/后面的英文）
 */
 const $ = new Env("京享红包");
@@ -16,7 +16,7 @@ if ($.isNode()) {
   cookiesArr = [$.getdata("CookieJD"), $.getdata("CookieJD2"), ...$.toObj($.getdata("CookiesJD") || "[]").map((item) => item.cookie)].filter((item) => !!item);
 }
 let cookie = "";
-$.shareCode = "mOzND";
+$.shareCode = "ZAaOZ";
 !(async () => {
   if (!cookiesArr[0]) {
     $.msg($.name, "【提示】请先获取京东账号一cookie\n直接使用NobyDa的京东签到获取", "https://bean.m.jd.com/bean/signIndex.action", { "open-url": "https://bean.m.jd.com/bean/signIndex.action" });
@@ -54,7 +54,7 @@ async function main() {
   $.UA = `jdapp;iPhone;10.2.0;13.1.2;${randomString(40)};M/5.0;network/wifi;ADID/;model/iPhone8,1;addressid/2308460622;appBuild/167853;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 13_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1;`;
   $.max = false;
   $.hotFlag = false;
-  const flCodeArr = ["SIMHz54", "StIuUgG", "SLI8zFT"];
+  const flCodeArr = ['SdiP4s0', 'Sdipcax'];
   let flCode = flCodeArr[Math.floor(Math.random() * flCodeArr.length)];
   let FLCODE = $.isNode() ? process.env.JD_FLCODE ? process.env.JD_FLCODE : '' : $.getdata("JD_FLCODE") ? $.getdata("JD_FLCODE") : ''
   if (FLCODE) {
@@ -3342,7 +3342,4 @@ function Env(t, e) {
         (this.isSurge() || this.isQuanX() || this.isLoon()) && $done(t);
     }
   })(t, e);
-}
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
 }
