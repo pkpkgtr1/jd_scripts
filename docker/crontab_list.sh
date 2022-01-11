@@ -117,6 +117,8 @@
 22 11,20 * * * node /scripts/jd_city.js  >> /scripts/logs/jd_city.log 2>&1 
 #炸年兽
 20 0,6-23/2 * * * node /scripts/jd_travel.js  >> /scripts/logs/jd_travel.log 2>&1 
+#京享红包
+0 0,20,21 * * * node /scripts/jd_redEnvelope.js  >> /scripts/logs/jd_redEnvelope.log 2>&1 
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
