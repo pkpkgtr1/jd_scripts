@@ -112,7 +112,7 @@ def getinfo(ck):
         printf('获取失败，黑号或者没有参加5人以上的队伍\n\n')
 if __name__ == '__main__':
     remarkinfos={}
-    get_remarkinfo()#获取备注
+    #get_remarkinfo()#获取备注
     try:
         cks = os.environ["JD_COOKIE"].split("&")#获取cookie
     except:
