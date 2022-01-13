@@ -57,7 +57,7 @@ def load_send():
     else:
         send=False
         print("加载通知服务失败~")
-load_send()
+#load_send()
 
     
 def get_remarkinfo():
