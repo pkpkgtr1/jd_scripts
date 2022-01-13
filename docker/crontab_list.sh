@@ -113,8 +113,6 @@
 0 0,8 * * * node /scripts/jd_lzdz1_customized.js  >> /scripts/logs/jd_lzdz1_customized1.log 2>&1 
 #年货盛宴 春节集福攻略
 0 0,8 * * * node /scripts/jd_lzdz1_customized2.js  >> /scripts/logs/jd_lzdz1_customized2.log 2>&1 
-#诚诚分现金
-22 11,20 * * * node /scripts/jd_city.js  >> /scripts/logs/jd_city.log 2>&1 
 #炸年兽
 #20 0,6-23/2 * * * node /scripts/jd_travel.js  >> /scripts/logs/jd_travel.log 2>&1 
 #京享红包
