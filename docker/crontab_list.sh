@@ -121,6 +121,13 @@
 0 0,12,20-23 * * * node /scripts/jd_nhs_red.js  >> /scripts/logs/jd_nhs_red.log 2>&1 
 #京东超级盒子
 24 3,13 * * * node /scripts/jd_cjhz.js   >> /scripts/logs/jd_cjhz.log 2>&1  
+#天天压岁钱
+33 0,22 * * *  node /scripts/jd_ttysq.js   >> /scripts/logs/jd_ttysq.log 2>&1  
+#年兽店铺大富翁，蚊子腿鞭炮
+0 7 * * * node /scripts/jd_dns_shop.js  >> /scripts/logs/jd_dns_shop.log 2>&1  
+#白条抽奖
+35 8 13-31,1-7 1,2 * node /scripts/jd_bt_sign.js  >> /scripts/logs/jd_bt_sign.log 2>&1  
+
 
 ##############长期活动##############
 # 签到
