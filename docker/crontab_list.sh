@@ -107,12 +107,10 @@
 15 0,8 * * * node /scripts/jd_jdtj_winner.js  >> /scripts/logs/jd_jdtj_winner.log 2>&1 
 #京东通天塔--签到
 3 1,11 * * * node /scripts/jd_m_sign.js  >> /scripts/logs/jd_m_sign.log 2>&1
+#通天塔签到共建
+53 0,12 * * * node /scripts/jd_babel_sign.js >> /scripts/logs/jd_babel_sign.log 2>&1 
 #年货签到
 14 1,20 * * *  node /scripts/jd_nh_sign.js  >> /scripts/logs/jd_nh_sign.log 2>&1 
-#集“年味卡”，享年货盛宴
-0 0,8 * * * node /scripts/jd_lzdz1_customized.js  >> /scripts/logs/jd_lzdz1_customized1.log 2>&1 
-#年货盛宴 春节集福攻略
-0 0,8 * * * node /scripts/jd_lzdz1_customized2.js  >> /scripts/logs/jd_lzdz1_customized2.log 2>&1 
 #炸年兽
 #20 0,6-23/2 * * * node /scripts/jd_travel.js  >> /scripts/logs/jd_travel.log 2>&1 
 #京享红包
@@ -127,7 +125,10 @@
 0 7 * * * node /scripts/jd_dns_shop.js  >> /scripts/logs/jd_dns_shop.log 2>&1  
 #白条抽奖
 35 8 13-31,1-7 1,2 * node /scripts/jd_bt_sign.js  >> /scripts/logs/jd_bt_sign.log 2>&1  
-
+#狂欢城抽奖
+50 0 * * * node /scripts/jd_kuanghuan_open.js  >> /scripts/logs/jd_kuanghuan_open.log 2>&1 
+#萌虎摇摇乐
+15 0,12,18 * * *  node /scripts/jd_tiger.js   >> /scripts/logs/jd_tiger.log 2>&1
 
 ##############长期活动##############
 # 签到
