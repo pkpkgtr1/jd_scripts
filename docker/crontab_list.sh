@@ -129,6 +129,9 @@
 50 0 * * * node /scripts/jd_kuanghuan_open.js  >> /scripts/logs/jd_kuanghuan_open.log 2>&1 
 #萌虎摇摇乐
 15 0,12,18 * * *  node /scripts/jd_tiger.js   >> /scripts/logs/jd_tiger.log 2>&1
+#点鞭炮赢京豆
+15 10 * * *  node /scripts/jd_festival.js   >> /scripts/logs/jd_festival.log 2>&1
+
 
 ##############长期活动##############
 # 签到
