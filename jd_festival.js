@@ -9,7 +9,7 @@ cookiesArr = []
 CodeArr = []
 cookie = ''
 var taskItemIdArr = [],task1ItemIdArr = []
-let t,num1,num2,num3,num4,num5,num = 0;
+let t,num1,num2,num3,num4,num5
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 cookiesArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
 let tz = ($.getval('tz') || '1');//0关闭通知，1默认开启
@@ -43,9 +43,10 @@ if ($.isNode()) {
     return;
   }
   for (let i =0; i < cookiesArr.length; i++) {
-      cookie = cookiesArr[i]
+      cookie = cookiesArr[i];
       $.UserName = decodeURIComponent(cookie.match(/pt_pin=([^; ]+)(?=;?)/) && cookie.match(/pt_pin=([^; ]+)(?=;?)/)[1])
       message = ''
+      num = 0
       $.isLogin = true;
       $.index = i + 1;
        console.log(`\n******开始【京东账号${$.index}】${$.nickName || $.UserName}*********\n`);
@@ -97,7 +98,7 @@ async function doTask(){
         await $.wait(2000)
         t = result.data.timeStamp
         }else{
-           $.log(result.data.bizMsg+"\n")
+           $.log(result.msg+"\n")
         }
         }catch(e) {
           $.logErr(e, response);
@@ -108,7 +109,7 @@ async function doTask(){
    })
   }
 async function DoTask(){
- const body = `appid=china-joy&functionId=festival_floor_prod&body=%7B%22taskId%22:%22${taskid}%22,%22taskItemId%22:%22${taskItemId}%22,%22timestamp%22:${t},%22skuId%22:%22%22,%22taskType%22:null,%22apiMapping%22:%22/api/task/getReward%22%7D&t=1642672924093&loginType=2`
+ const body = `appid=china-joy&functionId=festival_floor_prod&body=%7B%22taskId%22:%22${taskid}%22,%22taskItemId%22:%22${taskItemId}%22,%22timestamp%22:${t},%22skuId%22:%22%22,%22taskType%22:null,%22apiMapping%22:%22/api/task/getReward%22%7D&t=${t}&loginType=2`
  const MyRequest = PostRequest(``,body)
  return new Promise((resolve) => {
    $.post(MyRequest,async(error, response, data) =>{
@@ -121,6 +122,9 @@ async function DoTask(){
           }else{
            console.log("任务继续")
          }
+         
+        }else{
+          $.log(result.msg)
         }
         }catch(e) {
           $.logErr(e, response);
@@ -231,15 +235,16 @@ async function getlist(){
     $.post(MyRequest,async(error, response, data) =>{
     try{
         const result = JSON.parse(data)
-        if(logs)$.log(data)
+        if(logs) $.log(data)
         if(result.code == 200){
        
-       let list1 = result.data.taskList.find(item => item.taskId == 216)
+       let list1 = result.data.taskList.find(item => item.taskItemType == "VENUE")
        num1 = Number(list1.totalNum) - Number(list1.finishNum)
        if(num1 > 0){
        
-       taskid = 216;
+       taskid = list1.taskId;
        taskItemId = list1.taskItemId
+
        await doTask()
        await $.wait(2000)
        await DoTask()
@@ -248,12 +253,13 @@ async function getlist(){
         $.log("任务已完成")
         }
        
-       let list3 = result.data.taskList.find(item => item.taskId == 217)
+       let list3 = result.data.taskList.find(item => item.taskItemType == "SHOP")
        num3 = Number(list3.totalNum) - Number(list3.finishNum)
        if(num3 > 0){
        
-       taskid = 217;
+       taskid = list3.taskId;
        taskItemId = list3.taskItemId
+
        await doTask()
        await $.wait(2000)
        await DoTask()
@@ -263,11 +269,11 @@ async function getlist(){
         }
        
 
-       let list4 = result.data.taskList.find(item => item.taskId == 218)
+       let list4 = result.data.taskList.find(item => item.taskItemType == "SKU")
        num4 = Number(list4.totalNum) - Number(list4.finishNum)
        if(num4 > 0){
       
-       taskid = 218;
+       taskid = list4.taskId;
        taskItemId = list4.taskItemId
        await doTask()
        await $.wait(2000)
@@ -277,12 +283,12 @@ async function getlist(){
         $.log("任务已完成")
         }
        
-       let list5 = result.data.taskList.find(item => item.taskId == 219)
+       let list5 = result.data.taskList.find(item => item.taskItemType == "CHANNEL")
        
        num5 = Number(list5.totalNum) - Number(list5.finishNum)
       if(num5 > 0){
        
-       taskid = 219;
+       taskid = list5.taskId;
        taskItemId = list5.taskItemId
        await doTask()
        await $.wait(2000)
@@ -295,12 +301,13 @@ async function getlist(){
            $.log(result.echo+"错误！\n")
         }
         if(num1 > 0 || num3 >  0|| num4 > 0 || num5 > 0){
-          await getlist()
-         }
          if(num >= 5){
           console.log("\n⚠️发生错误，脚本自动退出")
           return;
          }
+          await getlist()
+         }
+         
         }catch(e) {
           $.logErr(e, response);
       } finally {
