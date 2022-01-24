@@ -7,10 +7,6 @@
 ##############短期活动##############
 #京东极速版红包(活动时间：2021-5-5至？)
 44 0 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
-#女装盲盒（活动时间：2021-8-5至2021-8-31）
-35 1,23 * * *  node /scripts/jd_nzmh.js >> /scripts/logs/jd_nzmh.log 2>&1
-#金榜创造营 活动时间：2021-05-21至2021-12-31
-0 1,22 * * * node /scripts/jd_gold_creator.js >> /scripts/logs/jd_gold_creator.log 2>&1
 #半点京豆雨
 #30 16-23/1 * * *  node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
 #柠檬推一推
@@ -85,8 +81,6 @@
 0 0,6-22/2 * * *  node /scripts/jd_foodRunning.js >> /scripts/logs/jd_foodRunning.log 2>&1  
 #京东金融-每日签到
 49 8 * * * node /scripts/jd_jdjrjf.js >> /scripts/logs/jd_jdjrjf.log 2>&1 
-#5G盲盒2021年11月1日到2022年1月28日
-5 0,1-23/3 * * *  node /scripts/jd_mohe.js >> /scripts/logs/jd_mohe.log 2>&1 
 #美丽研究院--兑换
 #5 0,1-23/3 * * *  node /scripts/jd_beauty_ex.js  >> /scripts/logs/jd_beauty_ex.log 2>&1 
 #京喜财富岛合成生鲜
@@ -119,12 +113,8 @@
 24 3,13 * * * node /scripts/jd_cjhz.js   >> /scripts/logs/jd_cjhz.log 2>&1  
 #天天压岁钱
 33 0,22 * * *  node /scripts/jd_ttysq.js   >> /scripts/logs/jd_ttysq.log 2>&1  
-#年兽店铺大富翁，蚊子腿鞭炮
-0 7 * * * node /scripts/jd_dns_shop.js  >> /scripts/logs/jd_dns_shop.log 2>&1  
 #白条抽奖
 35 8 13-31,1-7 1,2 * node /scripts/jd_bt_sign.js  >> /scripts/logs/jd_bt_sign.log 2>&1  
-#狂欢城抽奖
-50 0 * * * node /scripts/jd_kuanghuan_open.js  >> /scripts/logs/jd_kuanghuan_open.log 2>&1 
 #萌虎摇摇乐
 15 0,12,18 * * *  node /scripts/jd_tiger.js   >> /scripts/logs/jd_tiger.log 2>&1
 #点鞭炮赢京豆
