@@ -113,8 +113,6 @@
 33 0,22 * * *  node /scripts/jd_ttysq.js   >> /scripts/logs/jd_ttysq.log 2>&1  
 #白条抽奖
 35 8 13-31,1-7 1,2 * node /scripts/jd_bt_sign.js  >> /scripts/logs/jd_bt_sign.log 2>&1  
-#萌虎摇摇乐
-15 0,12,18 * * *  node /scripts/jd_tiger.js   >> /scripts/logs/jd_tiger.log 2>&1
 #点鞭炮赢京豆
 15 10 * * *  node /scripts/jd_festival.js   >> /scripts/logs/jd_festival.log 2>&1
 
