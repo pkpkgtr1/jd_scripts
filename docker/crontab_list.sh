@@ -101,8 +101,6 @@
 3 1,11 * * * node /scripts/jd_m_sign.js  >> /scripts/logs/jd_m_sign.log 2>&1
 #通天塔签到共建
 53 0,12 * * * node /scripts/jd_babel_sign.js >> /scripts/logs/jd_babel_sign.log 2>&1 
-#年货签到
-14 1,20 * * *  node /scripts/jd_nh_sign.js  >> /scripts/logs/jd_nh_sign.log 2>&1 
 #京享红包
 0 0,20,21 * * * node /scripts/jd_redEnvelope.js  >> /scripts/logs/jd_redEnvelope.log 2>&1 
 #会场红包
