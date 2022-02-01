@@ -16,7 +16,7 @@ const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 
-const linkIdArr = ["7ya6o83WSbNhrbYJqsMfFA"];
+const linkIdArr = ["7ya6o83WSbNhrbYJqsMfFA","Eu7-E0CUzqYyhZJo9d3YkQ"];
 let linkId;
 const signLinkId = '9WA12jYGulArzWS7vcrwhw';
 
@@ -79,7 +79,7 @@ async function jsRedPacket() {
     }
     await redPacketList()
 
-    console.log("===================签到提现===================")
+    /*console.log("===================签到提现===================")
     await $.wait(5000 + Math.floor(Math.random()*500))
     await sign();
     // 默认加速
@@ -88,7 +88,7 @@ async function jsRedPacket() {
       await speedUp()
       await $.wait(2000)
     }
-    await signList()
+    await signList()*/
 
     await showMsg()
   } catch (e) {
