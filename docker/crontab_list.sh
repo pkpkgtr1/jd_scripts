@@ -6,7 +6,7 @@
 
 ##############短期活动##############
 #京东极速版红包(活动时间：2021-5-5至？)
-44 0 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
+44 8,11 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
 #半点京豆雨
 #30 16-23/1 * * *  node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
 #柠檬推一推
@@ -113,7 +113,8 @@
 35 8 13-31,1-7 1,2 * node /scripts/jd_bt_sign.js  >> /scripts/logs/jd_bt_sign.log 2>&1  
 #点鞭炮赢京豆
 15 10 * * *  node /scripts/jd_festival.js   >> /scripts/logs/jd_festival.log 2>&1
-
+#击鼓助力
+15 10,22 31,1 1,2 *  node /scripts/jd_drum.js   >> /scripts/logs/jd_drum.log 2>&1
 
 ##############长期活动##############
 # 签到
