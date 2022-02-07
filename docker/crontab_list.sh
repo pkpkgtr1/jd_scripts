@@ -10,7 +10,7 @@
 #半点京豆雨
 #30 16-23/1 * * *  node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
 #柠檬推一推
-0 0 * * * node /scripts/jd_tyt.js  >> /scripts/logs/jd_tyt.log 2>&1
+0 3 * * * node /scripts/jd_tyt.js  >> /scripts/logs/jd_tyt.log 2>&1
 #柠檬众筹许愿池
 0 6 * * * node /scripts/jd_wish.js  >> /scripts/logs/jd_wish.log 2>&1
 #天天优惠大乐透
