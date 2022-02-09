@@ -13,7 +13,6 @@ TG频道：https://t.me/tom_210120
 const $ = new Env('京东幸福小店');
 const jsname = '京东幸福小店'
 const logDebug = 0
-const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notifyFlag = 1; //0为关闭通知，1为打开通知,默认为1
 const notify = $.isNode() ? require('./sendNotify') : '';
 let notifyStr = ''
@@ -21,17 +20,10 @@ let notifyStr = ''
 let httpResult //global buffer
 
 
-let userCookie = process.env.JD_COOKIE
+let userCookie = process.env.JD_COOKIE1
 let userCookieArr = []
 let userList = []
-if ($.isNode()) {
-  Object.keys(jdCookieNode).forEach((item) => {
-    cookiesArr.push(jdCookieNode[item])
-  })
-  if (process.env.JD_DEBUG && process.env.JD_DEBUG === 'false') console.log = () => {};
-} else {
-  userCookieArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
-}
+
 
 let userIdx = 0
 let userCount = 0
