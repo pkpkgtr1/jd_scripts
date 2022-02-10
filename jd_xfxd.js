@@ -15,7 +15,7 @@ let notifyStr = ''
 
 let httpResult //global buffer
 
-let userCookie = process.env.JD_COOKIE
+let userCookie = process.env.JD_COOKIE1
 let userCookieArr = []
 let userList = []
 
