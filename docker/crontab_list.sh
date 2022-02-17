@@ -115,6 +115,8 @@
 15 10 * * *  node /scripts/jd_festival.js   >> /scripts/logs/jd_festival.log 2>&1
 #击鼓助力
 15 10,22 31,1 1,2 *  node /scripts/jd_drum.js   >> /scripts/logs/jd_drum.log 2>&1
+#颜究种植园
+15 10,22 31,1 1,2 *  node /scripts/jd_xinruimz.js  >> /scripts/logs/jd_xinruimz.log 2>&1
 
 ##############长期活动##############
 # 签到
