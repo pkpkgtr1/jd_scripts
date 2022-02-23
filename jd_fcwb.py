@@ -9,6 +9,7 @@ new Env('发财挖宝');
 '''
 import os,json,random,time,re,string,functools,asyncio
 import sys
+import wskey_to_jdcookie
 sys.path.append('../../tmp')
 print('\n运行本脚本之前请手动进入游戏点击一个方块\n')
 print('\n挖的如果都是0.01红包就是黑了，别挣扎了！\n')
@@ -84,7 +85,9 @@ class Judge_env(object):
         if '/jd' in os.path.abspath(os.path.dirname(__file__)):
             cookie_list=self.v4_cookie()
         else:
-            cookie_list=os.environ["JD_COOKIE"].split('&')       # 获取cookie_list的合集
+            js_ck_list =wskey_to_jdcookie.read_js_cookie()
+            cookie_list=js_ck_list.split('&') 
+            #cookie_list=os.environ["JD_COOKIE"].split('&')       # 获取cookie_list的合集
         if len(cookie_list)<1:
             print('请填写环境变量JD_COOKIE\n')    
         return cookie_list
