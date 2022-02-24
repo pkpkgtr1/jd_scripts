@@ -38,7 +38,7 @@ account = ''
 charge_targe_id = ''
 cookies = []
 charge_targe_ids = ''
-
+import wskey_to_jdcookie
 import requests
 import time,datetime
 import requests,re,os,sys,random,json
@@ -128,7 +128,7 @@ except:
 
 
 cookies1 = []
-cookies1 = os.environ["JD_COOKIE"]
+cookies1 = read_js_cookie()
 cookies = cookies1.split ('&')
 
 
