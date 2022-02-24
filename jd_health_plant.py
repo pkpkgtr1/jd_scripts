@@ -7,7 +7,7 @@
 Author: 一风一扬
 功能：健康社区-种植园自动任务
 Date: 2022-1-4
-cron: 23 11,13,21 * * * xF_jd_health_plant.py
+cron: 23 11,13,21 * * * jd_health_plant.py
 new Env('京东健康社区-种植园自动任务');
 
 
@@ -127,35 +127,9 @@ except:
 #######################################################################
 
 
-if "plant_cookie" in os.environ:
-    if len (os.environ["plant_cookie"]) == 1:
-        is_ck = int(os.environ["plant_cookie"])
-        cookie1 = os.environ["JD_COOKIE"].split('&')
-        cookie = cookie1[is_ck-1]
-        printT ("已获取并使用Env环境cookie")
-    elif len (os.environ["plant_cookie"]) > 1:
-        cookies1 = []
-        cookies1 = os.environ["JD_COOKIE"]
-        cookies1 = cookies1.split ('&')
-        is_ck = os.environ["plant_cookie"].split('&')
-        for i in is_ck:
-            cookies.append(cookies1[int(i)-1])
-        printT ("已获取并使用Env环境plant_cookies")
-else:
-    if cookie == '':
-        printT ("变量plant_cookie未填写")
-        exit (0)
-
-if "charge_targe_id" in os.environ:
-    if len (os.environ["charge_targe_id"]) > 8:
-        charge_targe_ids = os.environ["charge_targe_id"]
-        charge_targe_ids = charge_targe_ids.split ('&')
-    else:
-        charge_targe_id = os.environ["charge_targe_id"]
-        printT (f"已获取并使用Env环境 charge_targe_id={charge_targe_id}")
-else:
-    printT("变量charge_targe_id未填写，无法充能")
-
+cookies1 = []
+cookies1 = os.environ["JD_COOKIE"]
+cookies = cookies1.split ('&')
 
 
 def userAgent():
@@ -257,7 +231,7 @@ def get_ck(token,sid_ck,account):
             "cookie": f"{token}",
             'host': 'api.m.jd.com',
             # 'User-Agent': 'jdapp;iPhone;9.4.8;14.3;809409cbd5bb8a0fa8fff41378c1afe91b8075ad;network/wifi;ADID/201EDE7F-5111-49E8-9F0D-CCF9677CD6FE;supportApplePay/0;hasUPPay/0;hasOCPay/0;model/iPhone13,4;addressid/2455696156;supportBestPay/0;appBuild/167629;jdSupportDarkMode/0;Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1',
-            'user-Agent': "JD4iPhone/167922%20(iPhone;%20iOS;%20Scale/2.00)",
+            'user-Agent': userAgent (),
             'accept-Encoding': 'gzip, deflate, br',
             'accept-Language': 'zh-Hans-CN;q=1',
             "content-type":"application/x-www-form-urlencoded",
@@ -305,7 +279,7 @@ def get_Authorization(access_token,account):
         # print(access_token)
         return access_token
     except Exception as e:
-        msg("账号【{0}】获取Authorization失败，cookie过期".format(account))
+        msg("账号【{0}】获取Authorization失败，活动火爆，请稍后再试".format(account))
 
 #获取已种植的信息
 def get_planted_info(cookies,sid,account):
@@ -335,6 +309,9 @@ def get_planted_info(cookies,sid,account):
             print(f"【账号{account}】所种植的",f"【{name}】","充能ID为:",planted_id)
             name_list.append(name)
             planted_id_list.append(planted_id)
+            global charge_targe_id
+            charge_targe_id=str(planted_id)
+            break
         except Exception as e:
             pass
     print('\n\n')
@@ -511,6 +488,9 @@ def do_task2(cookies,taskName,taskId,taskToken,sid,account):
 
 #充能
 def charge(charge_targe_id,cookies,sid,account):
+    if len(charge_targe_id)==0:
+        msg("账号【{0}】未种植".format(account))
+        return
     try:
         url = 'https://xinruismzd-isv.isvjcloud.com/api/add_growth_value'
         headers = {
@@ -568,15 +548,11 @@ def start():
                     do_task2 (cookie, taskName, taskId, i, sid,account)
                 charge(charge_targe_id,cookie,sid, account)
         elif cookies != '':
-            for cookie, charge_targe_id in zip (cookies, charge_targe_ids):
-                account = setName (cookie)
-                access_token = get_ck (cookie, sid_ck, account)
-                cookie = get_Authorization (access_token, account)
-                get_planted_info (cookie, sid,account)
-            for cookie,charge_targe_id in zip(cookies,charge_targe_ids):
+            for cookie in cookies:
                 try:
                     account = setName (cookie)
                     msg ("★★★★★正在账号{}的任务★★★★★".format (account))
+                    charge_targe_id=''
                     access_token = get_ck (cookie, sid_ck,account)
                     cookie = get_Authorization (access_token, account)
                     get_planted_info (cookie,sid,account)
