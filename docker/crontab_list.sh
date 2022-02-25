@@ -37,8 +37,8 @@
 34 5,18 * * *  node /scripts/jd_fan.js >> /scripts/logs/jd_fan.log 2>&1  
 #内容鉴赏官
 15 3,6 * * *  node /scripts/jd_connoisseur.js >> /scripts/logs/jd_connoisseur.log 2>&1
-#京喜财富岛合成月饼
-13 6,13,23 * * * node /scripts/jd_cfd_mooncake.js >> /scripts/logs/jd_cfd_mooncake.log 2>&1 
+#京喜财富岛合成月饼（升级）
+#13 6,13,23 * * * node /scripts/jd_cfd_mooncake.js >> /scripts/logs/jd_cfd_mooncake.log 2>&1 
 # 母婴-跳跳乐
 1 0,11,21 * * * node /scripts/jd_jump.js >> /scripts/logs/jd_jump.log 2>&1 
 # 东东世界
@@ -85,8 +85,8 @@
 45 7-23/1 * * *  node /scripts/jd_cfd_fresh.js >> /scripts/logs/jd_cfd_fresh.log 2>&1 
 #京喜财富岛合成生鲜兑换
 0 0,12 * * * node /scripts/jd_cfd_fresh_exchange.js >> /scripts/logs/jd_cfd_fresh_exchange.log 2>&1 
-#财富岛珍珠合成红包兑换
-59 0-23/1 * * * node /scripts/jd_cfd_pearl_ex.js >> /scripts/logs/jd_cfd_pearl_ex.log 2>&1 
+#财富岛珍珠合成红包兑换（活动升级）
+#59 0-23/1 * * * node /scripts/jd_cfd_pearl_ex.js >> /scripts/logs/jd_cfd_pearl_ex.log 2>&1 
 #京东赚赚
 10 3 * * *  node /scripts/jd_jdzz.js >> /scripts/logs/jd_jdzz.log 2>&1 
 #星系牧场
