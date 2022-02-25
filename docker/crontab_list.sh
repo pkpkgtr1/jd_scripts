@@ -117,8 +117,8 @@
 15 10,22 31,1 1,2 *  node /scripts/jd_drum.js   >> /scripts/logs/jd_drum.log 2>&1
 #颜究种植园
 15 10,22 31,1 1,2 *  node /scripts/jd_xinruimz.js  >> /scripts/logs/jd_xinruimz.log 2>&1
-#监控社区种植
-15 6,17 * * * cd /scripts && python3 jd_health_plant.py  >> /scripts/logs/jd_health_plant.log 2>&1
+#健康社区种植
+#15 6,17 * * * cd /scripts && python3 jd_health_plant.py  >> /scripts/logs/jd_health_plant.log 2>&1
 
 ##############长期活动##############
 # 签到
