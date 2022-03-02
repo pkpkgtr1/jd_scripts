@@ -106,9 +106,7 @@
 #会场红包
 0 0,12,20-23 * * * node /scripts/jd_nhs_red.js  >> /scripts/logs/jd_nhs_red.log 2>&1 
 #京东超级盒子
-24 3,13 * * * node /scripts/jd_cjhz.js   >> /scripts/logs/jd_cjhz.log 2>&1  
-#天天压岁钱
-33 0,22 * * *  node /scripts/jd_ttysq.js   >> /scripts/logs/jd_ttysq.log 2>&1  
+24 3,13 * * * node /scripts/jd_cjhz.js   >> /scripts/logs/jd_cjhz.log 2>&1   
 #白条抽奖
 35 8 13-31,1-7 1,2 * node /scripts/jd_bt_sign.js  >> /scripts/logs/jd_bt_sign.log 2>&1  
 #点鞭炮赢京豆
@@ -117,6 +115,8 @@
 15 10,22 31,1 1,2 *  node /scripts/jd_drum.js   >> /scripts/logs/jd_drum.log 2>&1
 #颜究种植园
 15 10,22 31,1 1,2 *  node /scripts/jd_xinruimz.js  >> /scripts/logs/jd_xinruimz.log 2>&1
+#女装盲盒
+33 0,22 * * *  node /scripts/jd_nzmh.js   >> /scripts/logs/jd_nzmh.log 2>&1  
 #健康社区种植
 #15 6,17 * * * cd /scripts && python3 jd_health_plant.py  >> /scripts/logs/jd_health_plant.log 2>&1
 
