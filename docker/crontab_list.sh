@@ -96,7 +96,7 @@
 #生活特权
 26 22 * *  node /scripts/jd_week.js >> /scripts/logs/jd_week.log 2>&1 
 #京东特价翻翻乐
-15 0,8 * * * node /scripts/jd_jdtj_winner.js  >> /scripts/logs/jd_jdtj_winner.log 2>&1 
+#15 0,8 * * * node /scripts/jd_jdtj_winner.js  >> /scripts/logs/jd_jdtj_winner.log 2>&1 
 #京东通天塔--签到
 3 1,11 * * * node /scripts/jd_m_sign.js  >> /scripts/logs/jd_m_sign.log 2>&1
 #通天塔签到共建
