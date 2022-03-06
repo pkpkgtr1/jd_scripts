@@ -119,7 +119,20 @@
 33 0,22 * * *  node /scripts/jd_nzmh.js   >> /scripts/logs/jd_nzmh.log 2>&1  
 #健康社区种植
 #15 6,17 * * * cd /scripts && python3 jd_health_plant.py  >> /scripts/logs/jd_health_plant.log 2>&1
-
+#逛plus，抽京豆
+33 0,22 * * *  node /scripts/jd_plusReward.js  >> /scripts/logs/jd_plusReward.log 2>&1  
+#3.3~3.18 约惠女王节 嗨购不停
+30 1 19,4-18 3 * node /scripts/jd_opencardL92.js  >> /scripts/logs/jd_opencardL92.log 2>&1
+#3.1-3.8 京东粉丝联盟福利社 入会赢专享好礼
+30 1,14 1-8 3 * node /scripts/jd_opencardL87.js >> /scripts/logs/jd_opencardL87.log 2>&1
+#3.1-3.8 约惠女神节，惊喜享不停
+31 4,13 1-8 3 * node /scripts/jd_opencardL88.js >> /scripts/logs/jd_opencardL88.log 2>&1 
+#3.1-3.15 集卡女王驾到
+30 7,16 1-15 3 * node /scripts/jd_opencardL89.js >> /scripts/logs/jd_opencardL89.log 2>&1 
+#3.1-3.8 会员联合狂欢
+31 18 1-8 3 * node /scripts/jd_opencardL90.js >> /scripts/logs/jd_opencardL90.log 2>&1 
+#3.5-3.18 女王驾到 钜惠来袭
+51 6,18 1-8 3 * node /scripts/jd_opencardL94.js >> /scripts/logs/jd_opencardL94.log 2>&1 
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
