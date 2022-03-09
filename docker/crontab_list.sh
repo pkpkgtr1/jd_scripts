@@ -33,8 +33,6 @@
 33 7,19 * * *  node /scripts/jd_dwapp.js >> /scripts/logs/jd_dwapp.log 2>&1  
 #特物Z|万物皆可国创
 30 16,2 * * * node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1    
-#粉丝签到
-34 5,18 * * *  node /scripts/jd_fan.js >> /scripts/logs/jd_fan.log 2>&1  
 #内容鉴赏官
 15 3,6 * * *  node /scripts/jd_connoisseur.js >> /scripts/logs/jd_connoisseur.log 2>&1
 #京喜财富岛合成月饼（升级）
@@ -125,12 +123,8 @@
 30 1 19,4-18 3 * node /scripts/jd_opencardL92.js  >> /scripts/logs/jd_opencardL92.log 2>&1
 #3.1-3.8 京东粉丝联盟福利社 入会赢专享好礼
 30 1,14 1-8 3 * node /scripts/jd_opencardL87.js >> /scripts/logs/jd_opencardL87.log 2>&1
-#3.1-3.8 约惠女神节，惊喜享不停
-31 4,13 1-8 3 * node /scripts/jd_opencardL88.js >> /scripts/logs/jd_opencardL88.log 2>&1 
 #3.1-3.15 集卡女王驾到
 30 7,16 1-15 3 * node /scripts/jd_opencardL89.js >> /scripts/logs/jd_opencardL89.log 2>&1 
-#3.1-3.8 会员联合狂欢
-31 18 1-8 3 * node /scripts/jd_opencardL90.js >> /scripts/logs/jd_opencardL90.log 2>&1 
 #3.5-3.18 女王驾到 钜惠来袭
 51 6,18 1-8 3 * node /scripts/jd_opencardL94.js >> /scripts/logs/jd_opencardL94.log 2>&1 
 ##############长期活动##############
