@@ -125,6 +125,13 @@
 51 6,18 1-8 3 * node /scripts/jd_opencardL94.js >> /scripts/logs/jd_opencardL94.log 2>&1 
 #3.10-3.16 男士品类日
 25 15 10-16 3 * node /scripts/jd_opencardL95.js >> /scripts/logs/jd_opencardL95.log 2>&1
+# 头文子J
+10 8 * * * node /scripts/jd_mpdzcar.js >> /scripts/logs/jd_mpdzcar.log 2>&1
+#头文字J 游戏
+10 6,10,12 * * *  node /scripts/jd_mpdzcar_game.js >> /scripts/logs/jd_mpdzcar_game.log 2>&1
+#头文子J助力
+10 2 * * * node /scripts/jd_mpdzcar_help.js >> /scripts/logs/jd_mpdzcar_help.log 2>&1 
+
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
