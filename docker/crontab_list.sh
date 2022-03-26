@@ -28,7 +28,7 @@
 #京喜领88元红包
 4 10,16,21,16,21 * * *  node /scripts/jd_jxlhb.js  >> /scripts/logs/jd_jxlhb.log 2>&1
 #京喜签到
-30 0,22 * * * node /scripts/jx_sign.js  >> /scripts/logs/jx_sign.log 2>&1  
+30 0,22 * * * node /scripts/jd_jx_sign.js   >> /scripts/logs/jd_jx_sign.log 2>&1  
 #积分换话费
 33 7,19 * * *  node /scripts/jd_dwapp.js >> /scripts/logs/jd_dwapp.log 2>&1  
 #特物Z|万物皆可国创
@@ -73,8 +73,6 @@
 #40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1 
 #饭粒
 0 9-22/1 9-20 11 * node /scripts/jd_fanli.js >> /scripts/logs/jd_fanli.log 2>&1 
-#京东金融-每日签到
-49 8 * * * node /scripts/jd_jdjrjf.js >> /scripts/logs/jd_jdjrjf.log 2>&1 
 #美丽研究院--兑换
 #5 0,1-23/3 * * *  node /scripts/jd_beauty_ex.js  >> /scripts/logs/jd_beauty_ex.log 2>&1 
 #京喜财富岛合成生鲜
@@ -230,8 +228,6 @@
 18 0,6-23/2 * * * node /scripts/gua_wealth_island.js  >> /scripts/logs/gua_wealth_island.log 2>&1 
 #财富大陆(京喜财富岛)
 18 0-23/2 * * * node /scripts/jd_cfd.js  >> /scripts/logs/jd_cfd.log 2>&1 
-#店铺签到
-0 0 * * *  node /scripts/jd_shop_sign.js >> /scripts/logs/jd_shop_sign.log 2>&1 
 #汪汪乐园每日任务
 20 7,9,17,20 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1 
 #汪汪乐园
