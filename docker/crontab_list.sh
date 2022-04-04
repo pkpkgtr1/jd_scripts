@@ -16,7 +16,7 @@
 #天天优惠大乐透
 15 6 * * *  node /scripts/jd_DrawEntrance.js   >> /scripts/logs/jd_DrawEntrance.log 2>&1  
 #省钱大赢家之翻翻乐
-1 0-12/1 * * *  node /scripts/jd_big_winner.js   >> /scripts/logs/jd_big_winner.log 2>&1  
+1 0-12/6 * * *  node /scripts/jd_big_winner.js   >> /scripts/logs/jd_big_winner.log 2>&1  
 #小鸽有礼
 13 1,22,23 * * *  node /scripts/jd_daily_lottery.js   >> /scripts/logs/jd_daily_lottery.log 2>&1
 #添加MM领京豆
@@ -52,7 +52,7 @@
 #攒金币 赢大礼
 22 0,8 * * * node /scripts/jd_GoldcoinToGift.js >> /scripts/logs/jd_GoldcoinToGift.log 2>&1
 #城城领现金
-0 0-23/5,22 10 * * node /scripts/gua_city.js >> /scripts/logs/gua_city.log 2>&1
+#0 0-23/5,22 10 * * node /scripts/gua_city.js >> /scripts/logs/gua_city.log 2>&1
 #京东超市 限时抢京豆
 23 7,9 * * *  node /scripts/jd_xsljd.js >> /scripts/logs/jd_xsljd.log 2>&1 
 #预售福利机
@@ -60,7 +60,7 @@
 #电竞预言家瓜分京豆
 23 10,11 * * * node /scripts/jd_lol.js >> /scripts/logs/jd_lol.log 2>&1  
 #发财大赢家
-#1 6-22/3 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1 
+#1 6-22/6 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1 
 #京东超级盒子
 40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1 
 #京喜-首页-牛牛福利
