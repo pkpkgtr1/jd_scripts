@@ -232,7 +232,7 @@ async function doJoyMoveUpAll(activityJoyList, workJoyInfoList) {
     await doJoyMoveUpAll($.activityJoyList, $.workJoyInfoList)
   }
   else if ($.JOY_COIN_MAXIMIZE) {
-    await joyCoinMaximize(workJoyInfoUnlockList)
+    //await joyCoinMaximize(workJoyInfoUnlockList)
   }
 
 }
