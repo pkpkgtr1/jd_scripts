@@ -125,7 +125,9 @@
 10 5 * * * node /scripts/jd_dpqd.js >> /scripts/logs/jd_dpqd.log 2>&1 
 #手机城
 10 5 * * * node /scripts/jd_carnivalcity.js >> /scripts/logs/jd_carnivalcity.log 2>&1 
-
+31 1 10-18/3 4 *   node /scripts/jd_gjlh.js >> /scripts/logs/jd_gjlh.log 2>&1
+31 14 9-21/3 4 *  node /scripts/jd_mncryyj.js >> /scripts/logs/jd_mncryyj.log 2>&1
+ 
 ##############长期活动##############
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
