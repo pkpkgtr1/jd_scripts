@@ -127,6 +127,8 @@
 31 14 9-21/3 4 *  node /scripts/jd_mncryyj.js >> /scripts/logs/jd_mncryyj.log 2>&1
  
 ##############长期活动##############
+#极速版签到
+30 0 * * * node /scripts/jd_js_sign.js >> /scripts/logs/jd_js_sign.log 2>&1
 # 签到
 7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
 # 东东超市兑换奖品
