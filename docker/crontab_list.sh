@@ -123,6 +123,8 @@
 10 2 * * * node /scripts/jd_mpdzcar_help.js >> /scripts/logs/jd_mpdzcar_help.log 2>&1 
 #店铺签到
 10 5 * * * node /scripts/jd_dpqd.js >> /scripts/logs/jd_dpqd.log 2>&1 
+#发财挖宝助力
+10 6 * * * node /scripts/jd_fcwb_help.js >> /scripts/logs/jd_fcwb_help.log 2>&1
 #手机城
 10 5 * * * node /scripts/jd_carnivalcity.js >> /scripts/logs/jd_carnivalcity.log 2>&1 
 31 1 10-18/3 4 *   node /scripts/jd_gjlh.js >> /scripts/logs/jd_gjlh.log 2>&1
