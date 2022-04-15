@@ -6,7 +6,7 @@
 
 ##############短期活动##############
 #京东极速版红包(活动时间：2021-5-5至？)
-44 8,11 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
+#44 8,11 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
 #半点京豆雨
 #30 16-23/1 * * *  node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
 #柠檬推一推
@@ -16,7 +16,7 @@
 #天天优惠大乐透
 15 6 * * *  node /scripts/jd_DrawEntrance.js   >> /scripts/logs/jd_DrawEntrance.log 2>&1  
 #省钱大赢家之翻翻乐
-1 0-12/6 * * *  node /scripts/jd_big_winner.js   >> /scripts/logs/jd_big_winner.log 2>&1  
+#1 0-12/6 * * *  node /scripts/jd_big_winner.js   >> /scripts/logs/jd_big_winner.log 2>&1  
 #小鸽有礼
 13 1,22,23 * * *  node /scripts/jd_daily_lottery.js   >> /scripts/logs/jd_daily_lottery.log 2>&1
 #添加MM领京豆
@@ -46,7 +46,7 @@
 #集魔方
 6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1 
 # 京喜财富岛热气球
-30 * * * * node /scripts/jd_cfd_loop.js >> /scripts/logs/jd_cfd_loop.log 2>&1
+#30 * * * * node /scripts/jd_cfd_loop.js >> /scripts/logs/jd_cfd_loop.log 2>&1
 #柠檬赚金币
 0 7 * * * node /scripts/jd_zjb.js >> /scripts/logs/jd_zjb.log 2>&1 
 #攒金币 赢大礼
@@ -56,9 +56,7 @@
 #京东超市 限时抢京豆
 23 7,9 * * *  node /scripts/jd_xsljd.js >> /scripts/logs/jd_xsljd.log 2>&1 
 #预售福利机
-5 0,2 * * * node /scripts/jd_ys.js >> /scripts/logs/jd_ys.log 2>&1  
-#电竞预言家瓜分京豆
-23 10,11 * * * node /scripts/jd_lol.js >> /scripts/logs/jd_lol.log 2>&1  
+5 0,2 * * * node /scripts/jd_ys.js >> /scripts/logs/jd_ys.log 2>&1    
 #发财大赢家
 #1 6-22/6 * * * node /scripts/jd_fcdyj.js >> /scripts/logs/jd_fcdyj.log 2>&1 
 #京东超级盒子
@@ -79,8 +77,6 @@
 45 7-23/1 * * *  node /scripts/jd_cfd_fresh.js >> /scripts/logs/jd_cfd_fresh.log 2>&1 
 #京喜财富岛合成生鲜兑换
 0 0,12 * * * node /scripts/jd_cfd_fresh_exchange.js >> /scripts/logs/jd_cfd_fresh_exchange.log 2>&1 
-#财富岛珍珠合成红包兑换（活动升级）
-#59 0-23/1 * * * node /scripts/jd_cfd_pearl_ex.js >> /scripts/logs/jd_cfd_pearl_ex.log 2>&1 
 #京东赚赚
 10 3 * * *  node /scripts/jd_jdzz.js >> /scripts/logs/jd_jdzz.log 2>&1 
 #星系牧场
