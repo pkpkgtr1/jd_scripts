@@ -205,7 +205,6 @@
 #41 0,23 * * * node /scripts/jd_price.js >> /scripts/logs/jd_price.log 2>&1
 #京东极速版签到+赚现金任务
 21 1,6 * * * node /scripts/jd_speed_sign.js >> /scripts/logs/jd_speed_sign.log 2>&1
-22 1,6 * * * node /scripts/jd_js_sign.js >> /scripts/logs/jd_js_sign.log 2>&1
 # 删除优惠券(默认注释，如需要自己开启，如有误删，已删除的券可以在回收站中还原，慎用)
 #20 9 * * 6 node /scripts/jd_delCoupon.js >> /scripts/logs/jd_delCoupon.log 2>&1
 #京喜工厂商品列表详情
@@ -229,7 +228,7 @@
 #京东签到图形验证
 14 2,10 * * * node /scripts/jd_sign_graphics.js >> /scripts/logs/jd_sign_graphics.log 2>&1   
 #京东试用
-14 10-20/4 * * * node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1 
+14 10-20/8 * * * node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1 
 #财富大陆
 18 0,6-23/2 * * * node /scripts/gua_wealth_island.js  >> /scripts/logs/gua_wealth_island.log 2>&1 
 #财富大陆(京喜财富岛)
