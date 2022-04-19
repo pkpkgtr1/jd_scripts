@@ -44,7 +44,7 @@
 # 东东世界兑换
 0 0 * * * node /scripts/jd_ddworld_exchange.js >> /scripts/logs/jd_ddworld_exchange.log 2>&1
 #集魔方
-6 8,20 * * * node /scripts/jd_mofang.js >> /scripts/logs/jd_mofang.log 2>&1 
+6 8,20 * * * node /scripts/jd_desire.js >> /scripts/logs/jd_desire.log 2>&1 
 # 京喜财富岛热气球
 #30 * * * * node /scripts/jd_cfd_loop.js >> /scripts/logs/jd_cfd_loop.log 2>&1
 #柠檬赚金币
