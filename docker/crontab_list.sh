@@ -230,7 +230,7 @@
 #京东试用
 #14 10-20/8 * * * node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1 
 #京东试用python版
-#14 7-15/7 * * * python3 /scripts/jd_try.py >> /scripts/logs/jd_try.log 2>&1 
+14 7-15/7 * * * python3 /scripts/jd_try.py >> /scripts/logs/jd_try.log 2>&1 
 #财富大陆
 18 0,6-23/2 * * * node /scripts/gua_wealth_island.js  >> /scripts/logs/gua_wealth_island.log 2>&1 
 #财富大陆(京喜财富岛)
