@@ -11,6 +11,7 @@ import os
 import requests
 import json
 import re
+import py_read_ck
 
 
 class jd:
@@ -23,8 +24,9 @@ class jd:
     # 申请的数据
     applyId= []
     # 添加cookie  os.environ["JD_COOKIE"].split("&")
-    cookie = os.environ["JD_COOKIE"].split("&")# 青龙面板的cookie获取
+    #cookie = os.environ["JD_COOKIE"].split("&")# 青龙面板的cookie获取
     # cookie = ["pt_key=AAJiV433ADA7ixoHjAK2TwFPT58RHxcFBn46UlzQml_6JO1p3PIoLYTUUV42RRcMmCZDM0oHQ20;pt_pin=jd_SdgQSvIEmZir;","pt_key=AAJiVhlLADAKH8IXFZTHiJi37pXybjB71bJ1-UXxoAhyZoTGIXyZPHsEm51bjoensstoCZTHga4;pt_pin=jd_580733dce44ac;"]#添加cookie
+    cookie = py_read_ck.read_ck()
     #查询数据申请的标题和商品id
     def query_num(self,page,tabId):
         data2 = 'ext={"prstate":"0"}&appid=newtry&functionId=try_feedsList&uuid=0333464346265636-3653664323631603&clientVersion=10.5.0&client=wh5&osVersion=10&area=22_1930_49322_49429&networkType=wifi&body={"geo":{"lng":103.997301,"lat":30.517789},"tabId":'+str(tabId)+',"page":'+str(page)+',"version":2,"source":"default","client":"app","previewTime":""}'
