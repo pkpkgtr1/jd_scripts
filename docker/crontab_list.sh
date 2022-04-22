@@ -69,8 +69,8 @@
 #0 9-22/1 9-20 11 * node /scripts/jd_super_redrain.js >> /scripts/logs/jd_super_redrain.log 2>&1 
 #发财挖宝
 #40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1 
-#饭粒
-0 9-22/1 9-20 11 * node /scripts/jd_fanli.js >> /scripts/logs/jd_fanli.log 2>&1 
+#粉丝签到
+0 9-22/1 9-20 11 * node /scripts/jd_fan.js >> /scripts/logs/jd_fan.log 2>&1 
 #美丽研究院--兑换
 #5 0,1-23/3 * * *  node /scripts/jd_beauty_ex.js  >> /scripts/logs/jd_beauty_ex.log 2>&1 
 #京喜财富岛合成生鲜
