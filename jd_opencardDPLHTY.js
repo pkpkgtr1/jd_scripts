@@ -52,7 +52,7 @@ $.activityEnd = false
 let lz_jdpin_token_cookie =''
 let activityCookie =''
 //此处修改助力码
-let helpnum = '8IgOKf+5WyAGyIlOgm/6vtPH3vYuPBb1K242gPzPNvcM1/5bn1kfgJfhWlCD+Ul2NlQTdHnDobG3YNSnH+XTYw=='
+let helpnum = 'b6+eYItgc4kD2obaBl3qca9AMkY4oJ31vhy6nI5LWbOiIw7XUQOP/Btn03/M1TYH'
 let DPLHTY = "";
 //修改1
 DPLHTY = '8143457b2586412c98c_220421';
