@@ -41,7 +41,8 @@ if ($.isNode()) {
 } else {
   cookiesArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
 }
-opencard_toShop = $.isNode() ? (process.env.opencard_toShop ? process.env.opencard_toShop : `${opencard_toShop}`) : ($.getdata('opencard_toShop') ? $.getdata('opencard_toShop') : `${opencard_toShop}`);
+//修改2（无需修改）
+opencard_toShop = true;
 
 allMessage = ""
 message = ""
@@ -53,7 +54,8 @@ let activityCookie =''
 //此处修改助力码
 let helpnum = '8IgOKf+5WyAGyIlOgm/6vtPH3vYuPBb1K242gPzPNvcM1/5bn1kfgJfhWlCD+Ul2NlQTdHnDobG3YNSnH+XTYw=='
 let DPLHTY = "";
-DPLHTY = $.isNode() ? (process.env.DPLHTY ? process.env.DPLHTY : `${DPLHTY}`) : ($.getdata('DPLHTY') ? $.getdata('DPLHTY') : `${DPLHTY}`);
+//修改1
+DPLHTY = '8143457b2586412c98c_220421';
 if (!DPLHTY){
     console.log(`\n请填写大牌联合通用开卡的活动ID,变量是DPLHTY\n`)
     return;
