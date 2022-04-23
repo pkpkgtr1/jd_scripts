@@ -4,7 +4,6 @@ Last Modified time: 2022-1-21
 活动入口：京东 首页秒杀
 更新地址：jd_ms.js
 
-
 已支持IOS双京东账号, Node.js支持N个京东账号
 脚本兼容: QuantumultX, Surge, Loon, 小火箭，JSBox, Node.js
 ============Quantumultx===============
