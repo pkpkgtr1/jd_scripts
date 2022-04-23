@@ -55,7 +55,7 @@ let activityCookie =''
 let helpnum = 'b6+eYItgc4kD2obaBl3qca9AMkY4oJ31vhy6nI5LWbOiIw7XUQOP/Btn03/M1TYH'
 let DPLHTY = "";
 //修改1
-DPLHTY = '8143457b2586412c98c_220421';
+DPLHTY = '05e2c482c9964ea_220423';
 if (!DPLHTY){
     console.log(`\n请填写大牌联合通用开卡的活动ID,变量是DPLHTY\n`)
     return;
