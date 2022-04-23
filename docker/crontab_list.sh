@@ -129,6 +129,7 @@
 31 1 10-18/3 4 *   node /scripts/jd_gjlh.js >> /scripts/logs/jd_gjlh.log 2>&1
 #4月蒙牛春日音乐节抽奖机
 31 14 9-21/3 4 *  node /scripts/jd_mncryyj.js >> /scripts/logs/jd_mncryyj.log 2>&1
+
  
 ##############长期活动##############
 #极速版签到
@@ -199,6 +200,8 @@
 10 */4 * * * node /scripts/jd_cash.js >> /scripts/logs/jd_cash.log 2>&1
 # 签到领现金
 15 0,7 * * * node /scripts/jd_ccSign.js >> /scripts/logs/jd_ccSign.log 2>&1
+#领现金微信版
+15 0,7 * * * node /scripts/jd_cash_wx.js >> /scripts/logs/jd_cash_wx.log 2>&1
 # 闪购盲盒
 47 8,22 * * * node /scripts/jd_sgmh.js >> /scripts/logs/jd_sgmh.log 2>&1
 # 京东秒秒币
