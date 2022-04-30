@@ -44,7 +44,7 @@ $.activityEnd = false
 let lz_jdpin_token_cookie =''
 let activityCookie =''
 //此处修改助力码，请务必自行删除修改，随便放的多个码子避免被助力太多。务必修改。
-let shareUuidArr = ["b6+eYItgc4kD2obaBl3qca9AMkY4oJ31vhy6nI5LWbOiIw7XUQOP/Btn03/M1TYH","ZfOVYAxr1KRKQyaFbtPqocjNhNaYFy2HteErE6izlhTf9nrGY7gBkCdGU4C6z/xD"]
+let shareUuidArr = ["b6+eYItgc4kD2obaBl3qca9AMkY4oJ31vhy6nI5LWbOiIw7XUQOP/Btn03/M1TYH","ZfOVYAxr1KRKQyaFbtPqocjNhNaYFy2HteErE6izlhTf9nrGY7gBkCdGU4C6z/xD","9N5xhzdQ+ucRns0DCfKuRF4tLNYA4seuA67MOIYQxEk3Vl9+AVo4NF+tgyeIc6A6kdK3rLBQpEQH9V4tdrrh0w=="]
 let s = Math.floor((Math.random()*8))
 let n = 0
 n = Math.floor((Math.random()*shareUuidArr.length))
