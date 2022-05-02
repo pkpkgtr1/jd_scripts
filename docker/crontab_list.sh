@@ -25,8 +25,6 @@
 18 0,1,9,14,18 * * *   node /scripts/gua_wealth_island_help.js    >> /scripts/logs/gua_wealth_island_help.log 2>&1 
 #真·抢京豆
 0 0 * * *  node /scripts/jd_angryBean.js   >> /scripts/logs/jd_angryBean.log 2>&1
-#京喜领88元红包
-4 10,16,21,16,21 * * *  node /scripts/jd_jxlhb.js  >> /scripts/logs/jd_jxlhb.log 2>&1
 #京喜签到
 30 0,22 * * * node /scripts/jd_jx_sign.js   >> /scripts/logs/jd_jx_sign.log 2>&1  
 #积分换话费
