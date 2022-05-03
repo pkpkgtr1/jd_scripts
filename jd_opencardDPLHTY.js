@@ -8,7 +8,7 @@
 变量填写：
 //export DPLHTY="活动ID"
 如：
-//export DPLHTY="eb3b560a0d7d407c9d048478ada07956"
+//export DPLHTY="824c227e1a2849d686e8b4ea5132832a"
 
 如需做浏览任务请设置环境变量：
 //export opencard_toShop="true"
