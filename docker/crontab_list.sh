@@ -88,47 +88,21 @@
 #京东通天塔--签到
 3 1,11 * * * node /scripts/jd_m_sign.js  >> /scripts/logs/jd_m_sign.log 2>&1
 #通天塔签到共建
-53 0,12 * * * node /scripts/jd_babel_sign.js >> /scripts/logs/jd_babel_sign.log 2>&1 
-#京享红包
-0 0,20,21 * * * node /scripts/jd_redEnvelope.js  >> /scripts/logs/jd_redEnvelope.log 2>&1 
-#会场红包
-0 0,12,20-23 * * * node /scripts/jd_nhs_red.js  >> /scripts/logs/jd_nhs_red.log 2>&1 
-#京东超级盒子
-24 3,13 * * * node /scripts/jd_cjhz.js   >> /scripts/logs/jd_cjhz.log 2>&1   
-#白条抽奖
-35 8 13-31,1-7 1,2 * node /scripts/jd_bt_sign.js  >> /scripts/logs/jd_bt_sign.log 2>&1  
-#点鞭炮赢京豆
-15 10 * * *  node /scripts/jd_festival.js   >> /scripts/logs/jd_festival.log 2>&1
-#击鼓助力
-15 10,22 31,1 1,2 *  node /scripts/jd_drum.js   >> /scripts/logs/jd_drum.log 2>&1
+53 0,12 * * * node /scripts/jd_babel_sign.js >> /scripts/logs/jd_babel_sign.log 2>&1  
 #颜究种植园
 15 10,22 31,1 1,2 *  node /scripts/jd_xinruimz.js  >> /scripts/logs/jd_xinruimz.log 2>&1
-#女装盲盒
-33 0,22 * * *  node /scripts/jd_nzmh.js   >> /scripts/logs/jd_nzmh.log 2>&1  
 #健康社区种植
 #15 6,17 * * * cd /scripts && python3 jd_health_plant.py  >> /scripts/logs/jd_health_plant.log 2>&1
-#逛plus，抽京豆
-33 0,22 * * *  node /scripts/jd_plusReward.js  >> /scripts/logs/jd_plusReward.log 2>&1  
-# 头文子J
-10 8 * * * node /scripts/jd_mpdzcar.js >> /scripts/logs/jd_mpdzcar.log 2>&1
-#头文字J 游戏
-10 6,10,12 * * *  node /scripts/jd_mpdzcar_game.js >> /scripts/logs/jd_mpdzcar_game.log 2>&1
-#头文子J助力
-10 2 * * * node /scripts/jd_mpdzcar_help.js >> /scripts/logs/jd_mpdzcar_help.log 2>&1 
 #店铺签到
 10 5 * * * node /scripts/jd_dpqd.js >> /scripts/logs/jd_dpqd.log 2>&1 
 #发财挖宝助力
 10 6 * * * node /scripts/jd_fcwb_help.js >> /scripts/logs/jd_fcwb_help.log 2>&1
 #开卡脚本
-30 12,16 19-31/3 4 * node /scripts/jd_opencardty.js >> /scripts/logs/jd_opencardty.log 2>&1
+#30 12,16 19-31/3 4 * node /scripts/jd_opencardty.js >> /scripts/logs/jd_opencardty.log 2>&1
 #通用开卡脚本
 30 12 * * * node /scripts/jd_opencardDPLHTY.js >> /scripts/logs/jd_opencardDPLHTY.log 2>&1
 #通用CJ组队瓜分
 30 12 * * * node /scripts/jd_cjzdgf.js >> /scripts/logs/jd_cjzdgf.log 2>&1
-#4月京东国际联合活动
-31 1 10-18/3 4 *   node /scripts/jd_gjlh.js >> /scripts/logs/jd_gjlh.log 2>&1
-#4月蒙牛春日音乐节抽奖机
-31 14 9-21/3 4 *  node /scripts/jd_mncryyj.js >> /scripts/logs/jd_mncryyj.log 2>&1
 
  
 ##############长期活动##############
