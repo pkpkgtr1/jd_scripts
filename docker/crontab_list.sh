@@ -182,4 +182,5 @@
 55 6 * * *  node /scripts/jd_unsubscriLive.js >> /scripts/logs/jd_unsubscriLive.log 2>&1 
 #（快过期）京豆兑换为喜豆
 33 0 * * *  node /scripts/jd_exchangejxbeans.js >> /scripts/logs/jd_exchangejxbeans.log 2>&1  
-
+#清理购物车
+33 0 */1 * *  node /scripts/jd_cleancart.js >> /scripts/logs/jd_cleancart.log 2>&1 
