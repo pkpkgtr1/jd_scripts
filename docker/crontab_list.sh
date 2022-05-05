@@ -63,8 +63,9 @@
 #30 12 * * * node /scripts/jd_opencardDPLHTY.js >> /scripts/logs/jd_opencardDPLHTY.log 2>&1
 #通用CJ组队瓜分
 #30 12 * * * node /scripts/jd_cjzdgf.js >> /scripts/logs/jd_cjzdgf.log 2>&1
+#特务集卡
+35 10,20 * * * node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1
 
- 
 ##############长期活动##############
 #极速版签到
 30 0 * * * node /scripts/jd_js_sign.js >> /scripts/logs/jd_js_sign.log 2>&1
