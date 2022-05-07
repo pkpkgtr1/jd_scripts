@@ -67,6 +67,8 @@
 35 10,20 * * * node /scripts/jd_superBrand.js >> /scripts/logs/jd_superBrand.log 2>&1
 #旺旺乐园任务
 35 6,7 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1
+#5.1-5.31 植选轻饮小店
+25 11 1-31 5 * node /scripts/jd_opencardL132.js >> /scripts/logs/jd_opencardL132.log 2>&1
 
 ##############长期活动##############
 #极速版签到
