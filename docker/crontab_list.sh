@@ -73,7 +73,8 @@
 25 11 1-31 5 * node /scripts/jd_opencardL132.js >> /scripts/logs/jd_opencardL132.log 2>&1
 #5.1-9.30 泉粉邀请卡
 30 5 7-31 5 * node /scripts/jd_opencardL133.js >> /scripts/logs/jd_opencardL133.log 2>&1
-
+#5.1-5.31 唤醒味蕾 伊样吃狂
+33 19 1-31 5 *  node /scripts/jd_opencardL134.js >> /scripts/logs/jd_opencardL134.log 2>&1
 
 ##############长期活动##############
 #极速版签到
