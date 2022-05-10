@@ -80,6 +80,10 @@
 33 19 1-31 5 *  node /scripts/jd_opencardL134.js >> /scripts/logs/jd_opencardL134.log 2>&1
 #5.8-5.31 洁净星愿
 33 3 8-31 5 * node /scripts/jd_opencardL135.js >> /scripts/logs/jd_opencardL135.log 2>&1
+#5.1-5.20 雅诗兰黛奢雅邀请入会有礼 
+33 2 1-20 5 * node /scripts/jd_opencardL136.js >> /scripts/logs/jd_opencardL136.log 2>&1
+#5.9-5.19 酒水会员盛典
+50 11 9-19 5 * node /scripts/jd_opencardL137.js >> /scripts/logs/jd_opencardL137.log 2>&1
 
 ##############长期活动##############
 #极速版签到
