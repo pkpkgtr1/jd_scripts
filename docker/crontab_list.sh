@@ -69,7 +69,10 @@
 35 6,7 * * * node /scripts/jd_joy_park_task.js >> /scripts/logs/jd_joy_park_task.log 2>&1
 #小鸽有礼微信签到
 06 6,7 * * * node /scripts/jd_xgyl_wx.js  >> /scripts/logs/jd_xgyl_wx.log 2>&1
-
+#入口：APP首页下拉-JOY庄园
+11 0,16 * * *  node /scripts/jd_joymanor_task.js  >> /scripts/logs/jd_joymanor_task.log 2>&1
+#5.1-5.30 云养牛，免费赢好礼
+31 7-20/1 1-30 5 *   node /scripts/jd_mnyyn.js  >> /scripts/logs/jd_mnyyn.log 2>&1
 
 ##############开卡活动##############
 #5.1-5.31 植选轻饮小店
