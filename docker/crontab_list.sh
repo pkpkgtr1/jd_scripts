@@ -85,7 +85,8 @@
 33 3 8-31 5 * node /scripts/jd_opencardL135.js >> /scripts/logs/jd_opencardL135.log 2>&1
 #5.9-5.19 酒水会员盛典
 50 11 9-19 5 * node /scripts/jd_opencardL137.js >> /scripts/logs/jd_opencardL137.log 2>&1
-
+#5.12~5.20 吃货来袭 惠聚好食光
+10 12 12-20 5 * node /scripts/jd_opencardL140.js >> /scripts/logs/jd_opencardL140.log 2>&1
 ##############长期活动##############
 #极速版签到
 30 0 * * * node /scripts/jd_js_sign.js >> /scripts/logs/jd_js_sign.log 2>&1
