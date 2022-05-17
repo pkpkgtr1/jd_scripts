@@ -75,6 +75,8 @@
 31 7-20/1 1-30 5 *   node /scripts/jd_mnyyn.js  >> /scripts/logs/jd_mnyyn.log 2>&1
 
 ##############开卡活动##############
+#5.5-6.20【金领冠】航天活动
+30 10 5-31,1-19 5,6 * node /scripts/jd_opencardL131.js >> /scripts/logs/jd_opencardL131.log 2>&1
 #5.1-5.31 植选轻饮小店
 25 11 1-31 5 * node /scripts/jd_opencardL132.js >> /scripts/logs/jd_opencardL132.log 2>&1
 #5.1-9.30 泉粉邀请卡
@@ -87,6 +89,13 @@
 50 11 9-19 5 * node /scripts/jd_opencardL137.js >> /scripts/logs/jd_opencardL137.log 2>&1
 #5.12~5.20 吃货来袭 惠聚好食光
 10 12 12-20 5 * node /scripts/jd_opencardL140.js >> /scripts/logs/jd_opencardL140.log 2>&1
+#5.15-5.28 童装童鞋盛典
+35 5 16-28 5 * node /scripts/jd_opencardL144.js >> /scripts/logs/jd_opencardL144.log 2>&1
+
+#5.16-5.23 情暖五月 以爱之名
+15 21 15-23 5 * node /scripts/jd_opencardL146.js >> /scripts/logs/jd_opencardL146.log 2>&1
+#5.17-6.1 爱上夏日 大牌献礼
+0 2 17-31,1 5,6 * node /scripts/jd_opencardL147.js >> /scripts/logs/jd_opencardL147.log 2>&1
 ##############长期活动##############
 #极速版签到
 30 0 * * * node /scripts/jd_js_sign.js >> /scripts/logs/jd_js_sign.log 2>&1
