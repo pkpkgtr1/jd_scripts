@@ -75,6 +75,9 @@
 31 7-20/1 1-30 5 *   node /scripts/jd_mnyyn.js  >> /scripts/logs/jd_mnyyn.log 2>&1
 #热爱奇旅
 25 0,6-23/2 * * *   node /scripts/jd_19E.js  >> /scripts/logs/jd_19E.log 2>&1
+#热爱奇旅助力+自动领取金币
+21 0,6-23/3 * * *   node /scripts/jd_19E_help.js  >> /scripts/logs/jd_19E_help.log 2>&1
+
 ##############开卡活动##############
 #5.5-6.20【金领冠】航天活动
 30 10 5-31,1-19 5,6 * node /scripts/jd_opencardL131.js >> /scripts/logs/jd_opencardL131.log 2>&1
