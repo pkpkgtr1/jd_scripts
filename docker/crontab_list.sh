@@ -91,15 +91,18 @@
 33 3 8-31 5 * node /scripts/jd_opencardL135.js >> /scripts/logs/jd_opencardL135.log 2>&1
 #5.15-5.28 童装童鞋盛典
 35 5 16-28 5 * node /scripts/jd_opencardL144.js >> /scripts/logs/jd_opencardL144.log 2>&1
-#5.16-5.23 情暖五月 以爱之名
-15 21 15-23 5 * node /scripts/jd_opencardL146.js >> /scripts/logs/jd_opencardL146.log 2>&1
 #5.17-6.1 爱上夏日 大牌献礼
 0 2 17-31,1 5,6 * node /scripts/jd_opencardL147.js >> /scripts/logs/jd_opencardL147.log 2>&1
-
 # 5.20~5.28 甜蜜派对 五月宠爱季
 32 12 21-28 5 * node /scripts/jd_opencardL151.js >> /scripts/logs/jd_opencardL151.log 2>&1
 #5.20~5.31 大牌优惠趴 五月爱相伴
 32 1 21-31 5 * node /scripts/jd_opencardL152.js >> /scripts/logs/jd_opencardL152.log 2>&1
+#5.23-6.20 会员联合狂欢  618百万京豆大派送
+20 0 23-31,1-20 5,6 * node /scripts/jd_opencardL155.js >> /scripts/logs/jd_opencardL155.log 2>&1
+##5.23-6.20 寻找潮配之旅
+18 2 23-31,1-20 5,6 * node /scripts/jd_opencardL156.js >> /scripts/logs/jd_opencardL156.log 2>&1
+
+
 ##############长期活动##############
 #极速版签到
 30 0 * * * node /scripts/jd_js_sign.js >> /scripts/logs/jd_js_sign.log 2>&1
