@@ -23,8 +23,9 @@ if ($.isNode()) {
         ...$.toObj($.getdata("CookiesJD") || "[]").map((item) => item.cookie)].filter((item) => !!item);
 }
 let activityList = [
-    {'id':'3cdf134438974b13bbc05d82d350e424','endTime':1653062399000},//2022-05-09---2022-05-20 飞利浦（PHILIPS ）家电官方京东自营旗舰店
-    {'id':'fa71725b1a6f44bdb40a77d4743baa99','endTime':1652630400000},//2022-05-07---2022-05-16 乐而雅旗舰店
+    {'id':'456b02e0ad1442c3bf1cc981d64ca0f8','endTime':1653932176000},//
+	{'id':'7ec61221978146358c0838c38e201d6b','endTime':1653932176000},//
+	{'id':'e0fd26e3c8174970a665b002cf4bf7d0','endTime':1653932176000},//
 ];
 !(async()=>{
 	activityList=getRandomArrayElements(activityList,activityList.length);
