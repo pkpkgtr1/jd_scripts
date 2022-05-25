@@ -73,10 +73,16 @@
 11 0,16 * * *  node /scripts/jd_joymanor_task.js  >> /scripts/logs/jd_joymanor_task.log 2>&1
 #5.1-5.30 云养牛，免费赢好礼
 31 7-20/1 1-30 5 *   node /scripts/jd_mnyyn.js  >> /scripts/logs/jd_mnyyn.log 2>&1
+
+##############618活动##############
 #热爱奇旅
 25 0,6-23/2 * * *   node /scripts/jd_19E.js  >> /scripts/logs/jd_19E.log 2>&1
 #热爱奇旅助力+自动领取金币
 21 0,6-23/3 * * *   node /scripts/jd_19E_help.js  >> /scripts/logs/jd_19E_help.log 2>&1
+#热爱奇旅助力组队升级
+10 0,8 * * *   node /scripts/jd_19E_friend.js  >> /scripts/logs/jd_19E_friend.log 2>&1
+#热爱奇旅膨胀内部互助
+11 8 * * * node /scripts/jd_19EPZ_help.js  >> /scripts/logs/jd_19EPZ_help.log 2>&1
 
 ##############开卡活动##############
 #5.5-6.20【金领冠】航天活动
