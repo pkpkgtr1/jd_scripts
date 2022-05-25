@@ -105,8 +105,10 @@
 32 1 21-31 5 * node /scripts/jd_opencardL152.js >> /scripts/logs/jd_opencardL152.log 2>&1
 #5.23-6.20 会员联合狂欢  618百万京豆大派送
 20 0 23-31,1-20 5,6 * node /scripts/jd_opencardL155.js >> /scripts/logs/jd_opencardL155.log 2>&1
-##5.23-6.20 寻找潮配之旅
+#5.23-6.20 寻找潮配之旅
 18 2 23-31,1-20 5,6 * node /scripts/jd_opencardL156.js >> /scripts/logs/jd_opencardL156.log 2>&1
+#5.20~6.2 快乐自定义 宅家云出游
+1 25-31,1-18 5,6 * node /scripts/jd_opencardL158.js >> /scripts/logs/jd_opencardL158.log 2>&1
 #5.25-6.18 逛小米618赢千万京豆(入口自己看脚本)
 10 25-31,1-18 5,6 *  node /scripts/jd_xiaomi.js >> /scripts/logs/jd_xiaomi.log 2>&1
 
