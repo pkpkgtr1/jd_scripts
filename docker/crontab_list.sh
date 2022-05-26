@@ -101,8 +101,10 @@
 18 2 23-31,1-20 5,6 * node /scripts/jd_opencardL156.js >> /scripts/logs/jd_opencardL156.log 2>&1
 #5.20~6.2 快乐自定义 宅家云出游
 1 25-31,1-18 5,6 * node /scripts/jd_opencardL158.js >> /scripts/logs/jd_opencardL158.log 2>&1
-#5.25-6.18 逛小米618赢千万京豆(入口自己看脚本)
-10 25-31,1-18 5,6 *  node /scripts/jd_xiaomi.js >> /scripts/logs/jd_xiaomi.log 2>&1
+#5.20~6.2 快乐自定义 宅家云出游
+1 25-31,1-18 5,6 * node /scripts/jd_opencardL159.js >> /scripts/logs/jd_opencardL159.log 2>&1
+#入口：[ 5.23-6.19 母婴“会”聚 幸运连击]
+40 13 26-31,1-19 5,6 *  node /scripts/jd_xiaomi.js >> /scripts/logs/jd_xiaomi.log 2>&1
 
 ##############长期活动##############
 #极速版签到
