@@ -73,8 +73,8 @@
 11 0,16 * * *  node /scripts/jd_joymanor_task.js  >> /scripts/logs/jd_joymanor_task.log 2>&1
 #5.1-5.30 云养牛，免费赢好礼
 31 7-20/1 1-30 5 *   node /scripts/jd_mnyyn.js  >> /scripts/logs/jd_mnyyn.log 2>&1
-
-
+#探味奇遇记 活动入口：美食馆-右侧悬浮
+31 0,13 26-31,1-16 5,6 *   node /scripts/jd_tanwei.js  >> /scripts/logs/jd_tanwei.log 2>&1
 
 ##############开卡活动##############
 #5.5-6.20【金领冠】航天活动
@@ -138,7 +138,7 @@
 # 取消关注
 45 23,6 * * * node /scripts/jd_unsubscribe.js >> /scripts/logs/jd_unsubscribe.log 2>&1
 # 京豆变动通知(增强版)
-20 10 * * * node /scripts/jd_bean_change.js >> /scripts/logs/jd_bean_change.log 2>&1
+20 17 * * * node /scripts/jd_bean_change.js >> /scripts/logs/jd_bean_change.log 2>&1
 # 京东抽奖机
 0 0,12,23 * * * node /scripts/jd_lotteryMachine.js >> /scripts/logs/jd_lotteryMachine.log 2>&1
 # 京东排行榜
