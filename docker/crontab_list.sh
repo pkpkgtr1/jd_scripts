@@ -214,8 +214,6 @@
 14 2,10 * * * node /scripts/jd_sign_graphics.js >> /scripts/logs/jd_sign_graphics.log 2>&1   
 #京东试用
 14 8-18/5 * * * node /scripts/jd_try.js >> /scripts/logs/jd_try.log 2>&1 
-#京东试用申请列表推送
-14 17 * * * node /scripts/jd_try_notify.js >> /scripts/logs/jd_try_notify.log 2>&1 
 #京东试用python版
 #14 7-15/7 * * * cd /scripts && python3 /scripts/jd_try.py > /scripts/logs/jd_try.log 2>&1
 #财富大陆
