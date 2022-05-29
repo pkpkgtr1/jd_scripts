@@ -80,7 +80,7 @@
 
 ##############618活动##############
 #热爱奇旅互助版-部分加密
-30,6-21/5 * * *  node /scripts/jd_19E_help.js  >> /scripts/logs/jd_19E_help.log 2>&1
+30 6-21/5 * * *  node /scripts/jd_19E_help.js  >> /scripts/logs/jd_19E_help.log 2>&1
 #热爱奇旅组队升级
 1 8,12 * * *   node /scripts/jd_19E_friends.js  >> /scripts/logs/jd_19E_friends.log 2>&1
 
