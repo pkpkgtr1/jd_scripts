@@ -75,8 +75,6 @@
 31 7-20/1 1-30 5 *   node /scripts/jd_mnyyn.js  >> /scripts/logs/jd_mnyyn.log 2>&1
 #探味奇遇记 活动入口：美食馆-右侧悬浮
 31 0,13 26-31,1-16 5,6 *   node /scripts/jd_tanwei.js  >> /scripts/logs/jd_tanwei.log 2>&1
-#京东电器巨超值
-0 20 * * *  node /scripts/jd_strategy.js  >> /scripts/logs/jd_strategy.log 2>&1
 
 ##############618活动##############
 #热爱奇旅互助版-部分加密
