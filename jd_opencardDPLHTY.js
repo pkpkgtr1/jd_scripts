@@ -8,7 +8,7 @@
 变量填写：
 //export DPLHTY="活动ID"
 如：
-//export DPLHTY="824c227e1a2849d686e8b4ea5132832a"
+//export DPLHTY="04c1bf1191d044c6ae059e_22040802"
 
 如需做浏览任务请设置环境变量：
 //export opencard_toShop="true"
@@ -41,8 +41,7 @@ if ($.isNode()) {
 } else {
   cookiesArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
 }
-//修改2（无需修改）
-opencard_toShop = true;
+opencard_toShop = $.isNode() ? (process.env.opencard_toShop ? process.env.opencard_toShop : `${opencard_toShop}`) : ($.getdata('opencard_toShop') ? $.getdata('opencard_toShop') : `${opencard_toShop}`);
 
 allMessage = ""
 message = ""
@@ -52,10 +51,9 @@ $.activityEnd = false
 let lz_jdpin_token_cookie =''
 let activityCookie =''
 //此处修改助力码
-let helpnum = 'b6+eYItgc4kD2obaBl3qca9AMkY4oJ31vhy6nI5LWbOiIw7XUQOP/Btn03/M1TYH'
+let helpnum = ''
 let DPLHTY = "";
-//修改1
-DPLHTY = 'e9bc0331d8f94ac3a_22050501';
+DPLHTY = $.isNode() ? (process.env.DPLHTY ? process.env.DPLHTY : `${DPLHTY}`) : ($.getdata('DPLHTY') ? $.getdata('DPLHTY') : `${DPLHTY}`);
 if (!DPLHTY){
     console.log(`\n请填写大牌联合通用开卡的活动ID,变量是DPLHTY\n`)
     return;
