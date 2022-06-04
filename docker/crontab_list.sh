@@ -77,8 +77,10 @@
 31 0,13 26-31,1-16 5,6 *   node /scripts/jd_tanwei.js  >> /scripts/logs/jd_tanwei.log 2>&1
 #618红包
 31 0 1-18 6 *   node /scripts/jd_tanwei.js  >> /scripts/logs/jd_tanwei.log 2>&1
-
-
+#京东超级盲盒
+0 20 3,17 6 *  node /scripts/jd_supermh.js  >> /scripts/logs/jd_supermh.log 2>&1
+#京洞察问卷通知
+0 9 * * *  node /scripts/jd_insight.js  >> /scripts/logs/jd_insight.log 2>&1
 ##############618活动##############
 #热爱奇旅互助版-部分加密
 30 6-21/5 * * *  node /scripts/jd_19E_help.js  >> /scripts/logs/jd_19E_help.log 2>&1
