@@ -81,12 +81,6 @@
 0 20 3,17 6 *  node /scripts/jd_supermh.js  >> /scripts/logs/jd_supermh.log 2>&1
 #京洞察问卷通知
 0 9 * * *  node /scripts/jd_insight.js  >> /scripts/logs/jd_insight.log 2>&1
-##############618活动##############
-#热爱奇旅互助版-部分加密
-30 6-21/5 * * *  node /scripts/jd_19E_help.js  >> /scripts/logs/jd_19E_help.log 2>&1
-#热爱奇旅组队升级
-1 8,12 * * *   node /scripts/jd_19E_friends.js  >> /scripts/logs/jd_19E_friends.log 2>&1
-
 
 ##############开卡活动##############
 #5.5-6.20【金领冠】航天活动
@@ -101,8 +95,6 @@
 40 13 26-31,1-19 5,6 *  node /scripts/jd_xiaomi.js >> /scripts/logs/jd_xiaomi.log 2>&1
 #5.31~6.20 时尚狂欢盛典
 35 21 31,1-20 5,6 *   node /scripts/jd_opencardL164.js  >> /scripts/logs/jd_opencardL164.log 2>&1 
-
-
 #5.31~6.10 大牌联合 好物焕新季
 1 22 31,1-10 5,6 *   node /scripts/jd_opencardL165.js  >> /scripts/logs/jd_opencardL165.log 2>&1 
 #6.1~6.18 618限定 和你一起为爱而购
@@ -117,14 +109,14 @@
 35 2 1-18 6 *   node /scripts/jd_opencardL171.js  >> /scripts/logs/jd_opencardL171.log 2>&1 
 #6.1-6.18 情暖618 全民抢红包
 551 1-18 6 *   node /scripts/jd_opencardL172.js  >> /scripts/logs/jd_opencardL172.log 2>&1 
-#6.1-6.8 大牌“粽”情献礼
-31 11 1-8 6 *  node /scripts/jd_opencardL173.js  >> /scripts/logs/jd_opencardL173.log 2>&1 
 #6.1-6.30 雅诗兰黛奢雅邀请入会有礼
 31 13 1-30/5 6 *   node /scripts/jd_opencardL174.js  >> /scripts/logs/jd_opencardL174.log 2>&1 
 #6.1-6.20 酒水会员盛典
 1 21 1-20 6 *  node /scripts/jd_opencardL175.js  >> /scripts/logs/jd_opencardL175.log 2>&1 
 #6.2-6.20 大牌狂欢嗨享购
 35 9 3-20 6 * node /scripts/jd_opencardL176.js  >> /scripts/logs/jd_opencardL176.log 2>&1 
+#6.8~6.18全力以赴 谁是囤货王
+52 0,18 8-18 6 * node /scripts/jd_opencardL179.js  >> /scripts/logs/jd_opencardL179.log 2>&1
 
 
 ##############长期活动##############
