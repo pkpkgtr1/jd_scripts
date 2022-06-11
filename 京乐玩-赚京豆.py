@@ -16,7 +16,7 @@ from requests import ConnectTimeout
 activatyname = "京乐玩-瓜分京豆"
 salt = "cXRofWK6"
 me = ""  # 小程序openid 留空
-group_size = 200 # 并发数建议 50-1500 
+group_size = 50 # 并发数建议 50-1500 
 
 inveteck = 'pkpkgtr1'  # 车头子ck
 
@@ -356,7 +356,7 @@ async def main():
     try:
         cks = os.environ["JD_COOKIE"].split("&")
     except:
-        with open('jdCookie','r') as f:
+        with open('./jdCookie','r') as f:
             cks = f.read().split('\n')
     logger.info(f"共:{len(cks)}个CK")
     
