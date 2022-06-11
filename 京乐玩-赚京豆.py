@@ -364,6 +364,7 @@ async def main():
         logger.info("------轮询------")
         logger.info(f"轮询ck")
         rand_ck = choice(cks[5:15])
+        rand_ck =rand_ck.replace('\'', '', 2).replace(',', '')
         print(rand_ck)
         ua = randomuserAgent()  # 随机ua
         if inveteck == '':
