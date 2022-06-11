@@ -82,6 +82,7 @@
 #京洞察问卷通知
 0 9 * * *  node /scripts/jd_insight.js  >> /scripts/logs/jd_insight.log 2>&1
 
+
 ##############开卡活动##############
 #5.5-6.20【金领冠】航天活动
 30 10 5-31,1-19 5,6 * node /scripts/jd_opencardL131.js >> /scripts/logs/jd_opencardL131.log 2>&1
@@ -115,10 +116,13 @@
 1 21 1-20 6 *  node /scripts/jd_opencardL175.js  >> /scripts/logs/jd_opencardL175.log 2>&1 
 #6.2-6.20 大牌狂欢嗨享购
 35 9 3-20 6 * node /scripts/jd_opencardL176.js  >> /scripts/logs/jd_opencardL176.log 2>&1 
-#6.8~6.18全力以赴 谁是囤货王
-52 0,18 8-18 6 * node /scripts/jd_opencardL179.js  >> /scripts/logs/jd_opencardL179.log 2>&1
 
-
+#6.9-6.18 618好物狂欢盛典
+11 0,18 9-18 6 * node /scripts/jd_opencardL184.js  >> /scripts/logs/jd_opencardL184.log 2>&1
+#6.10~6.20 心尖好物 618拔草时刻
+41 0,18 8-20 6 * node /scripts/jd_opencardL185.js  >> /scripts/logs/jd_opencardL185.log 2>&1
+#6.10~6.20 为热爱选择 一起618
+23 0,18 10-30 6 * node /scripts/jd_opencardL186.js  >> /scripts/logs/jd_opencardL186.log 2>&1
 ##############长期活动##############
 #领津贴
 30 5,23 * * * node /scripts/jd_jin_tie.js >> /scripts/logs/jd_jin_tie.log 2>&1
