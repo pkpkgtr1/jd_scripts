@@ -364,6 +364,7 @@ async def main():
         logger.info("------轮询------")
         logger.info(f"轮询ck")
         rand_ck = choice(cks[5:15])
+        print(rand_ck)
         ua = randomuserAgent()  # 随机ua
         if inveteck == '':
             logger.info(f"没有配置车头子ck，快去填写吧")
