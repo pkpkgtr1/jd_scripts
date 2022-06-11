@@ -1,5 +1,5 @@
 # 京乐玩-瓜分京豆 通用模板 create by doubi
-# openid 留空即可，不建议青龙使用，青龙玩不动，最好本地，本地在同目录下创建一个‘cklist.txt，将ck放在里面’
+# openid 留空即可，不建议青龙使用，青龙玩不动，最好本地，本地在同目录下创建一个‘jdCookie，将ck放在里面’
 # 目前新号助力10豆/人 老号助力2豆/人 
 from secrets import choice
 import sys
@@ -356,7 +356,7 @@ async def main():
     try:
         cks = os.environ["JD_COOKIE"].split("&")
     except:
-        with open('cklist.txt','r') as f:
+        with open('jdCookie','r') as f:
             cks = f.read().split('\n')
     logger.info(f"共:{len(cks)}个CK")
     
