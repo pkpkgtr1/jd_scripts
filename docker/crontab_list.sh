@@ -25,8 +25,6 @@
 #30 * * * * node /scripts/jd_cfd_loop.js >> /scripts/logs/jd_cfd_loop.log 2>&1  
 #整点红包雨
 #0 9-22/1 9-20 11 * node /scripts/jd_super_redrain.js >> /scripts/logs/jd_super_redrain.log 2>&1 
-#发财挖宝
-#40 12,16 * * * node /scripts/jd_fcwb.js >> /scripts/logs/jd_fcwb.log 2>&1 
 #粉丝签到
 0 8 * * * node /scripts/jd_fan.js >> /scripts/logs/jd_fan.log 2>&1 
 #美丽研究院--兑换
