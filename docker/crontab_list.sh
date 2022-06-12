@@ -83,6 +83,8 @@
 0 9 * * *  node /scripts/jd_insight.js  >> /scripts/logs/jd_insight.log 2>&1
 #头文字J
 0 9 * * *  node /scripts/jd_carplay.js  >> /scripts/logs/jd_carplay.log 2>&1
+#618红包
+5 0 * * *  node /scripts/jd_618red.js  >> /scripts/logs/jd_618red.log 2>&1
 
 ##############开卡活动##############
 #5.5-6.20【金领冠】航天活动
