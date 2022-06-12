@@ -16,7 +16,7 @@ from requests import ConnectTimeout
 activatyname = "京乐玩-瓜分京豆"
 salt = "cXRofWK6"
 me = ""  # 小程序openid 留空
-group_size = 50 # 并发数建议 50-1500 
+group_size = 10 # 并发数建议 50-1500 
 
 inveteck = 'pkpkgtr1'  # 车头子ck
 
@@ -238,7 +238,7 @@ async def post_url(def_id, ck, body):
                 "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.18(0x1800123f) NetType/WIFI Language/zh_CN",
             }
             bdoy = json.dumps(body)
-            res = (await httpx_client.post(url=url, headers=headers, data=json.dumps(body))).text
+            res = (await httpx_client.post(url=url, headers=headers, data=json.dumps(body),timeout=10)).text
             pin = re.findall(r"(pt_pin=([^; ]+)(?=;?))", ck)[0][1]
             logger.info(f'post_url:{unquote_plus(pin)}:{res}')
             res_json = json.loads(res)
@@ -354,7 +354,7 @@ async def search(ck,ua):
 # 主程序
 async def main():
     try:
-        cks = os.environ["JD_COOKIE"].split("&")
+        cks = os.environ["JD_COOKIE11"].split("&")
     except:
         with open('./jdCookie','r') as f:
             cks = f.read().split('\n')
@@ -363,9 +363,8 @@ async def main():
     while True:
         logger.info("------轮询------")
         logger.info(f"轮询ck")
-        rand_ck = choice(cks[5:15])
+        rand_ck = choice(cks)
         rand_ck =rand_ck.replace('\'', '', 2).replace(',', '')
-        print(rand_ck)
         ua = randomuserAgent()  # 随机ua
         if inveteck == '':
             logger.info(f"没有配置车头子ck，快去填写吧")
@@ -373,7 +372,7 @@ async def main():
         liveres = await search(rand_ck, ua)
         if len(liveres) == 0:
             logger.info("暂无活动,等待")
-            await asyncio.sleep(5)   # 等待时间
+            await asyncio.sleep(7)   # 等待时间
             continue
         
         liveId1 = liveres[0]
