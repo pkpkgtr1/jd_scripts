@@ -73,7 +73,8 @@
 0 9 * * *  node /scripts/jd_carplay.js  >> /scripts/logs/jd_carplay.log 2>&1
 #618红包
 5 0 * * *  node /scripts/jd_618red.js  >> /scripts/logs/jd_618red.log 2>&1
-
+#京东到家鲜豆任务
+5 0 * * *  node /scripts/jd_jddj_bean.js  >> /scripts/logs/jd_jddj_bean.log 2>&1
 ##############开卡活动##############
 #5.5-6.20【金领冠】航天活动
 30 10 5-31,1-19 5,6 * node /scripts/jd_opencardL131.js >> /scripts/logs/jd_opencardL131.log 2>&1
