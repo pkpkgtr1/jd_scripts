@@ -13,8 +13,6 @@
 0 3 * * * node /scripts/jd_tyt.js  >> /scripts/logs/jd_tyt.log 2>&1
 #柠檬众筹许愿池
 0 6 * * * node /scripts/jd_wish.js  >> /scripts/logs/jd_wish.log 2>&1  
-#省钱大赢家之翻翻乐
-#1 0-12/6 * * *  node /scripts/jd_big_winner.js   >> /scripts/logs/jd_big_winner.log 2>&1  
 #小鸽有礼
 13 1,22,23 * * *  node /scripts/jd_daily_lottery.js   >> /scripts/logs/jd_daily_lottery.log 2>&1
 #添加MM领京豆
