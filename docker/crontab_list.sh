@@ -7,8 +7,6 @@
 ##############短期活动##############
 #京东极速版红包(活动时间：2021-5-5至？)
 #44 8,11 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
-#半点京豆雨
-#30 16-23/1 * * *  node /scripts/jd_half_redrain.js >> /scripts/logs/jd_half_redrain.log 2>&1
 #柠檬推一推
 0 3 * * * node /scripts/jd_tyt.js  >> /scripts/logs/jd_tyt.log 2>&1
 #柠檬众筹许愿池
