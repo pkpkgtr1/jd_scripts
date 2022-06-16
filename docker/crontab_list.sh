@@ -61,10 +61,8 @@
 11 0,16 * * *  node /scripts/jd_joymanor_task.js  >> /scripts/logs/jd_joymanor_task.log 2>&1
 #5.1-5.30 云养牛，免费赢好礼
 31 7-20/1 1-30 5 *   node /scripts/jd_mnyyn.js  >> /scripts/logs/jd_mnyyn.log 2>&1
-#探味奇遇记 活动入口：美食馆-右侧悬浮
-31 0,13 26-31,1-16 5,6 *   node /scripts/jd_tanwei.js  >> /scripts/logs/jd_tanwei.log 2>&1
 #618红包
-31 0 1-18 6 *   node /scripts/jd_tanwei.js  >> /scripts/logs/jd_tanwei.log 2>&1
+31 0 1-18 6 *   node /scripts/jd_618red.js  >> /scripts/logs/jd_618red.log 2>&1
 #京东超级盲盒
 0 20 3,17 6 *  node /scripts/jd_supermh.js  >> /scripts/logs/jd_supermh.log 2>&1
 #京洞察问卷通知
