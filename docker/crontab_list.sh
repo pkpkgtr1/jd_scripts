@@ -61,16 +61,12 @@
 11 0,16 * * *  node /scripts/jd_joymanor_task.js  >> /scripts/logs/jd_joymanor_task.log 2>&1
 #5.1-5.30 云养牛，免费赢好礼
 31 7-20/1 1-30 5 *   node /scripts/jd_mnyyn.js  >> /scripts/logs/jd_mnyyn.log 2>&1
-#618红包
-31 0 1-18 6 *   node /scripts/jd_618red.js  >> /scripts/logs/jd_618red.log 2>&1
 #京东超级盲盒
 0 20 3,17 6 *  node /scripts/jd_supermh.js  >> /scripts/logs/jd_supermh.log 2>&1
 #京洞察问卷通知
 0 9 * * *  node /scripts/jd_insight.js  >> /scripts/logs/jd_insight.log 2>&1
 #头文字J
 0 9 * * *  node /scripts/jd_carplay.js  >> /scripts/logs/jd_carplay.log 2>&1
-#618红包
-5 0 * * *  node /scripts/jd_618red.js  >> /scripts/logs/jd_618red.log 2>&1
 #京东到家鲜豆任务
 5 0 * * *  node /scripts/jd_jddj_bean.js  >> /scripts/logs/jd_jddj_bean.log 2>&1
 ##############开卡活动##############
