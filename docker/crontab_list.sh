@@ -74,47 +74,11 @@
 #京东到家鲜豆任务
 5 0 * * *  node /scripts/jd_jddj_bean.js  >> /scripts/logs/jd_jddj_bean.log 2>&1
 ##############开卡活动##############
-#5.5-6.20【金领冠】航天活动
-30 10 5-31,1-19 5,6 * node /scripts/jd_opencardL131.js >> /scripts/logs/jd_opencardL131.log 2>&1
 #5.1-9.30 泉粉邀请卡
 30 5 7-31 5 * node /scripts/jd_opencardL133.js >> /scripts/logs/jd_opencardL133.log 2>&1
-#5.23-6.20 会员联合狂欢  618百万京豆大派送
-20 0 23-31,1-20 5,6 * node /scripts/jd_opencardL155.js >> /scripts/logs/jd_opencardL155.log 2>&1
-#5.23-6.20 寻找潮配之旅
-18 2 23-31,1-20 5,6 * node /scripts/jd_opencardL156.js >> /scripts/logs/jd_opencardL156.log 2>&1
-#入口：[ 5.23-6.19 母婴“会”聚 幸运连击]
-40 13 26-31,1-19 5,6 *  node /scripts/jd_xiaomi.js >> /scripts/logs/jd_xiaomi.log 2>&1
-#5.31~6.20 时尚狂欢盛典
-35 21 31,1-20 5,6 *   node /scripts/jd_opencardL164.js  >> /scripts/logs/jd_opencardL164.log 2>&1 
-#5.31~6.10 大牌联合 好物焕新季
-1 22 31,1-10 5,6 *   node /scripts/jd_opencardL165.js  >> /scripts/logs/jd_opencardL165.log 2>&1 
-#6.1~6.18 618限定 和你一起为爱而购
-40 0 1-18 6 *  node /scripts/jd_opencardL166.js  >> /scripts/logs/jd_opencardL166.log 2>&1 
-#6.1~6.18 618 陪伴让爱升级
-1 1 1-18 6 *   node /scripts/jd_opencardL168.js  >> /scripts/logs/jd_opencardL168.log 2>&1 
-#6.1~6.18 618 感恩有你 真情回馈
-35 1 1-18 6 *  node /scripts/jd_opencardL169.js  >> /scripts/logs/jd_opencardL169.log 2>&1 
-#6.1~6.18 618 大牌有礼 暖心陪伴
-1 2 1-18 6 * node /scripts/jd_opencardL170js  >> /scripts/logs/jd_opencardL170.log 2>&1 
-#6.1~6.18 盛宠618 大牌齐聚倾囊相送
-35 2 1-18 6 *   node /scripts/jd_opencardL171.js  >> /scripts/logs/jd_opencardL171.log 2>&1 
-#6.1-6.18 情暖618 全民抢红包
-551 1-18 6 *   node /scripts/jd_opencardL172.js  >> /scripts/logs/jd_opencardL172.log 2>&1 
 #6.1-6.30 雅诗兰黛奢雅邀请入会有礼
 31 13 1-30/5 6 *   node /scripts/jd_opencardL174.js  >> /scripts/logs/jd_opencardL174.log 2>&1 
-#6.1-6.20 酒水会员盛典
-1 21 1-20 6 *  node /scripts/jd_opencardL175.js  >> /scripts/logs/jd_opencardL175.log 2>&1 
-#6.2-6.20 大牌狂欢嗨享购
-35 9 3-20 6 * node /scripts/jd_opencardL176.js  >> /scripts/logs/jd_opencardL176.log 2>&1 
-#6.9-6.18 618好物狂欢盛典
-11 0,18 9-18 6 * node /scripts/jd_opencardL184.js  >> /scripts/logs/jd_opencardL184.log 2>&1
-#6.10~6.20 心尖好物 618拔草时刻
-41 0,18 8-20 6 * node /scripts/jd_opencardL185.js  >> /scripts/logs/jd_opencardL185.log 2>&1
-#6.10~6.20 为热爱选择 一起618
-23 0,18 10-30 6 * node /scripts/jd_opencardL186.js  >> /scripts/logs/jd_opencardL186.log 2>&1
 
-#6.13-6.20 时尚狂欢盛典
-10 10 14-20 6 * node /scripts/jd_opencardL187.js  >> /scripts/logs/jd_opencardL187.log 2>&1
 ##############长期活动##############
 #领津贴
 30 5,23 * * * node /scripts/jd_jin_tie.js >> /scripts/logs/jd_jin_tie.log 2>&1
