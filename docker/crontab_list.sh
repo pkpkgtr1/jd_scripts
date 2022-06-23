@@ -67,6 +67,9 @@
 0 9 * * *  node /scripts/jd_insight.js  >> /scripts/logs/jd_insight.log 2>&1
 #京东到家鲜豆任务
 5 0 * * *  node /scripts/jd_jddj_bean.js  >> /scripts/logs/jd_jddj_bean.log 2>&1
+#京东到家鲜豆任务
+1 10 * * *  node /scripts/jd_mfredrain.js  >> /scripts/logs/jd_mfredrain.log 2>&1
+
 ##############开卡活动##############
 #5.1-9.30 泉粉邀请卡
 30 5 7-31 5 * node /scripts/jd_opencardL133.js >> /scripts/logs/jd_opencardL133.log 2>&1
