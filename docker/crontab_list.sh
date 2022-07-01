@@ -71,13 +71,18 @@
 1 10 * * *  node /scripts/jd_mfredrain.js  >> /scripts/logs/jd_mfredrain.log 2>&1
 #7.1-7.31 安佳 邀新有礼
 11 6 1-3,4-31/5 7 *  node /scripts/jd_AJYX.js  >> /scripts/logs/jd_AJYX.log 2>&1
+#6.28-7.4 预约小米新品赢手机
+1 8 28-30,1-4 6,7 *  node /scripts/jd_xiaomi.js  >> /scripts/logs/jd_xiaomi.log 2>&1
 
  
 
 ##############开卡活动##############
 #5.1-9.30 泉粉邀请卡
 30 5 7-31 5 * node /scripts/jd_opencardL133.js >> /scripts/logs/jd_opencardL133.log 2>&1
-
+#7.1~7.8 爱我中华 礼赞盛世
+49 6,13 1-8 7 *  node /scripts/jd_opencardL189.js >> /scripts/logs/jd_opencardL189.log 2>&1
+#7.1-7.31 雅诗兰黛奢雅邀请入会有礼
+11 20 1-5,6-31/5 7 *  node /scripts/jd_opencardL191.js >> /scripts/logs/jd_opencardL191.log 2>&1
 
 ##############长期活动##############
 #领津贴
