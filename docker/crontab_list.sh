@@ -69,12 +69,15 @@
 5 0 * * *  node /scripts/jd_jddj_bean.js  >> /scripts/logs/jd_jddj_bean.log 2>&1
 #京东到家鲜豆任务
 1 10 * * *  node /scripts/jd_mfredrain.js  >> /scripts/logs/jd_mfredrain.log 2>&1
+#7.1-7.31 安佳 邀新有礼
+11 6 1-3,4-31/5 7 *  node /scripts/jd_AJYX.js  >> /scripts/logs/jd_AJYX.log 2>&1
+
+ 
 
 ##############开卡活动##############
 #5.1-9.30 泉粉邀请卡
 30 5 7-31 5 * node /scripts/jd_opencardL133.js >> /scripts/logs/jd_opencardL133.log 2>&1
-#6.1-6.30 雅诗兰黛奢雅邀请入会有礼
-31 13 1-30/5 6 *   node /scripts/jd_opencardL174.js  >> /scripts/logs/jd_opencardL174.log 2>&1 
+
 
 ##############长期活动##############
 #领津贴
