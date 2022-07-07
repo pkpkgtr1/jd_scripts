@@ -71,7 +71,10 @@
 1 10 * * *  node /scripts/jd_mfredrain.js  >> /scripts/logs/jd_mfredrain.log 2>&1
 #7.1-7.31 安佳 邀新有礼
 11 6 1-3,4-31/5 7 *  node /scripts/jd_AJYX.js  >> /scripts/logs/jd_AJYX.log 2>&1
-
+#7.1-7.31 安佳做任务开盲盒，赢好礼
+11 6 1-3,4-31/5 7 *  node /scripts/jd_AJMH.js  >> /scripts/logs/jd_AJMH.log 2>&1
+#闪购签到有礼
+11 6 * * *  node /scripts/jd_shangou.js  >> /scripts/logs/jd_shangou.log 2>&1
 
  
 
@@ -82,6 +85,9 @@
 49 6,13 1-8 7 *  node /scripts/jd_opencardL189.js >> /scripts/logs/jd_opencardL189.log 2>&1
 #7.1-7.31 雅诗兰黛奢雅邀请入会有礼
 11 20 1-5,6-31/5 7 *  node /scripts/jd_opencardL191.js >> /scripts/logs/jd_opencardL191.log 2>&1
+#7.6~7.13 跨牌联合 夏日狂欢
+59 0,12 6-13 7 *   node /scripts/jd_opencardL190.js >> /scripts/logs/jd_opencardL190.log 2>&1
+
 
 ##############长期活动##############
 #领津贴
