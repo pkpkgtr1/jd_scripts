@@ -75,6 +75,8 @@
 11 6 1-3,4-31/5 7 *  node /scripts/jd_AJMH.js  >> /scripts/logs/jd_AJMH.log 2>&1
 #闪购签到有礼
 11 6 * * *  node /scripts/jd_shangou.js  >> /scripts/logs/jd_shangou.log 2>&1
+#7.4-9.30 集碳豆赢大奖
+30 10 * * * node /scripts/jd_yiliBaby.js  >> /scripts/logs/jd_yiliBaby.log 2>&1
 
  
 
