@@ -71,8 +71,7 @@
 1 10 * * *  node /scripts/jd_mfredrain.js  >> /scripts/logs/jd_mfredrain.log 2>&1
 #7.1-7.31 安佳 邀新有礼
 11 6 1-3,4-31/5 7 *  node /scripts/jd_AJYX.js  >> /scripts/logs/jd_AJYX.log 2>&1
-#6.28-7.4 预约小米新品赢手机
-1 8 28-30,1-4 6,7 *  node /scripts/jd_xiaomi.js  >> /scripts/logs/jd_xiaomi.log 2>&1
+
 
  
 
