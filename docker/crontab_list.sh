@@ -83,8 +83,6 @@
 30 5 7-31 5 * node /scripts/jd_opencardL133.js >> /scripts/logs/jd_opencardL133.log 2>&1
 #7.1-7.31 雅诗兰黛奢雅邀请入会有礼
 11 20 1-5,6-31/5 7 *  node /scripts/jd_opencardL191.js >> /scripts/logs/jd_opencardL191.log 2>&1
-#7.6~7.13 跨牌联合 夏日狂欢
-59 0,12 6-13 7 *   node /scripts/jd_opencardL190.js >> /scripts/logs/jd_opencardL190.log 2>&1
 #入口：[ 7.7-7.22 酒水会员盛典]
 49 21 7-22 7 *  node /scripts/jd_opencardL192.js >> /scripts/logs/jd_opencardL192.log 2>&1
 
