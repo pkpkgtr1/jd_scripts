@@ -85,7 +85,10 @@
 11 20 1-5,6-31/5 7 *  node /scripts/jd_opencardL191.js >> /scripts/logs/jd_opencardL191.log 2>&1
 #入口：[ 7.7-7.22 酒水会员盛典]
 49 21 7-22 7 *  node /scripts/jd_opencardL192.js >> /scripts/logs/jd_opencardL192.log 2>&1
-
+#7.13-7.20 京东粉丝联盟福利社 入会赢专享好礼
+1 19 13-20 7 *  node /scripts/jd_opencardL193.js >> /scripts/logs/jd_opencardL193.log 2>&1
+#7.14-7.17 品类联合
+1 12 14-17 7 *  node /scripts/jd_opencardL194.js >> /scripts/logs/jd_opencardL194.log 2>&1
 
 ##############长期活动##############
 #领津贴
