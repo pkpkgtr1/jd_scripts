@@ -6,16 +6,6 @@
  * 上一作者说了每天最多300个商店，总上限为500个，jd_unsubscribe.js我已更新为批量取关版
  * 请提前取关至少250个商店确保京东试用脚本正常运行
  * @Address: https://github.com/X1a0He/jd_scripts_fixed/blob/main/jd_try_xh.js
- 参考环境变量配置如下：
-export JD_TRY="true"
-export JD_TRY_PLOG="true" #是否打印输出到日志
-export JD_TRY_PASSZC="false" #不过滤种草官类试用
-export JD_TRY_MAXLENGTH="50" #商品数组的最大长度，默认100个
-export JD_TRY_APPLYINTERVAL="10000" #商品试用之间和获取商品之间的间隔ms，太快报错
-export JD_TRY_APPLYNUMFILTER="100000" #过滤大于设定值的已申请人数
-export JD_TRY_MINSUPPLYNUM="1" #最小提供数量
-export JD_TRY_SENDNUM="10" #每隔多少账号发送一次通知，不需要可以不用设置
-export JD_TRY_UNIFIED="false" 默认采用不同试用组
 cron "4 1-22/8 * * *" jd_try.js, tag:京东试用
 
  */
@@ -555,7 +545,7 @@ function try_MyTrials(page, selected) {
                 'origin': 'https://prodev.m.jd.com',
                 'User-Agent': 'jdapp;iPhone;10.3.4;;;M/5.0;appBuild/167945;jdSupportDarkMode/1;;;Mozilla/5.0 (iPhone; CPU iPhone OS 15_2_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1;',
                 'referer': 'https://prodev.m.jd.com/',
-                'cookie': `${$.cookie} __jda=1.1.1.1.1.1;`
+                'cookie': `${$.cookie} __jda=1.0;`
             },
         }
         $.post(options, (err, resp, data) => {
@@ -596,7 +586,7 @@ function taskurl_xh(appid, functionId, body = JSON.stringify({})) {
     return {
         "url": `${URL}?appid=${appid}&functionId=${functionId}&clientVersion=10.3.4&client=wh5&body=${encodeURIComponent(body)}`,
         'headers': {
-            'Cookie': `${$.cookie} __jda=1.1.1.1.1.1;`,
+            'Cookie': `${$.cookie} __jda=1.0;`,
             'user-agent': 'jdapp;iPhone;10.1.2;15.0;ff2caa92a8529e4788a34b3d8d4df66d9573f499;network/wifi;model/iPhone13,4;addressid/2074196292;appBuild/167802;jdSupportDarkMode/1;Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1',
             'Referer': 'https://prodev.m.jd.com/',
             'origin': 'https://prodev.m.jd.com/',
