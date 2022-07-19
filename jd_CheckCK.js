@@ -36,7 +36,7 @@ let allMessage='',ErrorMessage='',SuccessMessage='',DisableMessage='',EnableMess
 	  }	  
 	  console.log(`开始检测【京东账号${$.index}】${$.nickName}${$.Remark}....\n`);
 	 
-      await TotalBean();      
+      //await TotalBean();      
 	  if ($.error){
 		  OErrorMessage+=$.error;
 		  return;

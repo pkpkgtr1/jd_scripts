@@ -79,7 +79,7 @@ let assistUserShareCode = 0; // 随机助力用户 share code
       $.isLogin = true;
       $.nickName = '';
       $.log(`\n************* 检查【京东账号${$.index}】${$.UserName} cookie 是否有效 *************`);
-      await TotalBean();
+      //await TotalBean();
       $.log(`开始【京东账号${$.index}】${$.nickName || $.UserName}\n`);
       if (!$.isLogin) {
         $.msg($.name, `【提示】cookie已失效`, `京东账号${$.index} ${$.nickName || $.UserName}\n请重新登录获取\nhttps://bean.m.jd.com/`, {"open-url": "https://bean.m.jd.com/"});

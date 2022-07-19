@@ -61,7 +61,7 @@ const JD_API_HOST = `https://api.m.jd.com/client.action`;
       $.nickName = '';
       $.beans = 0
       message = ''
-      await TotalBean();
+      //await TotalBean();
       await shareCodesFormat();
       console.log(`\n******开始【京东账号${$.index}】${$.nickName || $.UserName}*********\n`);
       if (!$.isLogin) {

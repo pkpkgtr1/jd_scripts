@@ -65,7 +65,7 @@ if ($.isNode()) {
       
       } else {
         if (!isLoginInfo[$.UserName]) {
-          await TotalBean();
+          //await TotalBean();
           isLoginInfo[$.UserName] = $.isLogin
         }
       }
@@ -94,7 +94,7 @@ if ($.isNode()) {
       
       } else {
         if (!isLoginInfo[$.UserName]) {
-          await TotalBean();
+          //await TotalBean();
           isLoginInfo[$.UserName] = $.isLogin
         }
       }
