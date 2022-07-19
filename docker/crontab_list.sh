@@ -75,8 +75,10 @@
 11 6 * * *  node /scripts/jd_shangou.js  >> /scripts/logs/jd_shangou.log 2>&1
 #7.4-9.30 集碳豆赢大奖
 30 10 * * * node /scripts/jd_yiliBaby.js  >> /scripts/logs/jd_yiliBaby.log 2>&1
-
- 
+#特务之明星送好礼
+36 2,19 * * * node /scripts/jd_superBrandStar.js >> /scripts/logs/jd_superBrandStar.log 2>&1
+#特务集卡
+2 10,18,20 * * * node /scripts/jd_superBrandJK.js >> /scripts/logs/jd_superBrandJK.log 2>&1
 
 ##############开卡活动##############
 #5.1-9.30 泉粉邀请卡
@@ -87,7 +89,10 @@
 49 21 7-22 7 *  node /scripts/jd_opencardL192.js >> /scripts/logs/jd_opencardL192.log 2>&1
 #7.13-7.20 京东粉丝联盟福利社 入会赢专享好礼
 1 19 13-20 7 *  node /scripts/jd_opencardL193.js >> /scripts/logs/jd_opencardL193.log 2>&1
-
+#7.18-7.25 酷玩一夏 冰爽放价
+55 7,16 18-25 7 *  node /scripts/jd_opencardL195.js >> /scripts/logs/jd_opencardL195.log 2>&1
+#7.18-7.31 萌宠清凉囤货新势界
+35 14,20 19-31 7 *  node /scripts/jd_opencardL196.js >> /scripts/logs/jd_opencardL196.log 2>&1
 
 ##############长期活动##############
 #领津贴
