@@ -85,14 +85,24 @@
 30 5 7-31 5 * node /scripts/jd_opencardL133.js >> /scripts/logs/jd_opencardL133.log 2>&1
 #7.1-7.31 雅诗兰黛奢雅邀请入会有礼
 11 20 1-5,6-31/5 7 *  node /scripts/jd_opencardL191.js >> /scripts/logs/jd_opencardL191.log 2>&1
-#入口：[ 7.7-7.22 酒水会员盛典]
-49 21 7-22 7 *  node /scripts/jd_opencardL192.js >> /scripts/logs/jd_opencardL192.log 2>&1
 #7.13-7.20 京东粉丝联盟福利社 入会赢专享好礼
 1 19 13-20 7 *  node /scripts/jd_opencardL193.js >> /scripts/logs/jd_opencardL193.log 2>&1
 #7.18-7.25 酷玩一夏 冰爽放价
 55 7,16 18-25 7 *  node /scripts/jd_opencardL195.js >> /scripts/logs/jd_opencardL195.log 2>&1
 #7.18-7.31 萌宠清凉囤货新势界
 35 14,20 19-31 7 *  node /scripts/jd_opencardL196.js >> /scripts/logs/jd_opencardL196.log 2>&1
+#7.21-8.1 燃动盛夏 伏气满满
+49 2,15 22-31,1 7,8 *   node /scripts/jd_opencardL197.js >> /scripts/logs/jd_opencardL197.log 2>&1
+#7.21-7.24 品类联合 
+10 11 1 1 *   node /scripts/jd_opencardL198.js >> /scripts/logs/jd_opencardL198.log 2>&1
+#7.22-8.6 超燃好物 七夕献礼
+25 1,13 23-31,1-6 7,8 *  node /scripts/jd_opencardL199.js >> /scripts/logs/jd_opencardL199.log 2>&1
+#7.20-8.4 七夕喜鹊叫，好运身边绕
+31 4,15 20-31,1-4 7,8 *  node /scripts/jd_opencardL200.js >> /scripts/logs/jd_opencardL200.log 2>&1
+#7.23-7.29 点亮夜半场 回归真自我
+40 20 23-29 7 *  node /scripts/jd_opencardL201.js >> /scripts/logs/jd_opencardL201.log 2>&1
+#7.24-8.4 甜蜜七夕 跨越时空中意你
+50 1,12 25-31,1-4 7,8 *   node /scripts/jd_opencardL203.js >> /scripts/logs/jd_opencardL203.log 2>&1
 
 ##############长期活动##############
 #领津贴
