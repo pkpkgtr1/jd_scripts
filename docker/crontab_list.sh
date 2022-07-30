@@ -97,7 +97,10 @@
 31 4,15 20-31,1-4 7,8 *  node /scripts/jd_opencardL200.js >> /scripts/logs/jd_opencardL200.log 2>&1
 #7.24-8.4 甜蜜七夕 跨越时空中意你
 50 1,12 25-31,1-4 7,8 *   node /scripts/jd_opencardL203.js >> /scripts/logs/jd_opencardL203.log 2>&1
-
+#7.28-8.4 “七”待已久，“夕”望你来
+29 11,14 28-31,1-4 7,8 * node /scripts/jd_opencardL207.js >> /scripts/logs/jd_opencardL207.log 2>&1
+#7.30-8.4 惊喜派送 纵享甜蜜
+21 1 30-31,1-4 7,8 * node /scripts/jd_opencardL209.js >> /scripts/logs/jd_opencardL209.log 2>&1
 ##############长期活动##############
 #领津贴
 30 5,23 * * * node /scripts/jd_jin_tie.js >> /scripts/logs/jd_jin_tie.log 2>&1
