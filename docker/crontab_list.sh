@@ -79,7 +79,8 @@
 36 2,19 * * * node /scripts/jd_superBrandStar.js >> /scripts/logs/jd_superBrandStar.log 2>&1
 #特务集卡
 2 10,18,20 * * * node /scripts/jd_superBrandJK.js >> /scripts/logs/jd_superBrandJK.log 2>&1
-
+特务集勋章
+3 10,18,20 * * * node /scripts/jd_SuperBrandJXZ.js >> /scripts/logs/jd_SuperBrandJXZ.log 2>&1
 ##############开卡活动##############
 #5.1-9.30 泉粉邀请卡
 30 5 7-31 5 * node /scripts/jd_opencardL133.js >> /scripts/logs/jd_opencardL133.log 2>&1
