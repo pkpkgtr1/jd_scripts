@@ -96,6 +96,8 @@
 29 11,14 28-31,1-4 7,8 * node /scripts/jd_opencardL207.js >> /scripts/logs/jd_opencardL207.log 2>&1
 #7.30-8.4 惊喜派送 纵享甜蜜
 21 1 30-31,1-4 7,8 * node /scripts/jd_opencardL209.js >> /scripts/logs/jd_opencardL209.log 2>&1
+#8.1-8.8 京东粉丝联盟福利社 入会赢专享好礼
+15 1 2-8 8 * node /scripts/jd_opencardL210.js >> /scripts/logs/jd_opencardL210.log 2>&1
 ##############长期活动##############
 #领津贴
 30 5,23 * * * node /scripts/jd_jin_tie.js >> /scripts/logs/jd_jin_tie.log 2>&1
@@ -156,7 +158,7 @@
 # 京喜农场
 30 9,12,18 * * * node /scripts/jd_jxnc.js >> /scripts/logs/jd_jxnc.log 2>&1
 # 领现金
-10 */4 * * * node /scripts/jd_cash_windfgg.js >> /scripts/logs/jd_cash_windfgg.log 2>&1
+10 */4 * * * node /scripts/jd_cash_freesoul.js >> /scripts/logs/jd_cash_freesoul.log 2>&1
 #领现金微信版
 15 0,7 * * * node /scripts/jd_cash_wx.js >> /scripts/logs/jd_cash_wx.log 2>&1
 # 闪购盲盒
