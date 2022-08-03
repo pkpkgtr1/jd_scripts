@@ -84,8 +84,6 @@
 ##############开卡活动##############
 #5.1-9.30 泉粉邀请卡
 30 5 7-31 5 * node /scripts/jd_opencardL133.js >> /scripts/logs/jd_opencardL133.log 2>&1
-#7.21-8.1 燃动盛夏 伏气满满
-49 2,15 22-31,1 7,8 *   node /scripts/jd_opencardL197.js >> /scripts/logs/jd_opencardL197.log 2>&1
 #7.21-7.24 品类联合 
 10 11 1 1 *   node /scripts/jd_opencardL198.js >> /scripts/logs/jd_opencardL198.log 2>&1
 #7.22-8.6 超燃好物 七夕献礼
