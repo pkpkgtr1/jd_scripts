@@ -86,8 +86,6 @@
 30 5 7-31 5 * node /scripts/jd_opencardL133.js >> /scripts/logs/jd_opencardL133.log 2>&1
 #7.1-7.31 雅诗兰黛奢雅邀请入会有礼
 11 20 1-5,6-31/5 7 *  node /scripts/jd_opencardL191.js >> /scripts/logs/jd_opencardL191.log 2>&1
-#7.18-7.31 萌宠清凉囤货新势界
-35 14,20 19-31 7 *  node /scripts/jd_opencardL196.js >> /scripts/logs/jd_opencardL196.log 2>&1
 #7.21-8.1 燃动盛夏 伏气满满
 49 2,15 22-31,1 7,8 *   node /scripts/jd_opencardL197.js >> /scripts/logs/jd_opencardL197.log 2>&1
 #7.21-7.24 品类联合 
