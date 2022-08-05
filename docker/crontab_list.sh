@@ -5,6 +5,8 @@
 
 
 ##############短期活动##############
+#入口 极速版 赚金币 种水果
+5 0-23/6 * * * node /scripts/jd_wsdlb.js >> /scripts/logs/jd_wsdlb.log 2>&1
 #京东极速版红包(活动时间：2021-5-5至？)
 #44 8,11 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
 #柠檬推一推
