@@ -100,6 +100,13 @@
 21 1 30-31,1-4 7,8 * node /scripts/jd_opencardL209.js >> /scripts/logs/jd_opencardL209.log 2>&1
 #8.1-8.8 京东粉丝联盟福利社 入会赢专享好礼
 15 1 2-8 8 * node /scripts/jd_opencardL210.js >> /scripts/logs/jd_opencardL210.log 2>&1
+
+#8.1-8.8 浪漫七夕 放肆约惠
+29 0 4-8 8 * node /scripts/jd_opencardL211.js >> /scripts/logs/jd_opencardL211.log 2>&1
+#8.3-8.10 飞利浦88会员狂欢日
+29 8,17 3-10 8 * node /scripts/jd_opencardL212.js >> /scripts/logs/jd_opencardL212.log 2>&1
+#入口：[ 8.5-8.12 8月你好 暑期嘉年华 ]
+59 0 6-12 8 * node /scripts/jd_opencardL213.js >> /scripts/logs/jd_opencardL213.log 2>&1
 ##############长期活动##############
 #领津贴
 30 5,23 * * * node /scripts/jd_jin_tie.js >> /scripts/logs/jd_jin_tie.log 2>&1
