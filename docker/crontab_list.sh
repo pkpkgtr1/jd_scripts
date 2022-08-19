@@ -169,7 +169,7 @@
 # 京喜农场
 30 9,12,18 * * * node /scripts/jd_jxnc.js >> /scripts/logs/jd_jxnc.log 2>&1
 # 领现金
-10 */4 * * * node /scripts/jd_cash_freesoul.js >> /scripts/logs/jd_cash_freesoul.log 2>&1
+10 */4 * * * node /scripts/jd_cash_nolan.js >> /scripts/logs/jd_cash_nolan.log 2>&1
 #领现金微信版
 15 0,7 * * * node /scripts/jd_cash_wx.js >> /scripts/logs/jd_cash_wx.log 2>&1
 # 闪购盲盒
