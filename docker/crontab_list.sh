@@ -99,10 +99,16 @@
 #7.30-8.4 惊喜派送 纵享甜蜜
 21 1 30-31,1-4 7,8 * node /scripts/jd_opencardL209.js >> /scripts/logs/jd_opencardL209.log 2>&1
 
-#8.3-8.10 飞利浦88会员狂欢日
-29 8,17 3-10 8 * node /scripts/jd_opencardL212.js >> /scripts/logs/jd_opencardL212.log 2>&1
-#入口：[ 8.5-8.12 8月你好 暑期嘉年华 ]
-59 0 6-12 8 * node /scripts/jd_opencardL213.js >> /scripts/logs/jd_opencardL213.log 2>&1
+#8.15-8.22 玩转818 超值购物攻略
+29 0,18 16-22 8 * node /scripts/jd_opencardL216.js >> /scripts/logs/jd_opencardL216.log 2>&1
+#8.15-8.25 畅享一夏，消费赢壕礼
+29 19 15-25 8 *  node /scripts/jd_opencardL217.js >> /scripts/logs/jd_opencardL217.log 2>&1
+#8.1-8.31 全民酿造 岁月酱香
+29 8,17 3-10 8 * node /scripts/jd_opencardL218.js >> /scripts/logs/jd_opencardL218.log 2>&1
+#8.18~8.26 解锁好物 宠粉时刻
+53 0,17 19-26 8 * node /scripts/jd_opencardL219.js >> /scripts/logs/jd_opencardL219.log 2>&1
+#8.18~9.2 能量派送 幻新出发
+45 1,17 18-26 8 * node /scripts/jd_opencardL220.js >> /scripts/logs/jd_opencardL220.log 2>&1
 ##############长期活动##############
 #领津贴
 30 5,23 * * * node /scripts/jd_jin_tie.js >> /scripts/logs/jd_jin_tie.log 2>&1
